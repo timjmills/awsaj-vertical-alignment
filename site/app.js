@@ -175,14 +175,15 @@
       <span>${list.length - c[3]} of ${list.length} rated · ${c[2]} in depth</span></div>`;
   }
 
-  // The one framework each count uses, so a standard listed in two frameworks is not counted twice:
-  // elementary uses AERO (the school's current framework), middle and high use NGSS / Wisconsin Social Studies.
+  // The default framework for a subject and grade, also the one each "still to rate" count uses so a standard
+  // listed in two frameworks is not counted twice. Social Studies is Wisconsin (with EEs) in every grade;
+  // Science is AERO in K-5 (the school's current framework) and NGSS in 6-12.
   function countFramework(subject, g) {
-    const elem = DIV.Elementary.includes(g);
-    if (subject === "Science") return elem ? "AERO-SCI" : "NGSS";
-    if (subject === "Social Studies") return elem ? "AERO-SS" : "WI-SS";
+    if (subject === "Science") return DIV.Elementary.includes(g) ? "AERO-SCI" : "NGSS";
+    if (subject === "Social Studies") return "WI-SS";
     return null;
   }
+  const defaultFramework = (subject, g) => (subject === "Science" && (!g || DIV.Elementary.includes(g)) ? "" : countFramework(subject, g) || "");
   // Grade-level standards (suggested for grade g) that no one has marked yet, per subject. The goal is 0 everywhere.
   function toRateStrip(g) {
     const subs = S.team.name === "Vertical Alignment Committee" ? S.meta.subjects.map((s) => s.name) : S.team.subjects;
@@ -562,7 +563,11 @@
     store.set("va_view", S.view); refreshFilterOptions(); rerender();
     if (S.view === "activity") Promise.all([loadEvents(), loadComments()]).then(rerender);
   }));
-  const bindF = (id, key) => $(id).addEventListener(id === "#f-search" ? "input" : "change", (ev) => { S.f[key] = ev.target.value; refreshFilterOptions(); rerender(); });
+  const bindF = (id, key) => $(id).addEventListener(id === "#f-search" ? "input" : "change", (ev) => {
+    S.f[key] = ev.target.value;
+    if (key === "subject") S.f.framework = defaultFramework(S.f.subject, teamGrade());
+    refreshFilterOptions(); rerender();
+  });
   bindF("#f-subject", "subject"); bindF("#f-framework", "framework"); bindF("#f-division", "division"); bindF("#f-grade", "grade"); bindF("#f-strand", "strand"); bindF("#f-search", "search");
   $("#team").addEventListener("change", (ev) => { setTeam(ev.target.value); store.set("va_team", ev.target.value); });
   $("#x-csv").addEventListener("click", exportCSV); $("#x-png").addEventListener("click", exportPNG); $("#x-pdf").addEventListener("click", () => window.print());
@@ -571,7 +576,7 @@
     S.team = S.teams.find((t) => t.name === name) || null;
     if (S.team && S.team.name !== "Vertical Alignment Committee") {
       S.f.subject = S.team.subjects[0]; S.f.grade = S.team.grades[0]; S.f.division = "all"; S.f.strand = "";
-      S.f.framework = S.f.subject === "Science" && !DIV.Elementary.includes(S.f.grade) ? "NGSS" : "";
+      S.f.framework = defaultFramework(S.f.subject, S.f.grade);
     }
     refreshFilterOptions(); rerender();
   }
