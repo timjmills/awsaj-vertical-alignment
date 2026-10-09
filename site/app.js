@@ -10,7 +10,7 @@
   const LEVEL_SHORT = ["Not taught", "Introduced", "In depth"];
   const FW_NAME = { "WI-CC-MATH": "Wisconsin Math (CC)", "WI-CC-ELA": "Wisconsin ELA (CC)", "NGSS": "NGSS",
     "WI-SCI": "Wisconsin Science", "AERO-SCI": "AERO Science", "WI-SS": "Wisconsin Social Studies", "AERO-SS": "AERO Social Studies" };
-  const COLORS = { none: "#FFFFFF", 0: "#D93F3F", placed: "#1F2328", 1: "#E09F1F", 2: "#1E7B45", maroon: "#8A1538", line: "#E3E6EA", ink: "#1F2328" };
+  const COLORS = { none: "#FFFFFF", 0: "#D93F3F", placed: "#8A1538", 1: "#E09F1F", 2: "#1E7B45", maroon: "#8A1538", line: "#E3E6EA", ink: "#1F2328" };
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -104,12 +104,16 @@
     if (!S.team) { toast("Choose your team first (top right)."); $("#team").focus(); return; }
     if (!canEdit(g)) { toast(`Your team rates ${S.team.grades.map(gname).join(", ")}.`); return; }
     const k = rkey(e.f, e.c, g), before = S.ratings.get(k);
+    const leftBefore = toRateLeft(g), strandBefore = strandLeft(e, g);
     S.ratings.set(k, { framework: e.f, code: e.c, grade: g, level, team: S.team.name, updated_at: new Date().toISOString() });
-    rerender();
+    S.flash = k; rerender(); S.flash = null;
+    const leftAfter = toRateLeft(g), undo = ["Undo", () => undoRating(e, g, before)];
+    const finished = Object.keys(leftAfter).find((sb) => leftBefore[sb] > 0 && leftAfter[sb] === 0);
+    const party = finished ? `Every ${finished} standard for ${gname(g)} is rated!` : strandBefore > 0 && strandLeft(e, g) === 0 ? `${e.s}: every standard rated` : "";
     try {
       await rpc("set_rating", { p_framework: e.f, p_code: e.c, p_grade: g, p_level: level, p_team: S.team.name, p_device: S.device });
       syncNote("Saved " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
-      toast(`${e.c}, ${gname(g)}: ${LEVEL[level]}`, ["Undo", () => undoRating(e, g, before)]);
+      if (party) celebrate(party, undo); else toast(`${e.c}, ${gname(g)}: ${LEVEL[level]}`, undo);
     } catch (err) {
       if (before) S.ratings.set(k, before); else S.ratings.delete(k);
       rerender(); toast("Could not save: " + err.message);
@@ -173,17 +177,56 @@
     if (subj().frameworks.length > 1) tags.push(`<span class="tag">${esc(FW_NAME[e.f] || e.f)}</span>`);
     if (e.ee) { const ee = e.ee.split(";")[0].trim(); tags.push(`<span class="tag">${/^(M\.)?EE/.test(ee) || ee.startsWith("SS.EE") ? "" : "EE "}${esc(ee)}</span>`); }
     if (note) tags.push(`<span class="tag sg">${esc(note)}</span>`);
-    return `<div class="std"><div><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}">${esc(e.c)}</button></div>
+    const k = rkey(e.f, e.c, g);
+    return `<div class="std ${r ? "rated l" + r.level : ""} ${S.flash === k ? "flash" : ""}"><div><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}">${esc(e.c)}</button></div>
       <div><div class="txt">${esc(e.t)}${e.t.length >= 220 ? "…" : ""}</div><div class="tags">${tags.join("")}</div></div>
       <div>${segFor(e, g)}</div>${r ? `<div class="who">${esc(r.team)} · ${new Date(r.updated_at).toLocaleDateString()}</div>` : ""}</div>`;
   }
   function groupByStrand(list, g, noteFn) {
     let html = "", last = null;
     for (const e of list) {
-      if (e.s !== last) { html += `<div class="strand">${esc(e.s || "Standards")}</div>`; last = e.s; }
+      if (e.s !== last) {
+        const inS = list.filter((x) => x.s === e.s), c = countLevels(inS, g), done = inS.length - c[3];
+        html += `<div class="strand ${c[3] ? "" : "done"}"><span>${esc(e.s || "Standards")}</span>${miniBar(c, `${done} of ${inS.length} rated`)}<span class="strand-n">${c[3] ? `${done}/${inS.length}` : "✓ all rated"}</span></div>`;
+        last = e.s;
+      }
       html += stdRow(e, g, noteFn && noteFn(e));
     }
     return html;
+  }
+  // c = [not taught, introduced, in depth, not rated] for a list of standards in grade g
+  function countLevels(list, g) { const c = [0, 0, 0, 0]; for (const e of list) { const r = rating(e.f, e.c, g); c[r ? r.level : 3]++; } return c; }
+  // Thin stacked bar: in depth, introduced, not taught, then unrated track. 2px gaps between fills.
+  function miniBar(c, label) {
+    const n = c[0] + c[1] + c[2] + c[3] || 1;
+    return `<span class="mini" role="img" aria-label="${esc(label || "")}">${[2, 1, 0].map((i) => (c[i] ? `<i style="flex:${c[i] / n};background:${COLORS[i]}"></i>` : "")).join("")}${c[3] ? `<i class="rest" style="flex:${c[3] / n}"></i>` : ""}</span>`;
+  }
+  // Ring chart of a grade's progress with % rated in the middle.
+  function donut(c, size = 84) {
+    const n = c[0] + c[1] + c[2] + c[3] || 1, r = 15.9, C = 2 * Math.PI * r, gap = c[3] === n ? 0 : 0.6;
+    let off = 0, arcs = "";
+    for (const i of [2, 1, 0]) {
+      if (!c[i]) continue;
+      const len = (c[i] / n) * C;
+      arcs += `<circle r="${r}" cx="20" cy="20" fill="none" stroke="${COLORS[i]}" stroke-width="4.2" stroke-dasharray="${Math.max(len - gap, 0.1)} ${C}" stroke-dashoffset="${-off}" class="arc"><title>${LEVEL[i]}: ${c[i]}</title></circle>`;
+      off += len;
+    }
+    const pct = Math.round(((n - c[3]) / n) * 100);
+    return `<svg class="donut" width="${size}" height="${size}" viewBox="0 0 40 40" role="img" aria-label="${pct}% rated">
+      <circle r="${r}" cx="20" cy="20" fill="none" stroke="var(--chip)" stroke-width="4.2"></circle><g transform="rotate(-90 20 20)">${arcs}</g>
+      <text x="20" y="21.5" text-anchor="middle" class="donut-n">${pct}%</text><text x="20" y="27.5" text-anchor="middle" class="donut-l">rated</text></svg>`;
+  }
+  function celebrate(msg, action) {
+    toast(msg, action);
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const box = document.createElement("div"); box.className = "confetti"; box.setAttribute("aria-hidden", "true");
+    const cols = [COLORS[2], COLORS[1], COLORS[0], COLORS.maroon, "#0F8B8D"];
+    for (let i = 0; i < 70; i++) {
+      const b = document.createElement("i");
+      b.style.cssText = `left:${Math.random() * 100}vw;background:${cols[i % cols.length]};animation-delay:${Math.random() * 0.4}s;animation-duration:${1.4 + Math.random()}s;transform:rotate(${Math.random() * 360}deg)`;
+      box.append(b);
+    }
+    document.body.append(box); setTimeout(() => box.remove(), 3000);
   }
   function progressBar(list, g) {
     const c = [0, 0, 0, 0];
@@ -203,6 +246,13 @@
     return null;
   }
   const defaultFramework = (subject, g) => (subject === "Science" && (!g || DIV.Elementary.includes(g)) ? "" : countFramework(subject, g) || "");
+  // Unrated grade-level standards per subject (counted framework only), and unrated standards left in e's strand.
+  function toRateLeft(g) {
+    const out = {};
+    for (const s of S.meta.subjects) { const fw = countFramework(s.name, g); out[s.name] = S.idx[s.slug].filter((e) => e.pl.includes(g) && (!fw || e.f === fw) && !rating(e.f, e.c, g)).length; }
+    return out;
+  }
+  const strandLeft = (e, g) => items().filter((x) => x.s === e.s && x.f === e.f && x.pl.includes(g) && !rating(x.f, x.c, g)).length;
   // Grade-level standards (suggested for grade g) that no one has marked yet, per subject. The goal is 0 everywhere.
   function toRateStrip(g) {
     const subs = S.team.name === "Vertical Alignment Committee" ? S.meta.subjects.map((s) => s.name) : S.team.subjects;
@@ -233,7 +283,8 @@
     el.innerHTML = `<div class="panel">
       <div class="rate-head"><div><h2>${esc(S.f.subject)} · ${esc(gname(g))} ${hb("rate")}</h2>
       <p class="lede">For each standard, choose how it is taught in ${esc(gname(g))} this year. Use what is really taught, even if the plans do not show it yet.</p></div>
-      <div style="display:flex;align-items:center">${progressBar(placed.concat(band.filter((e) => rating(e.f, e.c, g))), g)}${hb("progress")}</div></div>
+      <div class="ring-box">${(() => { const lst = placed.concat(band.filter((e) => rating(e.f, e.c, g))), c = countLevels(lst, g); return donut(c) +
+        `<div class="ring-key"><b>${lst.length - c[3]} of ${lst.length}</b> rated<br><span><i class="lv lv-2"></i>${c[2]} in depth</span><span><i class="lv lv-1"></i>${c[1]} introduced</span><span><i class="lv lv-0"></i>${c[0]} not taught</span></div>`; })()}${hb("progress")}</div></div>
       ${toRateStrip(g)}
       ${committee ? `<p class="muted">Committee view: pick a grade with the Grade filter above.</p>` : ""}
       <div class="group-title"><h3>Standards suggested for ${esc(gname(g))} (${placed.length}) ${hb("rate_placed")}</h3></div>
@@ -255,14 +306,17 @@
         gs.map((g) => {
           const r = rating(e.f, e.c, g), placed = e.pl.includes(g);
           const cls = ["cell", r ? "l" + r.level : "", placed ? "placed" : "", r && r.level > 0 && !placed ? "off" : ""].join(" ");
-          return `<td><button class="${cls}" data-act="open" data-k="${esc(e.f + "|" + e.c)}" data-g="${g}" data-tip="1"
+          return `<td data-gi="${g}"><button class="${cls}" data-act="open" data-k="${esc(e.f + "|" + e.c)}" data-g="${g}" data-tip="1"
             aria-label="${esc(e.c)}, ${esc(gname(g))}: ${r ? LEVEL[r.level] : "not rated"}${placed ? ", suggested grade" : ""}"></button></td>`;
         }).join("") + `</tr>`;
     }
     const rated = list.filter((e) => levelsAcross(e).length).length;
     el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"} ${hb("heatmap")}</h2>
-      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A dark outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
-      <div class="hm-wrap" id="hm"><table class="hm"><thead><tr><th class="rowh">Standard</th>${gs.map((g) => `<th>${gl(g)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A maroon outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
+      <div class="hm-wrap" id="hm"><table class="hm" data-sel="${esc(S.f.grade)}"><thead><tr><th class="rowh">Standard <span class="muted" style="font-weight:400">${hb("hm_cols")}</span></th>${gs.map((g) => {
+        const mine = list.filter((e) => e.pl.includes(g)), c = countLevels(mine, g), pct = mine.length ? Math.round(((mine.length - c[3]) / mine.length) * 100) : 0;
+        return `<th data-gi="${g}" class="${S.f.grade === g ? "sel" : ""}"><button type="button" class="colh" data-act="grade" data-g="${g}" data-tip-text="${esc(gname(g))}: ${mine.length - c[3]} of ${mine.length} suggested standards rated (${c[2]} in depth, ${c[1]} introduced, ${c[0]} not taught). Click to choose this grade.">${gl(g)}<small>${mine.length ? pct + "%" : ""}</small>${mine.length ? miniBar(c) : ""}</button></th>`;
+      }).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 
   function analyse(list) {
@@ -313,7 +367,7 @@
     const extra = filtered({ ignoreDivision: true }).filter((e) => !e.pl.includes(g) && (rating(e.f, e.c, g)?.level || 0) > 0);
     const bars = strands.map((x) => {
       const w = (i) => (x.c[i] / x.arr.length) * 100;
-      return `<div>${esc(x.s)}</div><div class="sb" role="img" aria-label="${esc(x.s)}: ${x.c[2]} in depth, ${x.c[1]} introduced, ${x.c[0]} not taught, ${x.c[3]} not rated">
+      return `<button type="button" class="sb-name" data-act="strand" data-s="${esc(x.s)}" title="Rate this strand">${esc(x.s)}</button><div class="sb" role="img" aria-label="${esc(x.s)}: ${x.c[2]} in depth, ${x.c[1]} introduced, ${x.c[0]} not taught, ${x.c[3]} not rated">
         ${[[2, COLORS[2]], [1, COLORS[1]], [0, COLORS[0]], [3, "#F2F4F6"]].map(([i, col]) => (x.c[i] ? `<i style="width:${w(i)}%;background:${col}" data-tip-text="${esc(x.s)}: ${x.c[i]} ${i === 3 ? "not rated" : LEVEL[i].toLowerCase()}"></i>` : "")).join("")}</div>
         <div class="num">${x.c[2]}/${x.arr.length}</div>`;
     }).join("");
@@ -321,10 +375,10 @@
     el.innerHTML = `<div class="panel"><h2>${esc(gname(g))} · ${esc(S.f.subject)} ${hb("dashboard")}</h2>
       <div class="tiles">
         <div class="tile"><div class="n">${list.length}</div><div class="l">standards suggested for this grade ${hb("t_total")}</div></div>
-        <div class="tile"><div class="n">${Math.round(((list.length - tot[3]) / n) * 100)}%</div><div class="l">rated so far ${hb("t_rated")}</div></div>
-        <div class="tile"><div class="n">${tot[2]}</div><div class="l">taught in depth ${hb("t_depth")}</div></div>
-        <div class="tile"><div class="n">${tot[1]}</div><div class="l">introduced or exposed ${hb("t_intro")}</div></div>
-        <div class="tile"><div class="n">${tot[0]}</div><div class="l">not taught ${hb("t_not")}</div></div>
+        <div class="tile ring-tile">${donut(tot, 64)}<div class="l">rated so far ${hb("t_rated")}</div></div>
+        <div class="tile t2"><div class="n">${tot[2]}</div><div class="l">taught in depth ${hb("t_depth")}</div></div>
+        <div class="tile t1"><div class="n">${tot[1]}</div><div class="l">introduced or exposed ${hb("t_intro")}</div></div>
+        <div class="tile t0"><div class="n">${tot[0]}</div><div class="l">not taught ${hb("t_not")}</div></div>
         <div class="tile"><div class="n">${extra.length}</div><div class="l">taught here but suggested for another grade ${hb("t_extra")}</div></div>
       </div>
       <div class="summary">${hb("summary")}${list.length - tot[3] === 0 ? `<p>No ratings yet for ${esc(gname(g))}. Once the team rates its standards, this summary fills in.</p>` :
@@ -346,7 +400,8 @@
       const here = list.filter((e) => e.pl.includes(g));
       const moved = list.filter((e) => !e.pl.includes(g) && (rating(e.f, e.c, g)?.level || 0) > 0);
       const chip = (e, m) => { const r = rating(e.f, e.c, g); return `<button class="chip ${r ? "l" + r.level : ""}" data-act="open" data-k="${esc(e.f + "|" + e.c)}" style="${m ? "border-style:dashed" : ""}">${esc(e.c)}<small>${esc(e.t.slice(0, 60))}${e.t.length > 60 ? "…" : ""}</small></button>`; };
-      return `<div class="rung"><h4>${esc(gname(g))} <span class="muted">(${here.length})</span></h4>${here.map((e) => chip(e)).join("")}${moved.length ? `<div class="muted" style="font-size:11px;margin:6px 0 4px">Also taught here</div>${moved.map((e) => chip(e, true)).join("")}` : ""}</div>`;
+      const c = countLevels(here, g);
+      return `<div class="rung div-${divOf(g)} ${g === g0 ? "sel" : ""}"><h4>${esc(gname(g))} <span class="muted">(${here.length})</span></h4>${here.length ? miniBar(c, `${here.length - c[3]} of ${here.length} rated`) : ""}${here.map((e) => chip(e)).join("")}${moved.length ? `<div class="muted" style="font-size:11px;margin:6px 0 4px">Also taught here</div>${moved.map((e) => chip(e, true)).join("")}` : ""}</div>`;
     }).join("");
     el.innerHTML = `<div class="panel"><h2>Progression: ${esc(strand || "")} ${hb("ladder")}</h2>
       <p class="lede">How one strand builds from grade to grade. Colour shows how each grade rates the standard. Pick another strand with the Strand filter.</p></div>
@@ -523,6 +578,8 @@
     const act = b.dataset.act;
     if (act === "rate") { const e = findItem(b.dataset.k); const l = +b.dataset.l; const cur = rating(e.f, e.c, b.dataset.g); if (cur && cur.level === l) return; setRating(e, b.dataset.g, l); }
     else if (act === "open") openDetail(b.dataset.k);
+    else if (act === "grade") { S.f.grade = b.dataset.g; refreshFilterOptions(); rerender(); }
+    else if (act === "strand") { S.f.strand = b.dataset.s; $(`.tabs [data-view="rate"]`).click(); }
     else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = b.dataset.fw || ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
     else if (act === "cycle") {
       const e = findItem(b.dataset.k), g = b.dataset.g, cur = rating(e.f, e.c, g);
@@ -565,6 +622,15 @@
   $("#pop-x").addEventListener("click", closePop);
   document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !pop.hidden) { closePop(); } });
 
+  // heatmap crosshair: light up the row and grade column under the pointer
+  let hmCol = null;
+  document.addEventListener("mouseover", (ev) => {
+    const td = ev.target.closest("table.hm td[data-gi], table.hm th[data-gi]");
+    const col = td ? td.dataset.gi : null;
+    if (col === hmCol) return;
+    $$("table.hm .xcol").forEach((x) => x.classList.remove("xcol"));
+    hmCol = col; if (col) $$(`table.hm [data-gi="${col}"]`).forEach((x) => x.classList.add("xcol"));
+  });
   // tooltip for heatmap cells and bars
   const tip = $("#tip");
   document.addEventListener("mouseover", (ev) => {
