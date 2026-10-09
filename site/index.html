@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="team-pick">
-    <label for="team">Your team</label>
+    <label for="team">Your team</label><button type="button" class="help" data-help="team" aria-label="What is this?">?</button>
     <select id="team"><option value="">Choose your team</option></select>
   </div>
 </header>
@@ -32,22 +32,23 @@
   <button role="tab" data-view="dashboard">Grade dashboard</button>
   <button role="tab" data-view="ladder">Progressions</button>
   <button role="tab" data-view="activity">Activity</button>
-  <span class="sync" id="sync" aria-live="polite"></span>
+  <button role="tab" data-view="plans">Plans vs ratings <span class="soon">Part 2</span></button>
+  <span class="sync" id="sync" aria-live="polite"></span><button type="button" class="help" data-help="sync" aria-label="What is this?">?</button>
 </nav>
 
 <section class="filters" id="filters">
-  <label>Subject <select id="f-subject"></select></label>
-  <label>Framework <select id="f-framework"></select></label>
-  <label>Show <select id="f-division">
+  <label><span>Subject <button type="button" class="help" data-help="subject" aria-label="What is this?">?</button></span><select id="f-subject"></select></label>
+  <label><span>Framework <button type="button" class="help" data-help="framework" aria-label="What is this?">?</button></span><select id="f-framework"></select></label>
+  <label><span>Show <button type="button" class="help" data-help="division" aria-label="What is this?">?</button></span><select id="f-division">
     <option value="all">K-12</option><option value="Elementary">Elementary (K-5)</option>
     <option value="Middle">Middle (6-8)</option><option value="High">High (9-12)</option></select></label>
-  <label class="grade-only">Grade <select id="f-grade"></select></label>
-  <label>Strand <select id="f-strand"><option value="">All strands</option></select></label>
-  <label class="grow">Search <input id="f-search" type="search" placeholder="Code or words, e.g. fractions"></label>
+  <label class="grade-only"><span>Grade <button type="button" class="help" data-help="grade" aria-label="What is this?">?</button></span><select id="f-grade"></select></label>
+  <label><span>Strand <button type="button" class="help" data-help="strand" aria-label="What is this?">?</button></span><select id="f-strand"><option value="">All strands</option></select></label>
+  <label class="grow"><span>Search <button type="button" class="help" data-help="search" aria-label="What is this?">?</button></span><input id="f-search" type="search" placeholder="Code or words, e.g. fractions"></label>
   <div class="exports">
     <button class="ghost" id="x-csv" title="Download the current view as a spreadsheet">CSV</button>
     <button class="ghost" id="x-png" title="Download the heatmap or chart as an image">PNG</button>
-    <button class="ghost" id="x-pdf" title="Print or save this view as a PDF report">PDF</button>
+    <button class="ghost" id="x-pdf" title="Print or save this view as a PDF report">PDF</button><button type="button" class="help" data-help="exports" aria-label="What is this?">?</button>
   </div>
 </section>
 
@@ -58,6 +59,7 @@
   <section class="view" id="view-dashboard" hidden></section>
   <section class="view" id="view-ladder" hidden></section>
   <section class="view" id="view-activity" hidden></section>
+  <section class="view" id="view-plans" hidden></section>
 </main>
 
 <div class="legend-bar" id="legend">
@@ -65,7 +67,7 @@
   <span class="key"><i class="lv lv-0"></i>Not taught</span>
   <span class="key"><i class="lv lv-1"></i>Introduced / exposed</span>
   <span class="key"><i class="lv lv-2"></i>Taught in depth</span>
-  <span class="key"><i class="lv lv-none placed"></i>Suggested grade for the standard</span>
+  <span class="key"><i class="lv lv-none placed"></i>Suggested grade for the standard</span><button type="button" class="help" data-help="legend" aria-label="What is this?">?</button>
 </div>
 
 <dialog id="detail" aria-labelledby="d-title">
@@ -86,6 +88,7 @@
 </dialog>
 
 <div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="pop" id="pop" role="dialog" aria-modal="false" hidden><div class="pop-t" id="pop-t"></div><div id="pop-b"></div><button class="icon pop-x" id="pop-x" aria-label="Close">&times;</button></div>
 <div class="toast" id="toast" role="status" hidden></div>
 
 <footer class="foot">
@@ -93,6 +96,7 @@
   "I can" statements marked <em>draft</em> await committee review. No student data is stored.
 </footer>
 <script src="config.js"></script>
+<script src="help.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

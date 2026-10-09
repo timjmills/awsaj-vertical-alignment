@@ -83,6 +83,7 @@
   const canEdit = (g) => S.team && (S.team.name === "Vertical Alignment Committee" || S.team.grades.includes(g));
   function teamGrade() { return S.team && S.team.grades.length === 1 ? S.team.grades[0] : S.f.grade; }
 
+  const hb = (k) => `<button type="button" class="help" data-help="${k}" aria-label="What is this?">?</button>`;
   function toast(msg) {
     const t = $("#toast"); t.textContent = msg; t.hidden = false;
     clearTimeout(toast._t); toast._t = setTimeout(() => (t.hidden = true), 2600);
@@ -131,7 +132,7 @@
   function rerender() {
     const v = S.view;
     if (v === "rate") renderRate(); else if (v === "heatmap") renderHeatmap(); else if (v === "gaps") renderGaps();
-    else if (v === "dashboard") renderDashboard(); else if (v === "ladder") renderLadder(); else renderActivity();
+    else if (v === "dashboard") renderDashboard(); else if (v === "ladder") renderLadder(); else if (v === "plans") renderPlans(); else renderActivity();
   }
 
   function segFor(e, g) {
@@ -169,7 +170,7 @@
   function renderRate() {
     const el = $("#view-rate");
     if (!S.team) {
-      el.innerHTML = `<div class="panel"><h2>Welcome</h2><p class="lede">Choose your team at the top right. You will see the standards for your grade, and you can mark each one as
+      el.innerHTML = `<div class="panel"><h2>Welcome ${hb("team")}</h2><p class="lede">Choose your team at the top right. You will see the standards for your grade, and you can mark each one as
         <b>Not taught</b>, <b>Introduced / exposed</b> or <b>Taught in depth</b>. Every change is saved straight away and recorded with your team name.</p></div>`;
       return;
     }
@@ -179,13 +180,13 @@
     const band = all.filter((e) => !e.pl.includes(g) && e.sg && e.div.includes(divOf(g)));
     const committee = S.team.name === "Vertical Alignment Committee";
     el.innerHTML = `<div class="panel">
-      <div class="rate-head"><div><h2>${esc(S.f.subject)} · ${esc(gname(g))}${S.team.grades.length === 1 && !committee ? "" : ""}</h2>
+      <div class="rate-head"><div><h2>${esc(S.f.subject)} · ${esc(gname(g))} ${hb("rate")}</h2>
       <p class="lede">For each standard, choose how it is taught in ${esc(gname(g))} this year. Use what is really taught, even if the plans do not show it yet.</p></div>
-      ${progressBar(placed.concat(band.filter((e) => rating(e.f, e.c, g))), g)}</div>
+      <div style="display:flex;align-items:center">${progressBar(placed.concat(band.filter((e) => rating(e.f, e.c, g))), g)}${hb("progress")}</div></div>
       ${committee ? `<p class="muted">Committee view: pick a grade with the Grade filter above.</p>` : ""}
-      <div class="group-title"><h3>Standards suggested for ${esc(gname(g))} (${placed.length})</h3></div>
+      <div class="group-title"><h3>Standards suggested for ${esc(gname(g))} (${placed.length}) ${hb("rate_placed")}</h3></div>
       ${placed.length ? groupByStrand(placed, g, (e) => (e.sg ? "Suggested placement" : "")) : `<div class="empty">No standards match these filters.</div>`}
-      ${band.length ? `<div class="group-title"><h3>Other ${esc(divOf(g).toLowerCase())} school standards (${band.length})</h3>
+      ${band.length ? `<div class="group-title"><h3>Other ${esc(divOf(g).toLowerCase())} school standards (${band.length}) ${hb("rate_band")}</h3>
         <span class="muted">Placement of these is a suggestion. Mark any that ${esc(gname(g))} actually teaches.</span></div>
         ${groupByStrand(band, g, (e) => "Suggested for " + e.pl.map(gname).join(", "))}` : ""}
     </div>`;
@@ -207,7 +208,7 @@
         }).join("") + `</tr>`;
     }
     const rated = list.filter((e) => levelsAcross(e).length).length;
-    el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"}</h2>
+    el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"} ${hb("heatmap")}</h2>
       <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A dark outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
       <div class="hm-wrap" id="hm"><table class="hm"><thead><tr><th class="rowh">Standard</th>${gs.map((g) => `<th>${gl(g)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
@@ -233,8 +234,8 @@
     const pct = (x) => (n ? Math.round((x / n) * 100) : 0);
     const sec = (title, desc, arr, fn, open) => `<details class="gap" ${open ? "open" : ""}><summary><span class="count">${arr.length}</span>${title}</summary>
       <p class="muted">${desc}</p><ul class="gap-list">${arr.slice(0, 400).map(fn).join("") || "<li class='muted'>None.</li>"}</ul></details>`;
-    el.innerHTML = `<div class="panel"><h2>Gaps and repetition: ${esc(S.f.subject)}${S.f.division === "all" ? "" : ", " + esc(S.f.division) + " school"}</h2>
-      <div class="summary"><p>${n} standards in view. ${n - a.unrated.length} (${pct(n - a.unrated.length)}%) have been rated by at least one grade.</p>
+    el.innerHTML = `<div class="panel"><h2>Gaps and repetition: ${esc(S.f.subject)}${S.f.division === "all" ? "" : ", " + esc(S.f.division) + " school"} ${hb("gaps")}</h2>
+      <div class="summary"><p>${hb("summary")} ${n} standards in view. ${n - a.unrated.length} (${pct(n - a.unrated.length)}%) have been rated by at least one grade.</p>
       <p>${a.noDepth.length} rated standards are not yet taught in depth in any grade${a.noDepth.length ? ", which makes them the clearest gaps" : ""}.
       ${a.repeat.length} are taught in depth in two or more grades: check that each grade builds on the one before rather than repeating it.</p>
       <p>${a.elsewhere.length} reports come from a grade other than the suggested one. These are the standards the committee may want to move.</p></div>
@@ -264,20 +265,20 @@
         <div class="num">${x.c[2]}/${x.arr.length}</div>`;
     }).join("");
     const strong = ratedStrands[0], weak = ratedStrands[ratedStrands.length - 1];
-    el.innerHTML = `<div class="panel"><h2>${esc(gname(g))} · ${esc(S.f.subject)}</h2>
+    el.innerHTML = `<div class="panel"><h2>${esc(gname(g))} · ${esc(S.f.subject)} ${hb("dashboard")}</h2>
       <div class="tiles">
-        <div class="tile"><div class="n">${list.length}</div><div class="l">standards suggested for this grade</div></div>
-        <div class="tile"><div class="n">${Math.round(((list.length - tot[3]) / n) * 100)}%</div><div class="l">rated so far</div></div>
-        <div class="tile"><div class="n">${tot[2]}</div><div class="l">taught in depth</div></div>
-        <div class="tile"><div class="n">${tot[1]}</div><div class="l">introduced or exposed</div></div>
-        <div class="tile"><div class="n">${tot[0]}</div><div class="l">not taught</div></div>
-        <div class="tile"><div class="n">${extra.length}</div><div class="l">taught here but suggested for another grade</div></div>
+        <div class="tile"><div class="n">${list.length}</div><div class="l">standards suggested for this grade ${hb("t_total")}</div></div>
+        <div class="tile"><div class="n">${Math.round(((list.length - tot[3]) / n) * 100)}%</div><div class="l">rated so far ${hb("t_rated")}</div></div>
+        <div class="tile"><div class="n">${tot[2]}</div><div class="l">taught in depth ${hb("t_depth")}</div></div>
+        <div class="tile"><div class="n">${tot[1]}</div><div class="l">introduced or exposed ${hb("t_intro")}</div></div>
+        <div class="tile"><div class="n">${tot[0]}</div><div class="l">not taught ${hb("t_not")}</div></div>
+        <div class="tile"><div class="n">${extra.length}</div><div class="l">taught here but suggested for another grade ${hb("t_extra")}</div></div>
       </div>
-      <div class="summary">${list.length - tot[3] === 0 ? `<p>No ratings yet for ${esc(gname(g))}. Once the team rates its standards, this summary fills in.</p>` :
+      <div class="summary">${hb("summary")}${list.length - tot[3] === 0 ? `<p>No ratings yet for ${esc(gname(g))}. Once the team rates its standards, this summary fills in.</p>` :
         `<p>${esc(gname(g))} has rated ${list.length - tot[3]} of ${list.length} ${esc(S.f.subject)} standards. ${tot[2]} are taught in depth and ${tot[1]} are introduced; ${tot[0]} are not taught this year.</p>
         ${strong && weak && strong !== weak ? `<p>Strongest coverage: <b>${esc(strong.s)}</b>. Most room to grow: <b>${esc(weak.s)}</b>.</p>` : ""}
         ${extra.length ? `<p>The team also teaches ${extra.length} standard${extra.length > 1 ? "s" : ""} suggested for other grades (see Gaps &amp; repetition).</p>` : ""}`}</div>
-      <h3>Coverage by strand</h3><div class="strand-bars" id="dash-bars">${bars || "<div class='muted'>No standards.</div>"}</div></div>`;
+      <h3>Coverage by strand ${hb("strandbars")}</h3><div class="strand-bars" id="dash-bars">${bars || "<div class='muted'>No standards.</div>"}</div></div>`;
   }
 
   function renderLadder() {
@@ -292,7 +293,7 @@
       const chip = (e, m) => { const r = rating(e.f, e.c, g); return `<button class="chip ${r ? "l" + r.level : ""}" data-act="open" data-k="${esc(e.f + "|" + e.c)}" style="${m ? "border-style:dashed" : ""}">${esc(e.c)}<small>${esc(e.t.slice(0, 60))}${e.t.length > 60 ? "…" : ""}</small></button>`; };
       return `<div class="rung"><h4>${esc(gname(g))} <span class="muted">(${here.length})</span></h4>${here.map((e) => chip(e)).join("")}${moved.length ? `<div class="muted" style="font-size:11px;margin:6px 0 4px">Also taught here</div>${moved.map((e) => chip(e, true)).join("")}` : ""}</div>`;
     }).join("");
-    el.innerHTML = `<div class="panel"><h2>Progression: ${esc(strand || "")}</h2>
+    el.innerHTML = `<div class="panel"><h2>Progression: ${esc(strand || "")} ${hb("ladder")}</h2>
       <p class="lede">How one strand builds from grade to grade. Colour shows how each grade rates the standard. Pick another strand with the Strand filter.</p></div>
       <div class="ladder">${rungs}</div>`;
   }
@@ -306,9 +307,65 @@
     const crow = S.comments.slice(0, 50).map((c) => `<tr><td>${new Date(c.created_at).toLocaleString()}</td><td>${esc(c.team)}${c.author ? " · " + esc(c.author) : ""}</td>
       <td><button class="code" data-act="open" data-k="${esc(c.framework + "|" + c.code)}">${esc(c.code)}</button></td><td colspan="2">${esc(c.body)}</td>
       <td><button class="ghost" data-act="hide" data-id="${c.id}">Hide</button></td></tr>`).join("");
-    el.innerHTML = `<div class="panel"><h2>Recent changes</h2><p class="lede">Every rating change, newest first. Undo needs the committee passcode.</p>
+    el.innerHTML = `<div class="panel"><h2>Recent changes ${hb("activity")}</h2><p class="lede">Every rating change, newest first. Undo needs the committee passcode.</p>
       <table class="log"><thead><tr><th>When</th><th>Team</th><th>Standard</th><th>Grade</th><th>Change</th><th></th></tr></thead><tbody>${rows || "<tr><td colspan='6' class='muted'>No changes yet.</td></tr>"}</tbody></table></div>
       <div class="panel"><h2>Recent comments</h2><table class="log"><thead><tr><th>When</th><th>Team</th><th>Standard</th><th colspan="2">Comment</th><th></th></tr></thead><tbody>${crow || "<tr><td colspan='6' class='muted'>No comments yet.</td></tr>"}</tbody></table></div>`;
+  }
+
+  /* ---------------- Part 2: plans vs ratings ---------------- */
+  // data/evidence.json is written by scripts/part2/match_plans.py (not run yet). Until it exists the page shows
+  // its layout with empty states, so the committee can see what Part 2 will report.
+  const ev = (f, c, g) => S.evidence && S.evidence.items[`${f}|${c}|${g}`];
+  function evidenceFor(e) {
+    if (!S.evidence) return `<p class="muted">Part 2 has not run yet. When it does, this shows which 2025-26 and 2026-27 plans include this standard, in which weeks, and whether the code was cited or inferred.</p>`;
+    const rows = GRADES.map((g) => ({ g, x: ev(e.f, e.c, g) })).filter((r) => r.x);
+    if (!rows.length) return `<p class="muted">Not found in any plan read so far.</p>`;
+    return `<ul class="comments">${rows.map(({ g, x }) => `<li><b>${esc(gname(g))}</b>: ${x.weeks} week${x.weeks === 1 ? "" : "s"} (${LEVEL[x.level].toLowerCase()}, ${x.match})
+      <div class="meta">${x.refs.map(([si, wk]) => { const s = S.evidence.sources[si]; return `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> ${esc(s.year)}: ${esc(wk.join(", "))}`; }).join("<br>")}</div></li>`).join("")}</ul>`;
+  }
+  function renderPlans() {
+    const el = $("#view-plans"), g = S.f.grade, ready = !!S.evidence;
+    const list = filtered({ ignoreDivision: true });
+    const pill = (l, lab) => `<span class="pill"><i class="lv ${l == null ? "lv-none" : "lv-" + l}"></i>${lab}</span>`;
+    let svsRows = "", off = [];
+    if (ready) {
+      for (const e of list) {
+        const r = rating(e.f, e.c, g), x = ev(e.f, e.c, g);
+        if (!r && !x) continue;
+        const said = r ? r.level : null, shown = x ? x.level : 0;
+        if (said === shown) continue;
+        const note = said == null ? "Plans show it; the team has not rated it yet." : said > 0 && !x ? "Not yet recorded in plans." :
+          said === 0 && x ? "Plans include it, but the team marked it not taught. Worth a quick check." :
+          said > shown ? "Taught more than the plans show." : "Plans show more time than the rating suggests.";
+        svsRows += `<tr><td><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}">${esc(e.c)}</button></td>
+          <td>${said == null ? pill(null, "Not rated") : pill(said, LEVEL_SHORT[said])}</td><td>${x ? pill(x.level, LEVEL_SHORT[x.level] + " · " + x.weeks + " wk") : pill(null, "Not in plans")}</td><td>${note}</td></tr>`;
+      }
+      off = Object.entries(S.evidence.items).filter(([k]) => k.endsWith("|" + g)).map(([k, x]) => { const [f, c] = k.split("|"); return { e: findItem(f + "|" + c), x }; })
+        .filter((o) => o.e && !o.e.pl.includes(g) && o.e.f && (!S.f.framework || o.e.f === S.f.framework) && list.includes(o.e));
+    }
+    const empty = (cols, msg) => `<tr class="placeholder"><td colspan="${cols}">${msg}</td></tr>`;
+    el.innerHTML = `<div class="panel"><h2>Plans vs ratings: ${esc(gname(g))} · ${esc(S.f.subject)} ${hb("plans")}</h2>
+      <p class="lede">What the curriculum plans show, side by side with what teams said in Part 1.</p>
+      ${ready ? `<p class="muted">Plans last read ${esc(S.evidence.built)} · ${S.evidence.sources.length} plan files.</p>` :
+      `<div class="notice"><b>Part 2 has not run yet.</b> This page shows what it will report. When the plans are read, every section below fills in, and each standard's popup shows the plans and weeks where it appears.</div>`}
+      <h3>How Part 2 works</h3>
+      <ol class="steps">
+        <li><b>Read the plans ${hb("p_sources")}</b>2026-27 unit and weekly plans for every grade, with 2025-26 filling weeks not planned yet.</li>
+        <li><b>Find the standards ${hb("p_match")}</b>Codes named in a plan are <i>cited</i>; content without a code is matched by AI and labelled <i>inferred</i>.</li>
+        <li><b>Count the weeks ${hb("p_rule")}</b>1-2 weeks = Introduced; 3 or more = Taught in depth.</li>
+        <li><b>Compare with Part 1 ${hb("p_svs")}</b>Where plans and ratings differ, the page says so gently, because plans do not always record everything taught.</li>
+      </ol></div>
+    <div class="panel"><h2>Says vs shows ${hb("p_svs")}</h2><p class="lede">Standards where the team's rating and the plans differ for ${esc(gname(g))}.</p>
+      <table class="svs"><thead><tr><th>Standard</th><th>Team says (Part 1)</th><th>Plans show (Part 2)</th><th>Note</th></tr></thead>
+      <tbody>${ready ? svsRows || empty(4, "No differences in this view.") : empty(4, "Fills in when Part 2 runs.")}</tbody></table></div>
+    <div class="panel"><h2>Below and above grade in the plans ${hb("p_offgrade")}</h2><p class="lede">Standards from other grades that appear in ${esc(gname(g))}'s plans.</p>
+      <table class="svs"><thead><tr><th>Standard</th><th>Suggested grade</th><th>Weeks in ${esc(gname(g))} plans</th><th>Below or above</th></tr></thead>
+      <tbody>${ready ? off.map(({ e, x }) => `<tr><td><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}">${esc(e.c)}</button></td><td>${e.pl.map(gl).join(", ")}</td><td>${x.weeks} (${x.match})</td>
+        <td>${GRADES.indexOf(e.pl[0]) < GRADES.indexOf(g) ? "Below grade (review or remediation)" : "Above grade (extension)"}</td></tr>`).join("") || empty(4, "None found.") : empty(4, "Fills in when Part 2 runs.")}</tbody></table></div>
+    <div class="panel"><h2>Plan sources ${hb("p_sources")}</h2>
+      <table class="svs"><thead><tr><th>Plan</th><th>Year</th><th>Grade</th><th>Type</th><th>Notes</th></tr></thead>
+      <tbody>${ready ? S.evidence.sources.filter((s) => s.grade === g).map((s) => `<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${esc(s.year)}</td><td>${esc(gname(s.grade))}</td><td>${esc(s.kind)}</td><td>${s.carried_forward ? "Copied forward from last year" : ""}</td></tr>`).join("") || empty(5, "No plans read for this grade yet.") :
+        empty(5, "Elementary weekly and unit plans, Middle and High school unit and lesson plans (2026-27, with 2025-26 for weeks not yet planned).")}</tbody></table></div>`;
   }
 
   /* ---------------- detail popup ---------------- */
@@ -336,28 +393,28 @@
     $("#d-body").innerHTML = `
       <p class="stdtext">${esc(d.text || e.t)}</p>
       <p class="muted">Suggested for ${e.pl.map(gname).join(", ")}${e.sg ? " (a suggestion: teachers confirm the grade in Part 1)" : ""}${d.course ? " · " + esc(d.course) : ""}${d.cluster ? " · " + esc(d.cluster) : ""}</p>
-      <div class="box"><h3>How each grade teaches it</h3><div class="strip">${strip}</div>
+      <div class="box"><h3>How each grade teaches it ${hb("d_strip")}</h3><div class="strip">${strip}</div>
         <p class="muted" style="margin:8px 0 0">${S.team ? "Click your grade's square to change its rating." : "Choose your team to rate."}</p></div>
-      ${d.descriptor_flag ? `<div class="flagbox"><b>Committee review:</b> ${esc(d.descriptor_flag)}. A suggested version is shown beside the school descriptor.</div>` : ""}
+      ${d.descriptor_flag ? `<div class="flagbox">${hb("d_flag")} <b>Committee review:</b> ${esc(d.descriptor_flag)}. A suggested version is shown beside the school descriptor.</div>` : ""}
       <div class="grid2" style="margin-top:14px">
-        <div class="box"><h3>"I can" levels ${d.descriptor_source === "draft" ? '<span class="tag flag">draft</span>' : '<span class="tag">school</span>'}</h3>${lvl(desc)}</div>
-        <div class="box"><h3>Essential Element ${esc(e.ee || "")}</h3><p>${esc(d.ee_text || "No Essential Element for this standard.")}</p>
+        <div class="box"><h3>"I can" levels ${hb("d_levels")} ${d.descriptor_source === "draft" ? '<span class="tag flag">draft</span>' : '<span class="tag">school</span>'}</h3>${lvl(desc)}</div>
+        <div class="box"><h3>Essential Element ${esc(e.ee || "")} ${hb("d_ee")}</h3><p>${esc(d.ee_text || "No Essential Element for this standard.")}</p>
           ${desc.ee_at_target && !String(desc.ee_at_target).startsWith("Not applicable") ? `<dl class="levels"><dt>EE at target</dt><dd>${esc(desc.ee_at_target)}</dd></dl>` : ""}</div>
       </div>
       ${d.descriptors_suggested ? `<div class="box" style="margin-top:14px"><h3>Suggested "I can" levels <span class="tag flag">draft</span></h3>${lvl(d.descriptors_suggested)}</div>` : ""}
       <div class="grid2 related" style="margin-top:14px">
-        <div class="box"><h3>Same strand, grade before</h3><ul class="gap-list" style="columns:1">${relList(GRADES[pg - 1])}</ul></div>
+        <div class="box"><h3>Same strand, grade before ${hb("d_related")}</h3><ul class="gap-list" style="columns:1">${relList(GRADES[pg - 1])}</ul></div>
         <div class="box"><h3>Same strand, grade after</h3><ul class="gap-list" style="columns:1">${relList(GRADES[pg + 1])}</ul></div>
       </div>
       ${(d.crosswalk || []).length ? `<p class="muted" style="margin-top:12px">Related codes in other frameworks: ${d.crosswalk.map(esc).join(", ")}</p>` : ""}
       <div class="grid2" style="margin-top:14px">
-        <div class="box"><h3>Comments</h3><ul class="comments">${comments.map((c) => `<li>${esc(c.body)}<div class="meta">${esc(c.team)}${c.author ? " · " + esc(c.author) : ""} · ${new Date(c.created_at).toLocaleDateString()}</div></li>`).join("") || "<li class='muted'>No comments yet.</li>"}</ul>
+        <div class="box"><h3>Comments ${hb("d_comments")}</h3><ul class="comments">${comments.map((c) => `<li>${esc(c.body)}<div class="meta">${esc(c.team)}${c.author ? " · " + esc(c.author) : ""} · ${new Date(c.created_at).toLocaleDateString()}</div></li>`).join("") || "<li class='muted'>No comments yet.</li>"}</ul>
           <label class="muted" for="c-body" style="display:block;margin-top:8px">Add a comment${S.team ? "" : " (choose your team first)"}</label>
           <textarea id="c-body" maxlength="2000" ${S.team ? "" : "disabled"}></textarea>
           <input id="c-author" placeholder="Your name (optional)" style="margin-top:6px;width:100%" ${S.team ? "" : "disabled"}>
           <div class="row-end"><button data-act="comment" data-k="${esc(k)}" ${S.team ? "" : "disabled"}>Post comment</button></div></div>
-        <div class="box"><h3>History</h3><ul class="comments">${hist.map((ev) => `<li>${gl(ev.grade)}: ${ev.old_level == null ? "Not rated" : LEVEL_SHORT[ev.old_level]} → ${LEVEL_SHORT[ev.new_level]}<div class="meta">${esc(ev.team)} · ${new Date(ev.created_at).toLocaleString()}${ev.undone ? " · undone" : ""}</div></li>`).join("") || "<li class='muted'>No changes yet.</li>"}</ul>
-          <h3 style="margin-top:12px">Curriculum evidence</h3><p class="muted">Where this standard appears in the 2025-26 and 2026-27 plans will show here once Part 2 is running.</p></div>
+        <div class="box"><h3>History ${hb("d_history")}</h3><ul class="comments">${hist.map((ev) => `<li>${gl(ev.grade)}: ${ev.old_level == null ? "Not rated" : LEVEL_SHORT[ev.old_level]} → ${LEVEL_SHORT[ev.new_level]}<div class="meta">${esc(ev.team)} · ${new Date(ev.created_at).toLocaleString()}${ev.undone ? " · undone" : ""}</div></li>`).join("") || "<li class='muted'>No changes yet.</li>"}</ul>
+          <h3 style="margin-top:12px">Curriculum evidence ${hb("d_evidence")}</h3>${evidenceFor(e)}</div>
       </div>
       <p class="muted" style="margin-top:12px;font-size:12px">Source: ${esc(d.source || "")}</p>`;
     $("#detail").dataset.k = k;
@@ -425,6 +482,30 @@
   $$("dialog [data-close], #d-close").forEach((b) => b.addEventListener("click", () => b.closest("dialog").close()));
   $("#detail").addEventListener("close", () => rerender());
 
+  // "?" explanations
+  const pop = $("#pop");
+  let popFor = null;
+  function closePop() { pop.hidden = true; if (popFor) popFor.setAttribute("aria-expanded", "false"); popFor = null; }
+  document.addEventListener("click", (ev) => {
+    const h = ev.target.closest(".help");
+    if (h) {
+      ev.preventDefault(); ev.stopPropagation();
+      if (popFor === h) { closePop(); return; }
+      closePop();
+      const [t, b] = (window.VA_HELP || {})[h.dataset.help] || ["Help", "No explanation yet."];
+      $("#pop-t").textContent = t; $("#pop-b").innerHTML = /<(ul|p)/.test(b) ? b : `<p>${b}</p>`;
+      const host = h.closest("dialog"); (host || document.body).appendChild(pop);
+      pop.hidden = false; popFor = h; h.setAttribute("aria-expanded", "true");
+      const r = h.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+      pop.style.left = Math.max(8, Math.min(r.left - 12, innerWidth - pw - 8)) + "px";
+      pop.style.top = (r.bottom + ph + 8 < innerHeight ? r.bottom + 6 : Math.max(8, r.top - ph - 6)) + "px";
+      return;
+    }
+    if (!ev.target.closest("#pop")) closePop();
+  }, true);
+  $("#pop-x").addEventListener("click", closePop);
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !pop.hidden) { closePop(); } });
+
   // tooltip for heatmap cells and bars
   const tip = $("#tip");
   document.addEventListener("mouseover", (ev) => {
@@ -462,6 +543,7 @@
     S.meta = await (await fetch("data/meta.json")).json();
     S.teams = S.meta.teams;
     await Promise.all(S.meta.subjects.map(async (s) => (S.idx[s.slug] = await (await fetch(`data/index_${s.slug}.json`)).json())));
+    try { const r = await fetch("data/evidence.json"); S.evidence = r.ok ? await r.json() : null; } catch (e) { S.evidence = null; }
     const groups = { "Committee": [], "Elementary": [], "Middle school": [], "High school": [] };
     S.teams.forEach((t) => (t.name === "Vertical Alignment Committee" ? groups.Committee : DIV.Elementary.includes(t.grades[0]) ? groups.Elementary : DIV.Middle.includes(t.grades[0]) ? groups["Middle school"] : groups["High school"]).push(t));
     $("#team").innerHTML = `<option value="">Choose your team</option>` + Object.entries(groups).map(([g, ts]) => `<optgroup label="${g}">${ts.map((t) => `<option>${esc(t.name)}</option>`).join("")}</optgroup>`).join("");
