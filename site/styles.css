@@ -12,11 +12,13 @@
   --surface: #FFFFFF;
   --page: #FAFAF8;
   --chip: #F2F4F6;
-  /* sequential levels: one hue (teal), light to dark */
+  /* rating levels: traffic light (red / amber / green), also separated by lightness for colour-blind readers */
   --lv-none: #FFFFFF;
-  --lv-0: #E7EBEE;
-  --lv-1: #8FCFD0;
-  --lv-2: #0B6466;
+  --lv-0: #D93F3F;
+  --lv-0-ink: #FFFFFF;
+  --placed: #1F2328;
+  --lv-1: #E09F1F;
+  --lv-2: #1E7B45;
   --lv-2-ink: #FFFFFF;
   --warn: #9A5B00;
   --warn-bg: #FFF4DE;
@@ -81,10 +83,10 @@ main { padding: 0 24px 24px; }
 .key { display: inline-flex; align-items: center; gap: 6px; }
 .lv { display: inline-block; width: 16px; height: 16px; border-radius: 4px; border: 1px solid var(--line-2); }
 .lv-none { background: var(--lv-none); }
-.lv-0 { background: var(--lv-0); border-color: #D3D9DE; }
+.lv-0 { background: var(--lv-0); border-color: var(--lv-0); }
 .lv-1 { background: var(--lv-1); border-color: var(--lv-1); }
 .lv-2 { background: var(--lv-2); border-color: var(--lv-2); }
-.lv.placed { box-shadow: inset 0 0 0 2px var(--maroon); border-color: var(--maroon); }
+.lv.placed { box-shadow: inset 0 0 0 2px var(--placed); border-color: var(--placed); }
 
 /* rate view */
 .rate-head { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; }
@@ -108,7 +110,7 @@ main { padding: 0 24px 24px; }
   padding: 6px 10px; font-size: 13px; font-weight: 600; white-space: nowrap; }
 .seg button:first-child { border-left: 0; }
 .seg button:hover { background: var(--chip); color: var(--ink); }
-.seg button[aria-pressed="true"][data-l="0"] { background: var(--lv-0); color: var(--ink); }
+.seg button[aria-pressed="true"][data-l="0"] { background: var(--lv-0); color: var(--lv-0-ink); }
 .seg button[aria-pressed="true"][data-l="1"] { background: var(--lv-1); color: var(--ink); }
 .seg button[aria-pressed="true"][data-l="2"] { background: var(--lv-2); color: var(--lv-2-ink); }
 .who { font-size: 11px; color: var(--muted); grid-column: 3; text-align: right; }
@@ -122,12 +124,12 @@ table.hm th.rowh { z-index: 3; }
 table.hm td.rowh { padding: 0 10px 0 6px; white-space: nowrap; max-width: 280px; overflow: hidden; text-overflow: ellipsis; }
 table.hm tr.strand-row td { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--maroon); padding: 10px 6px 2px; }
 .cell { width: 30px; height: 20px; border-radius: 4px; background: var(--lv-none); border: 1px solid var(--line); padding: 0; display: block; position: relative; }
-.cell.l0 { background: var(--lv-0); border-color: #D3D9DE; }
+.cell.l0 { background: var(--lv-0); border-color: var(--lv-0); }
 .cell.l1 { background: var(--lv-1); border-color: var(--lv-1); }
 .cell.l2 { background: var(--lv-2); border-color: var(--lv-2); }
-.cell.placed { box-shadow: inset 0 0 0 2px var(--maroon); border-color: var(--maroon); }
+.cell.placed { box-shadow: 0 0 0 2px var(--placed); border-color: var(--placed); }
 .cell.off::after { content: ""; position: absolute; right: 2px; top: 2px; width: 5px; height: 5px; border-radius: 50%; background: var(--maroon); }
-.cell.l2.off::after { background: #fff; }
+.cell.l2.off::after, .cell.l0.off::after { background: #fff; }
 .cell:hover { outline: 2px solid var(--ink); outline-offset: 1px; }
 td.dim { opacity: .35; }
 
@@ -157,7 +159,7 @@ details.gap > summary .count { display: inline-block; min-width: 2.2em; text-ali
 .rung h4 { margin: 0 0 8px; font-size: 13px; color: var(--maroon); }
 .chip { display: block; width: 100%; text-align: left; margin-bottom: 6px; padding: 6px 8px; border-radius: 6px; font-size: 12px; font-weight: 600;
   border: 1px solid var(--line); background: var(--lv-none); color: var(--ink); }
-.chip.l0 { background: var(--lv-0); } .chip.l1 { background: var(--lv-1); border-color: var(--lv-1); }
+.chip.l0 { background: var(--lv-0); color: #fff; border-color: var(--lv-0); } .chip.l1 { background: var(--lv-1); border-color: var(--lv-1); }
 .chip.l2 { background: var(--lv-2); color: #fff; border-color: var(--lv-2); }
 .chip:hover { outline: 2px solid var(--ink); background-clip: padding-box; }
 .chip small { display: block; font-weight: 400; opacity: .85; }

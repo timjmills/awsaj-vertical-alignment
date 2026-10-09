@@ -10,7 +10,7 @@
   const LEVEL_SHORT = ["Not taught", "Introduced", "In depth"];
   const FW_NAME = { "WI-CC-MATH": "Wisconsin Math (CC)", "WI-CC-ELA": "Wisconsin ELA (CC)", "NGSS": "NGSS",
     "WI-SCI": "Wisconsin Science", "AERO-SCI": "AERO Science", "WI-SS": "Wisconsin Social Studies", "AERO-SS": "AERO Social Studies" };
-  const COLORS = { none: "#FFFFFF", 0: "#E7EBEE", 1: "#8FCFD0", 2: "#0B6466", maroon: "#8A1538", line: "#E3E6EA", ink: "#1F2328" };
+  const COLORS = { none: "#FFFFFF", 0: "#D93F3F", placed: "#1F2328", 1: "#E09F1F", 2: "#1E7B45", maroon: "#8A1538", line: "#E3E6EA", ink: "#1F2328" };
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -162,7 +162,7 @@
     for (const e of list) { const r = rating(e.f, e.c, g); c[r ? r.level : 3]++; }
     const n = list.length || 1;
     const seg = (i, col) => (c[i] ? `<i style="width:${(c[i] / n) * 100}%;background:${col}"></i>` : "");
-    return `<div class="progress"><div class="bar">${seg(2, COLORS[2])}${seg(1, COLORS[1])}${seg(0, "#C9D0D6")}</div>
+    return `<div class="progress"><div class="bar">${seg(2, COLORS[2])}${seg(1, COLORS[1])}${seg(0, COLORS[0])}</div>
       <span>${list.length - c[3]} of ${list.length} rated · ${c[2]} in depth</span></div>`;
   }
 
@@ -208,7 +208,7 @@
     }
     const rated = list.filter((e) => levelsAcross(e).length).length;
     el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"}</h2>
-      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A maroon outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
+      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A dark outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
       <div class="hm-wrap" id="hm"><table class="hm"><thead><tr><th class="rowh">Standard</th>${gs.map((g) => `<th>${gl(g)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 
@@ -260,7 +260,7 @@
     const bars = strands.map((x) => {
       const w = (i) => (x.c[i] / x.arr.length) * 100;
       return `<div>${esc(x.s)}</div><div class="sb" role="img" aria-label="${esc(x.s)}: ${x.c[2]} in depth, ${x.c[1]} introduced, ${x.c[0]} not taught, ${x.c[3]} not rated">
-        ${[[2, COLORS[2]], [1, COLORS[1]], [0, "#C9D0D6"], [3, "#F2F4F6"]].map(([i, col]) => (x.c[i] ? `<i style="width:${w(i)}%;background:${col}" data-tip-text="${esc(x.s)}: ${x.c[i]} ${i === 3 ? "not rated" : LEVEL[i].toLowerCase()}"></i>` : "")).join("")}</div>
+        ${[[2, COLORS[2]], [1, COLORS[1]], [0, COLORS[0]], [3, "#F2F4F6"]].map(([i, col]) => (x.c[i] ? `<i style="width:${w(i)}%;background:${col}" data-tip-text="${esc(x.s)}: ${x.c[i]} ${i === 3 ? "not rated" : LEVEL[i].toLowerCase()}"></i>` : "")).join("")}</div>
         <div class="num">${x.c[2]}/${x.arr.length}</div>`;
     }).join("");
     const strong = ratedStrands[0], weak = ratedStrands[ratedStrands.length - 1];
@@ -391,7 +391,7 @@
       x.fillStyle = COLORS.ink; x.fillText(e.c.slice(0, 22), pad, y + 12);
       gs.forEach((g, i) => {
         const rt = rating(e.f, e.c, g), X = left + i * (cw + gap);
-        x.fillStyle = rt ? COLORS[rt.level] : COLORS.none; x.strokeStyle = e.pl.includes(g) ? COLORS.maroon : COLORS.line; x.lineWidth = e.pl.includes(g) ? 2 : 1;
+        x.fillStyle = rt ? COLORS[rt.level] : COLORS.none; x.strokeStyle = e.pl.includes(g) ? COLORS.placed : COLORS.line; x.lineWidth = e.pl.includes(g) ? 2 : 1;
         x.beginPath(); x.roundRect(X, y, cw, ch, 3); x.fill(); x.stroke();
       });
     });
