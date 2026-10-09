@@ -89,9 +89,14 @@
   const pickGrade = (el, what) => { el.innerHTML = `<div class="panel empty">Choose a grade with the Grade filter above to see ${what}.</div>`; };
 
   const hb = (k) => `<button type="button" class="help" data-help="${k}" aria-label="What is this?">?</button>`;
-  function toast(msg) {
+  // action: optional [label, fn] shown as a button in the toast (used for Undo), which then stays up longer.
+  function toast(msg, action) {
     const t = $("#toast"); t.textContent = msg; t.hidden = false;
-    clearTimeout(toast._t); toast._t = setTimeout(() => (t.hidden = true), 2600);
+    if (action) {
+      const b = document.createElement("button"); b.type = "button"; b.textContent = action[0];
+      b.addEventListener("click", () => { t.hidden = true; action[1](); }); t.append(" ", b);
+    }
+    clearTimeout(toast._t); toast._t = setTimeout(() => (t.hidden = true), action ? 10000 : 2600);
   }
   function syncNote(msg) { $("#sync").textContent = msg; }
 
@@ -104,9 +109,23 @@
     try {
       await rpc("set_rating", { p_framework: e.f, p_code: e.c, p_grade: g, p_level: level, p_team: S.team.name, p_device: S.device });
       syncNote("Saved " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
+      toast(`${e.c}, ${gname(g)}: ${LEVEL[level]}`, ["Undo", () => undoRating(e, g, before)]);
     } catch (err) {
       if (before) S.ratings.set(k, before); else S.ratings.delete(k);
       rerender(); toast("Could not save: " + err.message);
+    }
+  }
+
+  // Take back this device's latest rating (no passcode; the database allows it for 15 minutes).
+  async function undoRating(e, g, before) {
+    const k = rkey(e.f, e.c, g), now = S.ratings.get(k);
+    if (before) S.ratings.set(k, before); else S.ratings.delete(k);
+    rerender();
+    try {
+      await rpc("undo_my_rating", { p_framework: e.f, p_code: e.c, p_grade: g, p_device: S.device });
+      toast("Undone"); if (S.view === "activity") { await loadEvents(); rerender(); }
+    } catch (err) {
+      if (now) S.ratings.set(k, now); rerender(); toast("Could not undo: " + err.message);
     }
   }
 
