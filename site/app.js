@@ -26,7 +26,7 @@
   const S = {
     meta: null, idx: {}, detail: {}, ratings: new Map(), events: [], comments: [], teams: [],
     team: null, view: "rate", lastSync: null, device: null, pending: null,
-    f: { subject: "Math", framework: "", division: "all", grade: "5", strand: "", search: "" },
+    f: { subject: "Math", framework: "", division: "all", grade: "", strand: "", search: "" },
   };
 
   /* ---------------- data access ---------------- */
@@ -82,6 +82,11 @@
   const levelsAcross = (e) => GRADES.map((g) => ({ g, r: rating(e.f, e.c, g) })).filter((x) => x.r);
   const canEdit = (g) => S.team && (S.team.name === "Vertical Alignment Committee" || S.team.grades.includes(g));
   function teamGrade() { return S.team && S.team.grades.length === 1 ? S.team.grades[0] : S.f.grade; }
+  // The grade the Strand menu follows: the team's own grade on Rate, otherwise the Grade filter. "" = none chosen.
+  const strandGrade = () => (S.view === "rate" ? teamGrade() : S.f.grade);
+  // Standards a grade works with: those suggested for it, plus band standards it may claim (same set as the Rate page).
+  const forGrade = (e, g) => e.pl.includes(g) || (e.sg && e.div.includes(divOf(g)));
+  const pickGrade = (el, what) => { el.innerHTML = `<div class="panel empty">Choose a grade with the Grade filter above to see ${what}.</div>`; };
 
   const hb = (k) => `<button type="button" class="help" data-help="${k}" aria-label="What is this?">?</button>`;
   function toast(msg) {
@@ -117,12 +122,15 @@
     const fws = subj().frameworks;
     if (S.f.framework && !fws.includes(S.f.framework)) S.f.framework = "";
     fillSelect($("#f-framework"), [["", fws.length > 1 ? "All frameworks" : FW_NAME[fws[0]]], ...(fws.length > 1 ? fws.map((f) => [f, FW_NAME[f] || f]) : [])], S.f.framework);
-    const strands = [...new Set(items().filter((e) => !S.f.framework || e.f === S.f.framework).map((e) => e.s).filter(Boolean))].sort();
-    if (S.f.strand && !strands.includes(S.f.strand)) S.f.strand = "";
-    fillSelect($("#f-strand"), [["", "All strands"], ...strands.map((s) => [s, s])], S.f.strand);
     const gs = visibleGrades();
-    if (!gs.includes(S.f.grade)) S.f.grade = gs[0];
-    fillSelect($("#f-grade"), gs.map((g) => [g, gname(g)]), S.f.grade);
+    if (!gs.includes(S.f.grade)) S.f.grade = "";
+    fillSelect($("#f-grade"), [["", "Choose a grade"], ...gs.map((g) => [g, gname(g)])], S.f.grade);
+    const sg = strandGrade(), strandSel = $("#f-strand");
+    const strands = sg ? [...new Set(items().filter((e) => (!S.f.framework || e.f === S.f.framework) && forGrade(e, sg)).map((e) => e.s).filter(Boolean))].sort() : [];
+    if (S.f.strand && !strands.includes(S.f.strand)) S.f.strand = "";
+    fillSelect(strandSel, sg ? [["", "All strands"], ...strands.map((s) => [s, s])] : [["", ""]], S.f.strand);
+    strandSel.disabled = !sg;
+    strandSel.title = sg ? "" : "Choose a grade first";
     $("#f-division").value = S.f.division;
     $("#filters").dataset.view = S.view;
     $("#filters").dataset.committee = S.team && S.team.name === "Vertical Alignment Committee" ? "1" : "0";
@@ -167,6 +175,19 @@
       <span>${list.length - c[3]} of ${list.length} rated · ${c[2]} in depth</span></div>`;
   }
 
+  // Grade-level standards (suggested for grade g) that no one has marked yet, per subject. The goal is 0 everywhere.
+  function toRateStrip(g) {
+    const subs = S.team.name === "Vertical Alignment Committee" ? S.meta.subjects.map((s) => s.name) : S.team.subjects;
+    const chips = subs.map((name) => {
+      const sl = S.meta.subjects.find((s) => s.name === name).slug;
+      const list = S.idx[sl].filter((e) => e.pl.includes(g));
+      const left = list.filter((e) => !rating(e.f, e.c, g)).length;
+      return `<button type="button" class="torate ${left ? "" : "done"} ${name === S.f.subject ? "on" : ""}" data-act="subject" data-s="${esc(name)}"
+        title="${left} of ${list.length} ${esc(name)} standards for ${esc(gname(g))} not rated yet"><b>${left}</b> ${esc(name)}${left ? "" : " ✓"}</button>`;
+    }).join("");
+    return `<div class="torate-row"><span class="muted">Still to rate in ${esc(gname(g))}:</span> ${chips} ${hb("torate")}</div>`;
+  }
+
   function renderRate() {
     const el = $("#view-rate");
     if (!S.team) {
@@ -175,6 +196,7 @@
       return;
     }
     const g = teamGrade();
+    if (!g) return pickGrade(el, "its standards");
     const all = filtered({ ignoreDivision: true });
     const placed = all.filter((e) => e.pl.includes(g));
     const band = all.filter((e) => !e.pl.includes(g) && e.sg && e.div.includes(divOf(g)));
@@ -183,6 +205,7 @@
       <div class="rate-head"><div><h2>${esc(S.f.subject)} · ${esc(gname(g))} ${hb("rate")}</h2>
       <p class="lede">For each standard, choose how it is taught in ${esc(gname(g))} this year. Use what is really taught, even if the plans do not show it yet.</p></div>
       <div style="display:flex;align-items:center">${progressBar(placed.concat(band.filter((e) => rating(e.f, e.c, g))), g)}${hb("progress")}</div></div>
+      ${toRateStrip(g)}
       ${committee ? `<p class="muted">Committee view: pick a grade with the Grade filter above.</p>` : ""}
       <div class="group-title"><h3>Standards suggested for ${esc(gname(g))} (${placed.length}) ${hb("rate_placed")}</h3></div>
       ${placed.length ? groupByStrand(placed, g, (e) => (e.sg ? "Suggested placement" : "")) : `<div class="empty">No standards match these filters.</div>`}
@@ -249,6 +272,7 @@
 
   function renderDashboard() {
     const el = $("#view-dashboard"), g = S.f.grade;
+    if (!g) return pickGrade(el, "its dashboard");
     const list = filtered({ ignoreDivision: true }).filter((e) => e.pl.includes(g));
     const counts = (arr) => { const c = [0, 0, 0, 0]; arr.forEach((e) => { const r = rating(e.f, e.c, g); c[r ? r.level : 3]++; }); return c; };
     const tot = counts(list), n = list.length || 1;
@@ -283,9 +307,11 @@
 
   function renderLadder() {
     const el = $("#view-ladder"), gs = visibleGrades();
-    const strands = [...new Set(items().filter((e) => !S.f.framework || e.f === S.f.framework).map((e) => e.s).filter(Boolean))].sort();
-    const g0 = teamGrade(), inG = filtered().filter((e) => e.pl.includes(g0));
-    const strand = S.f.strand || (inG[0] && inG[0].s) || strands[0];
+    const g0 = S.f.grade;
+    if (!g0) return pickGrade(el, "a progression");
+    const inG = filtered().filter((e) => forGrade(e, g0));
+    const strand = S.f.strand || (inG[0] && inG[0].s);
+    if (!strand) { el.innerHTML = `<div class="panel empty">No standards match these filters.</div>`; return; }
     const list = filtered().filter((e) => e.s === strand);
     const rungs = gs.map((g) => {
       const here = list.filter((e) => e.pl.includes(g));
@@ -325,6 +351,7 @@
   }
   function renderPlans() {
     const el = $("#view-plans"), g = S.f.grade, ready = !!S.evidence;
+    if (!g) return pickGrade(el, "its plans");
     const list = filtered({ ignoreDivision: true });
     const pill = (l, lab) => `<span class="pill"><i class="lv ${l == null ? "lv-none" : "lv-" + l}"></i>${lab}</span>`;
     let svsRows = "", off = [];
@@ -425,6 +452,7 @@
   function download(name, blob) { const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); }
   function csvCell(v) { v = String(v ?? ""); return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v; }
   function exportCSV() {
+    if ((S.view === "rate" && !teamGrade()) || (S.view === "dashboard" && !S.f.grade)) { toast("Choose a grade first."); return; }
     const gs = S.view === "rate" || S.view === "dashboard" ? [S.view === "rate" ? teamGrade() : S.f.grade] : visibleGrades();
     const list = S.view === "activity" ? null : filtered({ ignoreDivision: S.view === "rate" || S.view === "dashboard" });
     let rows;
@@ -466,12 +494,14 @@
     const act = b.dataset.act;
     if (act === "rate") { const e = findItem(b.dataset.k); const l = +b.dataset.l; const cur = rating(e.f, e.c, b.dataset.g); if (cur && cur.level === l) return; setRating(e, b.dataset.g, l); }
     else if (act === "open") openDetail(b.dataset.k);
+    else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
     else if (act === "cycle") {
       const e = findItem(b.dataset.k), g = b.dataset.g, cur = rating(e.f, e.c, g);
       if (!canEdit(g)) { toast(S.team ? `Your team rates ${S.team.grades.map(gname).join(", ")}.` : "Choose your team first."); return; }
       await setRating(e, g, cur ? (cur.level + 1) % 3 : 1); openDetail(b.dataset.k);
     } else if (act === "comment") {
       const body = $("#c-body").value.trim(); if (!body) return;
+      if (!teamGrade()) { toast("Choose a grade first."); return; }
       const e = findItem(b.dataset.k);
       try { await rpc("add_comment", { p_framework: e.f, p_code: e.c, p_grade: teamGrade(), p_team: S.team.name, p_author: $("#c-author").value.trim(), p_body: body });
         await loadComments(); openDetail(b.dataset.k); toast("Comment posted"); } catch (err) { toast("Could not post: " + err.message); }

@@ -66,8 +66,13 @@ select, input { border: 1px solid var(--line-2); border-radius: 8px; padding: 6p
 .filters label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; font-weight: 600; color: var(--ink-2); }
 .filters label.grow { flex: 1 1 220px; }
 .filters .exports { display: flex; gap: 6px; margin-left: auto; }
-.filters .grade-only { display: none; }
-.filters[data-view="dashboard"] .grade-only, .filters[data-view="plans"] .grade-only, .filters[data-view="rate"][data-committee="1"] .grade-only { display: flex; }
+.filters[data-view="activity"] .grade-only, .filters[data-view="rate"][data-committee="0"] .grade-only { display: none; }
+.torate-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 10px; font-size: 13px; }
+.torate { border: 1px solid #D93F3F; background: #fff; color: #1F2328; border-radius: 999px; padding: 3px 10px; cursor: pointer; font: inherit; }
+.torate b { color: #D93F3F; }
+.torate.done { border-color: #1E7B45; } .torate.done b { color: #1E7B45; }
+.torate.on { box-shadow: 0 0 0 2px #8A1538; }
+.filters select:disabled { opacity: .6; cursor: not-allowed; }
 
 main { padding: 0 24px 24px; }
 .view { min-height: 40vh; }
