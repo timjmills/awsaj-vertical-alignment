@@ -1,0 +1,350 @@
+[
+ {
+  "name": "Vertical Alignment Committee",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "K",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12"
+  ]
+ },
+ {
+  "name": "Kindergarten",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "K"
+  ]
+ },
+ {
+  "name": "Grade 1",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "1"
+  ]
+ },
+ {
+  "name": "Grade 2",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "2"
+  ]
+ },
+ {
+  "name": "Grade 3",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "3"
+  ]
+ },
+ {
+  "name": "Grade 4",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "4"
+  ]
+ },
+ {
+  "name": "Grade 5",
+  "subjects": [
+   "Math",
+   "ELA",
+   "Science",
+   "Social Studies"
+  ],
+  "grades": [
+   "5"
+  ]
+ },
+ {
+  "name": "Grade 6 Math",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "6"
+  ]
+ },
+ {
+  "name": "Grade 6 ELA",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "6"
+  ]
+ },
+ {
+  "name": "Grade 6 Science",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "6"
+  ]
+ },
+ {
+  "name": "Grade 6 Social Studies",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "6"
+  ]
+ },
+ {
+  "name": "Grade 7 Math",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "7"
+  ]
+ },
+ {
+  "name": "Grade 7 ELA",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "7"
+  ]
+ },
+ {
+  "name": "Grade 7 Science",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "7"
+  ]
+ },
+ {
+  "name": "Grade 7 Social Studies",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "7"
+  ]
+ },
+ {
+  "name": "Grade 8 Math",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "8"
+  ]
+ },
+ {
+  "name": "Grade 8 ELA",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "8"
+  ]
+ },
+ {
+  "name": "Grade 8 Science",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "8"
+  ]
+ },
+ {
+  "name": "Grade 8 Social Studies",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "8"
+  ]
+ },
+ {
+  "name": "Algebra 1",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "9"
+  ]
+ },
+ {
+  "name": "Geometry",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "10"
+  ]
+ },
+ {
+  "name": "Algebra 2",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "11"
+  ]
+ },
+ {
+  "name": "Pre-Calculus",
+  "subjects": [
+   "Math"
+  ],
+  "grades": [
+   "12"
+  ]
+ },
+ {
+  "name": "English 9",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "9"
+  ]
+ },
+ {
+  "name": "English 10",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "10"
+  ]
+ },
+ {
+  "name": "English 11",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "11"
+  ]
+ },
+ {
+  "name": "English 12",
+  "subjects": [
+   "ELA"
+  ],
+  "grades": [
+   "12"
+  ]
+ },
+ {
+  "name": "Earth Environmental Science",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "9"
+  ]
+ },
+ {
+  "name": "Physics",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "10"
+  ]
+ },
+ {
+  "name": "Biology",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "11"
+  ]
+ },
+ {
+  "name": "Chemistry",
+  "subjects": [
+   "Science"
+  ],
+  "grades": [
+   "12"
+  ]
+ },
+ {
+  "name": "Geography",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "9"
+  ]
+ },
+ {
+  "name": "World History 10",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "10"
+  ]
+ },
+ {
+  "name": "Economics",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "11"
+  ]
+ },
+ {
+  "name": "World History 12",
+  "subjects": [
+   "Social Studies"
+  ],
+  "grades": [
+   "12"
+  ]
+ }
+]

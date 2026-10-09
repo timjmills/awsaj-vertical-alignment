@@ -1,0 +1,1907 @@
+[
+ {
+  "cc_code": "M.K.CC.A.1",
+  "ee_code": "M.EE.K.CC.1",
+  "ee_text": "Starting with one, count to 10 by ones."
+ },
+ {
+  "cc_code": "M.K.CC.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.2.NBT.2c"
+ },
+ {
+  "cc_code": "M.K.CC.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.2.NBT.3"
+ },
+ {
+  "cc_code": "M.K.CC.B.4",
+  "ee_code": "M.EE.K.CC.4",
+  "ee_text": "Connect counting to cardinality to 10. a. Demonstrate one-to-one correspondence, pairing each object with one and only one number and each number with one and only one object (one-to-one correspondence). Understand that the last number name said tells the number of objects counted (cardinality)."
+ },
+ {
+  "cc_code": "M.K.CC.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.K.CC.B.6",
+  "ee_code": "M.EE.K.CC.6",
+  "ee_text": "Count out up to three objects from a larger set, pairing each object with one and only one number name to tell how many."
+ },
+ {
+  "cc_code": "M.K.CC.C.7",
+  "ee_code": "M.EE.K.CC.7",
+  "ee_text": "Identify whether the number of objects in one group is greater than (more) or less than (when the quantities are clearly different) or equal to the number objects in another group."
+ },
+ {
+  "cc_code": "M.K.CC.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.4 and M.EE.2.NBT.4 ."
+ },
+ {
+  "cc_code": "M.K.OA.A.1",
+  "ee_code": "M.EE.K.OA.1",
+  "ee_text": "Represent addition as “putting together” or subtraction as “taking from” in everyday activities (e.g., with objects, fingers, sounds, drawings, verbal explanations, or numbers)."
+ },
+ {
+  "cc_code": "M.K.OA.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.2.NBT.6 and M.EE.2.NBT.7 ."
+ },
+ {
+  "cc_code": "M.K.OA.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.6."
+ },
+ {
+  "cc_code": "M.K.OA.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.2."
+ },
+ {
+  "cc_code": "M.K.OA.A.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.4 and M.EE.1.NBT.6 ."
+ },
+ {
+  "cc_code": "M.K.NBT.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.4 and M.EE.1.NBT.6 ."
+ },
+ {
+  "cc_code": "M.K.MD.A.1",
+  "ee_code": "M.EE.K.MD.1",
+  "ee_text": "Classify objects according to attributes (e.g., big/small, heavy/light)."
+ },
+ {
+  "cc_code": "M.K.MD.A.2",
+  "ee_code": "M.EE.K.MD.2",
+  "ee_text": "Classify objects according to attributes (e.g., big/small, heavy/light)."
+ },
+ {
+  "cc_code": "M.K.MD.B.3",
+  "ee_code": "M.EE.K.MD.3",
+  "ee_text": "Classify objects according to attributes (e.g., big/small, heavy/light)."
+ },
+ {
+  "cc_code": "M.K.G.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.G.1"
+ },
+ {
+  "cc_code": "M.K.G.A.2",
+  "ee_code": "M.EE.K.G.2",
+  "ee_text": "Match shapes of the same size and orientation, including circles, squares, rectangles, and triangles."
+ },
+ {
+  "cc_code": "M.K.G.A.3",
+  "ee_code": "M.EE.K.G.3",
+  "ee_text": "Match shapes of the same size and orientation, including circles, squares, rectangles, and triangles."
+ },
+ {
+  "cc_code": "M.K.G.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.G.1"
+ },
+ {
+  "cc_code": "M.K.G.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.K.G.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.G.A.3."
+ },
+ {
+  "cc_code": "M.1.OA.A.1",
+  "ee_code": "M.EE.1.OA.1",
+  "ee_text": "Represent addition and subtraction e.g., by using objects, fingers, mental images, drawings, sounds (e.g., claps), or acting out situations."
+ },
+ {
+  "cc_code": "M.1.OA.A.2",
+  "ee_code": "M.EE.1.OA.2",
+  "ee_text": "Use “putting together” to solve problems with two sets."
+ },
+ {
+  "cc_code": "M.1.OA.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.6.EE.3 and M.EE.N.CN.2."
+ },
+ {
+  "cc_code": "M.1.OA.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.NBT.4 and M.EE.1.NBT.6 ."
+ },
+ {
+  "cc_code": "M.1.OA.C.5",
+  "ee_code": "M.EE.1.OA.5",
+  "ee_text": "Relate counting to addition and subtraction. a. Use manipulatives or visual representations to indicate the number that results when adding one more. b. Apply knowledge of “one less” to subtract one from a number."
+ },
+ {
+  "cc_code": "M.1.OA.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.3.OA.6."
+ },
+ {
+  "cc_code": "M.1.OA.D.7",
+  "ee_code": "M.EE.1.OA.7",
+  "ee_text": "Recognize two groups that have the same or equal quantity."
+ },
+ {
+  "cc_code": "M.1.NBT.A.1",
+  "ee_code": "M.EE.1.NBT.1",
+  "ee_text": "Know the count sequence and understand numbers and quantities. a. Count by ones to 30. b. Count up to 10 objects and represent the quantity with the corresponding numeral."
+ },
+ {
+  "cc_code": "M.1.NBT.B.2",
+  "ee_code": "M.EE.1.NBT.2",
+  "ee_text": "Create sets of 10."
+ },
+ {
+  "cc_code": "M.1.NBT.B.3",
+  "ee_code": "M.EE.1.NBT.3",
+  "ee_text": "Compare two groups of 10 or fewer items when the number of items in each group is similar."
+ },
+ {
+  "cc_code": "M.1.NBT.C.4",
+  "ee_code": "M.EE.1.NBT.4",
+  "ee_text": "Compose quantities less than or equal to five in more than one way."
+ },
+ {
+  "cc_code": "M.1.NBT.C.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.1.OA.5."
+ },
+ {
+  "cc_code": "M.1.NBT.C.6",
+  "ee_code": "M.EE.1.NBT.6",
+  "ee_text": "Decompose quantities less than or equal to five in more than one way."
+ },
+ {
+  "cc_code": "M.1.MD.A.1",
+  "ee_code": "M.EE.1.MD.1",
+  "ee_text": "Compare lengths to identify which is longer/shorter or taller/shorter."
+ },
+ {
+  "cc_code": "M.1.MD.A.2",
+  "ee_code": "M.EE.1.MD.2",
+  "ee_text": "Compare lengths to identify which is longer/shorter or taller/shorter."
+ },
+ {
+  "cc_code": "M.1.MD.B.3",
+  "ee_code": "M.EE.1.MD.3",
+  "ee_text": "Understand concepts of time. a. Demonstrate an understanding of tomorrow, yesterday, and today. b. Demonstrate an understanding of morning, afternoon, day, and night. c. Identify activities that come before, next, and after. d. Demonstrate an understanding that telling time is the same every day."
+ },
+ {
+  "cc_code": "M.1.MD.C.4",
+  "ee_code": "M.EE.1.MD.4",
+  "ee_text": "Organize objects into categories by sorting (e.g., color, size, shape). Count the number of objects in each category and identify the category with the most objects."
+ },
+ {
+  "cc_code": "M.1.G.A.1",
+  "ee_code": "M.EE.1.G.1",
+  "ee_text": "Identify the relative position of objects that are on, off, in, and out."
+ },
+ {
+  "cc_code": "M.1.G.A.2",
+  "ee_code": "M.EE.1.G.2",
+  "ee_text": "Sort shapes of the same size and orientation including circles, squares, rectangles, and triangles."
+ },
+ {
+  "cc_code": "M.1.G.A.3",
+  "ee_code": "M.EE.1.G.3",
+  "ee_text": "Put together two shapes to make a shape that relates to the whole (e.g., two semicircles to make a circle, two squares to make a rectangle)."
+ },
+ {
+  "cc_code": "M.2.OA.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.3.OA.6."
+ },
+ {
+  "cc_code": "M.2.OA.B.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.2.NBT.7 and M.EE.3.OA.6 ."
+ },
+ {
+  "cc_code": "M.2.OA.C.3",
+  "ee_code": "M.EE.2.OA.3",
+  "ee_text": "Equally distribute even numbers of objects between two groups."
+ },
+ {
+  "cc_code": "M.2.OA.C.4",
+  "ee_code": "M.EE.2.OA.4",
+  "ee_text": "Use addition to find the total number of objects arranged within equal groups up to a total of 10."
+ },
+ {
+  "cc_code": "M.2.NBT.A.1",
+  "ee_code": "M.EE.2.NBT.1",
+  "ee_text": "Represent numbers up to 30 with objects in sets of tens and ones (e.g., ten frames, hundreds chart, columns)."
+ },
+ {
+  "cc_code": "M.2.NBT.A.2",
+  "ee_code": "M.EE.2.NBT.2",
+  "ee_text": "Extend understanding of numbers and quantities. a. Count to answer \"how many?\" questions about as many as 30 things. b. Given a number from 1-30, count out that many objects. c. Name the next number in a sequence between 1 and 10."
+ },
+ {
+  "cc_code": "M.2.NBT.A.3",
+  "ee_code": "M.EE.2.NBT.3",
+  "ee_text": "Identify numerals 1 to 30."
+ },
+ {
+  "cc_code": "M.2.NBT.A.4",
+  "ee_code": "M.EE.2.NBT.4",
+  "ee_text": "Compare sets of objects and numbers using accurate vocabulary (e.g., greater, more, less, equal)."
+ },
+ {
+  "cc_code": "M.2.NBT.B.5",
+  "ee_code": "M.EE.2.NBT.5",
+  "ee_text": "Identify the meaning of the “+” sign (including combine, plus, add), “-” sign (including separate, subtract, take), and the “=” sign (including the same amount as, equal)."
+ },
+ {
+  "cc_code": "M.2.NBT.B.6",
+  "ee_code": "M.EE.2.NBT.6",
+  "ee_text": "Using concrete models, compose and decompose numbers up to 10 in more than one way."
+ },
+ {
+  "cc_code": "M.2.NBT.B.7",
+  "ee_code": "M.EE.2.NBT.7",
+  "ee_text": "Use objects, representations, and numbers (0-20) to add and subtract."
+ },
+ {
+  "cc_code": "M.2.NBT.B.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.2.NBT.B.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.2.MD.A.1",
+  "ee_code": "M.EE.2.MD.1",
+  "ee_text": "Measure the length of objects using non-standard units."
+ },
+ {
+  "cc_code": "M.2.MD.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.2.MD.A.3",
+  "ee_code": "M.EE.2.MD.3",
+  "ee_text": "Order objects by length using non-standard units."
+ },
+ {
+  "cc_code": "M.2.MD.A.4",
+  "ee_code": "M.EE.2.MD.4",
+  "ee_text": "Order objects by length using non-standard units. .5   Increase or decrease length by adding or subtracting unit(s). .6   Use a number line to add one more unit of length."
+ },
+ {
+  "cc_code": "M.2.MD.B.5",
+  "ee_code": "",
+  "ee_text": ""
+ },
+ {
+  "cc_code": "M.2.MD.B.6",
+  "ee_code": "",
+  "ee_text": ""
+ },
+ {
+  "cc_code": "M.2.MD.C.7",
+  "ee_code": "M.EE.2.MD.7",
+  "ee_text": "Identify, on a digital clock, the hour that matches a routine activity."
+ },
+ {
+  "cc_code": "M.2.MD.C.8",
+  "ee_code": "M.EE.2.MD.8",
+  "ee_text": "Recognize that money has value."
+ },
+ {
+  "cc_code": "M.2.MD.D.9",
+  "ee_code": "M.EE.2.MD.9",
+  "ee_text": "Create physical bar graphs from sorted objects (e.g., line up different colored toy cars)."
+ },
+ {
+  "cc_code": "M.2.MD.D.10",
+  "ee_code": "M.EE.2.MD.10",
+  "ee_text": "Create physical bar graphs from sorted objects (e.g., line up different colored toy cars)."
+ },
+ {
+  "cc_code": "M.2.G.A.1",
+  "ee_code": "M.EE.2.G.1",
+  "ee_text": "Identify common two-dimensional shapes including squares, circles, triangles, and rectangles of various sizes and in various orientations."
+ },
+ {
+  "cc_code": "M.2.G.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.2.G.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.3.G.2 and M.EE.4.NF.1 ."
+ },
+ {
+  "cc_code": "M.3.OA.A.1",
+  "ee_code": "M.EE.3.OA.1",
+  "ee_text": "Use repeated addition to find the total number of objects and determine the sum."
+ },
+ {
+  "cc_code": "M.3.OA.A.2",
+  "ee_code": "M.EE.3.OA.2",
+  "ee_text": "Use repeated addition to find the total number of objects and determine the sum."
+ },
+ {
+  "cc_code": "M.3.OA.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.3.OA.1 and M.EE.5.NBT.5 ."
+ },
+ {
+  "cc_code": "M.3.OA.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE. N.CN.2."
+ },
+ {
+  "cc_code": "M.3.OA.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.5.NBT.6."
+ },
+ {
+  "cc_code": "M.3.OA.C.6",
+  "ee_code": "M.EE.3.OA.6",
+  "ee_text": "Solve addition and subtraction problems within 20, when the result is unknown."
+ },
+ {
+  "cc_code": "M.3.OA.D.7",
+  "ee_code": "M.EE.3.OA.7",
+  "ee_text": "Solve one-step real-world problems within 20, using addition or subtraction."
+ },
+ {
+  "cc_code": "M.3.OA.D.8",
+  "ee_code": "M.EE.3.OA.8",
+  "ee_text": "Identify arithmetic patterns."
+ },
+ {
+  "cc_code": "M.3.NBT.A.1",
+  "ee_code": "M.EE.3.NBT.1",
+  "ee_text": "Use decade numbers (10, 20, 30) as benchmarks to demonstrate understanding of place value for numbers 0-30."
+ },
+ {
+  "cc_code": "M.3.NBT.A.2",
+  "ee_code": "M.EE.3.NBT.2",
+  "ee_text": "Demonstrate understanding of place value to tens."
+ },
+ {
+  "cc_code": "M.3.NBT.A.3",
+  "ee_code": "M.EE.3.NBT.3",
+  "ee_text": "Count by tens using models (e.g., objects, base ten blocks, money)."
+ },
+ {
+  "cc_code": "M.3.NF.A.1",
+  "ee_code": "M.EE.3.NF.1",
+  "ee_text": "Differentiate a fractional part from a whole."
+ },
+ {
+  "cc_code": "M.3.NF.A.2",
+  "ee_code": "M.EE.3.NF.2",
+  "ee_text": "Differentiate a fractional part from a whole."
+ },
+ {
+  "cc_code": "M.3.NF.A.3",
+  "ee_code": "M.EE.3.NF.3",
+  "ee_text": "Differentiate a fractional part from a whole."
+ },
+ {
+  "cc_code": "M.3.MD.A.1",
+  "ee_code": "M.EE.3.MD.1",
+  "ee_text": "Tell time to the hour on a digital clock."
+ },
+ {
+  "cc_code": "M.3.MD.A.2",
+  "ee_code": "M.EE.3.MD.2",
+  "ee_text": "Identify the appropriate measurement tool to solve one- step word problems involving mass and volume."
+ },
+ {
+  "cc_code": "M.3.MD.B.3",
+  "ee_code": "M.EE.3.MD.3",
+  "ee_text": "Use picture or bar graphs to answer questions about the data."
+ },
+ {
+  "cc_code": "M.3.MD.B.4",
+  "ee_code": "M.EE.3.MD.4",
+  "ee_text": "Measure the length of objects using standard tools including rulers, yardsticks, and meter sticks."
+ },
+ {
+  "cc_code": "M.3.MD.C.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.MD.3."
+ },
+ {
+  "cc_code": "M.3.MD.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.MD.3."
+ },
+ {
+  "cc_code": "M.3.MD.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.MD.3."
+ },
+ {
+  "cc_code": "M.3.MD.D.8",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.3.MD.4."
+ },
+ {
+  "cc_code": "M.3.G.A.1",
+  "ee_code": "M.EE.3.G.1",
+  "ee_text": "Describe attributes of two- dimensional shapes."
+ },
+ {
+  "cc_code": "M.3.G.A.2",
+  "ee_code": "M.EE.3.G.2",
+  "ee_text": "Recognize shapes that have been partitioned into equal areas."
+ },
+ {
+  "cc_code": "M.4.OA.A.1",
+  "ee_code": "M.EE.4.OA.1",
+  "ee_text": "Demonstrate the connection between repeated addition and multiplication."
+ },
+ {
+  "cc_code": "M.4.OA.A.2",
+  "ee_code": "M.EE.4.OA.2",
+  "ee_text": "Demonstrate the connection between repeated addition and multiplication."
+ },
+ {
+  "cc_code": "M.4.OA.A.3",
+  "ee_code": "M.EE.4.OA.3",
+  "ee_text": "Solve one-step real-world problems using addition or subtraction within 100."
+ },
+ {
+  "cc_code": "M.4.OA.B.4",
+  "ee_code": "M.EE.4.OA.4",
+  "ee_text": "Use an understanding of multiplication to show at least one way to determine a product. Use repeating patterns to make predictions."
+ },
+ {
+  "cc_code": "M.4.OA.C.5",
+  "ee_code": "",
+  "ee_text": ""
+ },
+ {
+  "cc_code": "M.4.OA.D.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.4.NBT.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.5.NBT.1"
+ },
+ {
+  "cc_code": "M.4.NBT.A.2",
+  "ee_code": "M.EE.4.NBT.2",
+  "ee_text": "Compare whole numbers to 10 using symbols (<, >, =)."
+ },
+ {
+  "cc_code": "M.4.NBT.A.3",
+  "ee_code": "M.EE.4.NBT.3",
+  "ee_text": "Use place value understanding to generate estimates for real- world addition and subtraction problem situations within 30, using strategies such as mental math, benchmark numbers, compatible numbers, and rounding."
+ },
+ {
+  "cc_code": "M.4.NBT.B.4",
+  "ee_code": "M.EE.4.NBT.4",
+  "ee_text": "Add and subtract two-digit whole numbers."
+ },
+ {
+  "cc_code": "M.4.NBT.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.OA.4 and"
+ },
+ {
+  "cc_code": "M.4.NBT.B.6",
+  "ee_code": "M.EE.5.NBT.5",
+  "ee_text": ". Not applicable. See M.EE.5.NBT.6."
+ },
+ {
+  "cc_code": "M.4.NF.A.1",
+  "ee_code": "M.EE.4.NF.1",
+  "ee_text": "Identify models of one half (½) and one fourth (¼)."
+ },
+ {
+  "cc_code": "M.4.NF.A.2",
+  "ee_code": "M.EE.4.NF.2",
+  "ee_text": "Identify models of one half (½) and one fourth (¼)."
+ },
+ {
+  "cc_code": "M.4.NF.B.3",
+  "ee_code": "M.EE.4.NF.3",
+  "ee_text": "Differentiate between whole and half."
+ },
+ {
+  "cc_code": "M.4.NF.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.OA.4 and M.EE.5.NBT.5 ."
+ },
+ {
+  "cc_code": "M.4.NF.C.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.NS.2c-d."
+ },
+ {
+  "cc_code": "M.4.NF.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.NS.2c-d."
+ },
+ {
+  "cc_code": "M.4.NF.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.NS.2c-d."
+ },
+ {
+  "cc_code": "M.4.MD.A.1",
+  "ee_code": "M.EE.4.MD.1",
+  "ee_text": "Identify the smaller measurement unit that comprises a larger unit within a measurement system including inches/foot, centimeter/meter, minutes/hour."
+ },
+ {
+  "cc_code": "M.4.MD.A.2",
+  "ee_code": "M.EE.4.MD.2",
+  "ee_text": "Apply concepts of measurement. a. Tell time using a digital clock. Tell time to the nearest hour using an analog clock. b. Measure mass or volume using standard tools. c. Use standard measurement to compare lengths of objects. d. Identify coins including penny, nickel, dime, quarter and their values."
+ },
+ {
+  "cc_code": "M.4.MD.A.3",
+  "ee_code": "M.EE.4.MD.3",
+  "ee_text": "Determine the area of a square or rectangle by counting units of measure (unit squares)."
+ },
+ {
+  "cc_code": "M.4.MD.B.4",
+  "ee_code": "M.EE.4.MD.4",
+  "ee_text": "Represent and interpret data on a picture or bar graph, given a model and a graph to complete."
+ },
+ {
+  "cc_code": "M.4.MD.C.5",
+  "ee_code": "M.EE.4.MD.5",
+  "ee_text": "Recognize angles in geometric shapes."
+ },
+ {
+  "cc_code": "M.4.MD.C.6",
+  "ee_code": "M.EE.4.MD.6",
+  "ee_text": "Compare angles as larger than, smaller than, or the same size as another angle."
+ },
+ {
+  "cc_code": "M.4.MD.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.4.G.2."
+ },
+ {
+  "cc_code": "M.4.G.A.1",
+  "ee_code": "M.EE.4.G.1",
+  "ee_text": "Recognize parallel lines and intersecting lines."
+ },
+ {
+  "cc_code": "M.4.G.A.2",
+  "ee_code": "M.EE.4.G.2",
+  "ee_text": "Describe the defining attributes of two-dimensional shapes."
+ },
+ {
+  "cc_code": "M.4.G.A.3",
+  "ee_code": "M.EE.4.G.3",
+  "ee_text": "Recognize that lines of symmetry partition shapes into equal areas."
+ },
+ {
+  "cc_code": "M.5.OA.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.5.OA.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.5.OA.B.3",
+  "ee_code": "M.EE.5.OA.3",
+  "ee_text": "Identify and extend numerical patterns."
+ },
+ {
+  "cc_code": "M.5.NBT.A.1",
+  "ee_code": "M.EE.5.NBT.1",
+  "ee_text": "Compare numbers up to 99 using place value models."
+ },
+ {
+  "cc_code": "M.5.NBT.A.2",
+  "ee_code": "M.EE.5.NBT.2",
+  "ee_text": "Use the number of zeros in numbers that are powers of 10 to determine which values are equal, greater than, or less than another number."
+ },
+ {
+  "cc_code": "M.5.NBT.A.3",
+  "ee_code": "M.EE.5.NBT.3",
+  "ee_text": "Compare whole numbers up to 100 using symbols (<, >, =)."
+ },
+ {
+  "cc_code": "M.5.NBT.A.4",
+  "ee_code": "M.EE.5.NBT.4",
+  "ee_text": "Use place value understanding to generate estimates for real- world addition and subtraction problem situations within 100, using strategies such as mental math, benchmark numbers, compatible numbers, and rounding."
+ },
+ {
+  "cc_code": "M.5.NBT.B.5",
+  "ee_code": "M.EE.5.NBT.5",
+  "ee_text": "Use the meaning of multiplication to develop and understand strategies to find products with multiples of 0, 1, 2, 5, and 10 within 100."
+ },
+ {
+  "cc_code": "M.5.NBT.B.6",
+  "ee_code": "M.EE.5.NBT.6",
+  "ee_text": "Illustrate the concept of division using fair and equal shares."
+ },
+ {
+  "cc_code": "M.5.NBT.B.7",
+  "ee_code": "M.EE.5.NBT.7",
+  "ee_text": "Identify models of tenths (1/10, 2/10, 3/10, 4/10, 5/10, 6/10, 7/10, 8/10, 9/10, 10/10)."
+ },
+ {
+  "cc_code": "M.5.NF.A.1",
+  "ee_code": "M.EE.5.NF.1",
+  "ee_text": "Identify models of halves (½, 2/2), thirds (⅓, ⅔, 3/3), and fourths (¼, 2/4, ¾, 4/4)."
+ },
+ {
+  "cc_code": "M.5.NF.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.5.NF.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.6.RP.1."
+ },
+ {
+  "cc_code": "M.5.NF.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.5.NF.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.5.NF.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.N.CN.2b."
+ },
+ {
+  "cc_code": "M.5.NF.B.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.NS.2b."
+ },
+ {
+  "cc_code": "M.5.MD.A.1",
+  "ee_code": "M.EE.5.MD.1",
+  "ee_text": "Extend understanding of measurement concepts. a. Tell time using an analog or digital clock to the half or quarter hour. b. Use standard units to measure weight and length of objects. c. Indicate relative value of collections of coins."
+ },
+ {
+  "cc_code": "M.5.MD.B.2",
+  "ee_code": "M.EE.5.MD.2",
+  "ee_text": "Represent and interpret data on a picture graph, line plot, or bar graph."
+ },
+ {
+  "cc_code": "M.5.MD.C.3",
+  "ee_code": "M.EE.5.MD.3",
+  "ee_text": "Identify common three- dimensional shapes. Determine the volume of a rectangular prism by counting units of measure (unit cubes)."
+ },
+ {
+  "cc_code": "M.5.MD.C.4",
+  "ee_code": "",
+  "ee_text": "Determine the volume of a rectangular prism by counting units of measure (unit cubes)."
+ },
+ {
+  "cc_code": "M.5.MD.C.5",
+  "ee_code": "",
+  "ee_text": ""
+ },
+ {
+  "cc_code": "M.5.G.A.1",
+  "ee_code": "M.EE.5.G.1",
+  "ee_text": "Sort two-dimensional figures and identify the attributes, including number of angles, sides, or corners that they have in common."
+ },
+ {
+  "cc_code": "M.5.G.A.2",
+  "ee_code": "M.EE.5.G.2",
+  "ee_text": "Sort two-dimensional figures and identify the attributes, including number of angles, sides, or corners that they have in common."
+ },
+ {
+  "cc_code": "M.5.G.B.3",
+  "ee_code": "M.EE.5.G.3",
+  "ee_text": "Sort two-dimensional figures and identify the attributes, including number of angles, sides, or corners that they have in common."
+ },
+ {
+  "cc_code": "M.5.G.B.4",
+  "ee_code": "M.EE.5.G.4",
+  "ee_text": "Sort two-dimensional figures and identify the attributes, including number of angles, sides, or corners that they have in common."
+ },
+ {
+  "cc_code": "M.6.RP.A.1",
+  "ee_code": "M.EE.6.RP.1",
+  "ee_text": "Demonstrate a simple ratio relationship."
+ },
+ {
+  "cc_code": "M.6.RP.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.RP.1."
+ },
+ {
+  "cc_code": "M.6.RP.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.8.F.1."
+ },
+ {
+  "cc_code": "M.6.NS.A.1",
+  "ee_code": "M.EE.6.NS.1",
+  "ee_text": "Compare the relationships between two unit fractions."
+ },
+ {
+  "cc_code": "M.6.NS.B.2",
+  "ee_code": "M.EE.6.NS.2",
+  "ee_text": "Apply the concept of fair share and equal shares to divide."
+ },
+ {
+  "cc_code": "M.6.NS.B.3",
+  "ee_code": "M.EE.6.NS.3",
+  "ee_text": "Use the meaning of multiplication and the properties of operations (e.g., the distributive property) to develop and understand strategies to find products with multiples of 3, 4, and 9 within 100."
+ },
+ {
+  "cc_code": "M.6.NS.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.NS.C.5",
+  "ee_code": "M.EE.6.NS.5",
+  "ee_text": "Describe quantities having opposite directions or values as positive and negative numbers (e.g., temperature above/below zero)."
+ },
+ {
+  "cc_code": "M.6.NS.C.6",
+  "ee_code": "M.EE.6.NS.6",
+  "ee_text": "Describe quantities having opposite directions or values as positive and negative numbers (e.g., temperature above/below zero)."
+ },
+ {
+  "cc_code": "M.6.NS.C.7",
+  "ee_code": "M.EE.6.NS.7",
+  "ee_text": "Describe quantities having opposite directions or values as positive and negative numbers (e.g., temperature above/below zero)."
+ },
+ {
+  "cc_code": "M.6.NS.C.8",
+  "ee_code": "M.EE.6.NS.8",
+  "ee_text": "Describe quantities having opposite directions or values as positive and negative numbers (e.g., temperature above/below zero)."
+ },
+ {
+  "cc_code": "M.6.EE.A.1",
+  "ee_code": "M.EE.6.EE.1",
+  "ee_text": "Evaluate if an equation is true."
+ },
+ {
+  "cc_code": "M.6.EE.A.2",
+  "ee_code": "M.EE.6.EE.2",
+  "ee_text": "Evaluate if an equation is true."
+ },
+ {
+  "cc_code": "M.6.EE.A.3",
+  "ee_code": "M.EE.6.EE.3",
+  "ee_text": "Apply the properties of addition to identify equivalent numerical expressions."
+ },
+ {
+  "cc_code": "M.6.EE.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.EE.B.5",
+  "ee_code": "M.EE.6.EE.5",
+  "ee_text": "Match an equation to a real- world problem in which variables are used to represent numbers."
+ },
+ {
+  "cc_code": "M.6.EE.B.6",
+  "ee_code": "M.EE.6.EE.6",
+  "ee_text": "Match an equation to a real- world problem in which variables are used to represent numbers."
+ },
+ {
+  "cc_code": "M.6.EE.B.7",
+  "ee_code": "M.EE.6.EE.7",
+  "ee_text": "Match an equation to a real- world problem in which variables are used to represent numbers."
+ },
+ {
+  "cc_code": "M.6.EE.B.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.EE.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.G.A.1",
+  "ee_code": "M.EE.6.G.1",
+  "ee_text": "Solve real-world and mathematical problems about area using unit squares."
+ },
+ {
+  "cc_code": "M.6.G.A.2",
+  "ee_code": "M.EE.6.G.2",
+  "ee_text": "Solve real-world and mathematical problems about volume using unit cubes."
+ },
+ {
+  "cc_code": "M.6.G.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.G.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.SP.A.1",
+  "ee_code": "M.EE.6.SP.1",
+  "ee_text": "Display data on a graph or table that shows variability in the data."
+ },
+ {
+  "cc_code": "M.6.SP.A.2",
+  "ee_code": "M.EE.6.SP.2",
+  "ee_text": "Display data on a graph or table that shows variability in the data."
+ },
+ {
+  "cc_code": "M.6.SP.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.6.SP.B.4",
+  "ee_code": "M.EE.6.SP.4",
+  "ee_text": "Display data on a graph or table that shows variability in the data."
+ },
+ {
+  "cc_code": "M.6.SP.B.5",
+  "ee_code": "M.EE.6.SP.5",
+  "ee_text": "Summarize data distributions shown in graphs or tables."
+ },
+ {
+  "cc_code": "M.7.RP.A.1",
+  "ee_code": "M.EE.7.RP.1",
+  "ee_text": "Use a ratio to model or describe a relationship."
+ },
+ {
+  "cc_code": "M.7.RP.A.2",
+  "ee_code": "M.EE.7.RP.2",
+  "ee_text": "Use a ratio to model or describe a relationship."
+ },
+ {
+  "cc_code": "M.7.RP.A.3",
+  "ee_code": "M.EE.7.RP.3",
+  "ee_text": "Use a ratio to model or describe a relationship."
+ },
+ {
+  "cc_code": "M.7.NS.A.1",
+  "ee_code": "M.EE.7.NS.1",
+  "ee_text": "Add fractions with like denominators (halves, thirds, fourths, and tenths) with sums less than or equal to one."
+ },
+ {
+  "cc_code": "M.7.NS.A.2",
+  "ee_code": "M.EE.7.NS.2",
+  "ee_text": "Apply and extend previous understandings of multiplication, division, and fractions. a. Multiply within 100 using strategies such as the properties of operations [e.g., knowing that 7 x 6 can be thought of as 7 groups of 6 so one could think 5 groups of 6 is 30 and 2 more groups of 6 is 12 and 30 + 12 = 42 (informal use of the distributive property)]. b. Solve division problems within 100, including divisors of 1-5 and 10, without remainders. c-d. Express a fraction with a denominator of 10 as a decimal."
+ },
+ {
+  "cc_code": "M.7.NS.A.3",
+  "ee_code": "M.EE.7.NS.3",
+  "ee_text": "Using real world examples, compare quantities represented as decimals to tenths."
+ },
+ {
+  "cc_code": "M.7.EE.A.1",
+  "ee_code": "M.EE.7.EE.1",
+  "ee_text": "Use the properties of operations as strategies to demonstrate that expressions are equivalent."
+ },
+ {
+  "cc_code": "M.7.EE.A.2",
+  "ee_code": "M.EE.7.EE.2",
+  "ee_text": "Identify an arithmetic sequence of whole numbers with a whole number common difference."
+ },
+ {
+  "cc_code": "M.7.EE.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.7.EE.B.4",
+  "ee_code": "M.EE.7.EE.4",
+  "ee_text": "Use the concept of equality to solve one-step addition and subtraction equations with models."
+ },
+ {
+  "cc_code": "M.7.G.A.1",
+  "ee_code": "M.EE.7.G.1",
+  "ee_text": "Match two similar geometric shapes that are proportional in size and have the same orientation."
+ },
+ {
+  "cc_code": "M.7.G.A.2",
+  "ee_code": "M.EE.7.G.2",
+  "ee_text": "Recognize geometric shapes with given conditions."
+ },
+ {
+  "cc_code": "M.7.G.A.3",
+  "ee_code": "M.EE.7.G.3",
+  "ee_text": "Match a two-dimensional shape with a three-dimensional shape that shares an attribute."
+ },
+ {
+  "cc_code": "M.7.G.B.4",
+  "ee_code": "M.EE.7.G.4",
+  "ee_text": "Determine the perimeter of a rectangle."
+ },
+ {
+  "cc_code": "M.7.G.B.5",
+  "ee_code": "M.EE.7.G.5",
+  "ee_text": "Recognize angles that are acute, obtuse, and right."
+ },
+ {
+  "cc_code": "M.7.G.B.6",
+  "ee_code": "M.EE.7.G.6",
+  "ee_text": "Determine the area of a rectangle using the formula for length x width and confirm the result using tiling or partitioning into unit squares."
+ },
+ {
+  "cc_code": "M.7.SP.A.1",
+  "ee_code": "M.EE.7.SP.1",
+  "ee_text": "Answer a data related question, given a model of the data from a student experiment or collection."
+ },
+ {
+  "cc_code": "M.7.SP.A.2",
+  "ee_code": "M.EE.7.SP.2",
+  "ee_text": "Answer a data related question, given a model of the data from a student experiment or collection."
+ },
+ {
+  "cc_code": "M.7.SP.B.3",
+  "ee_code": "M.EE.7.SP.3",
+  "ee_text": "Compare two sets of data found within a single data display such as a picture graph, line plot, or bar graph."
+ },
+ {
+  "cc_code": "M.7.SP.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.4."
+ },
+ {
+  "cc_code": "M.7.SP.C.5",
+  "ee_code": "M.EE.7.SP.5",
+  "ee_text": "Describe the probability of events occurring as possible or impossible."
+ },
+ {
+  "cc_code": "M.7.SP.C.6",
+  "ee_code": "M.EE.7.SP.6",
+  "ee_text": "Describe the probability of events occurring as possible or impossible."
+ },
+ {
+  "cc_code": "M.7.SP.C.7",
+  "ee_code": "M.EE.7.SP.7",
+  "ee_text": "Describe the probability of events occurring as possible or impossible."
+ },
+ {
+  "cc_code": "M.7.SP.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.NS.A.1",
+  "ee_code": "M.EE.8.NS.1",
+  "ee_text": "Subtract fractions with like denominators, including halves, thirds, fourths, and tenths with minuends less than or equal to one."
+ },
+ {
+  "cc_code": "M.8.NS.A.2",
+  "ee_code": "M.EE.8.NS.2",
+  "ee_text": "Represent and compare fractions and decimal fractions to hundredths. a. Express a fraction with a denominator of 100 as a decimal. b. Using real world examples, compare quantities represented as decimals to hundredths."
+ },
+ {
+  "cc_code": "M.8.EE.A.1",
+  "ee_code": "M.EE.8.EE.1",
+  "ee_text": "Identify and understand the meaning of exponents."
+ },
+ {
+  "cc_code": "M.8.EE.A.2",
+  "ee_code": "M.EE.8.EE.2",
+  "ee_text": "Identify a geometric sequence of whole numbers with a whole number common ratio."
+ },
+ {
+  "cc_code": "M.8.EE.A.3",
+  "ee_code": "M.EE.8.EE.3",
+  "ee_text": "Compose and decompose whole numbers up to 999."
+ },
+ {
+  "cc_code": "M.8.EE.A.4",
+  "ee_code": "M.EE.8.EE.4",
+  "ee_text": "Compose and decompose whole numbers up to 999."
+ },
+ {
+  "cc_code": "M.8.EE.B.5",
+  "ee_code": "M.EE.8.EE.5",
+  "ee_text": "Graph a simple ratio by connecting the origin to a point representing the ratio in the form of y/x. For example, when given a ratio in standard form (2:1), convert to 2/1, and plot the point (1,2)."
+ },
+ {
+  "cc_code": "M.8.EE.B.6",
+  "ee_code": "M.EE.8.EE.6",
+  "ee_text": "Graph a simple ratio by connecting the origin to a point representing the ratio in the form of y/x. For example, when given a ratio in standard form (2:1), convert to 2/1, and plot the point (1,2)."
+ },
+ {
+  "cc_code": "M.8.EE.C.7",
+  "ee_code": "M.EE.8.EE.7",
+  "ee_text": "Solve simple algebraic equations with one variable using addition and subtraction."
+ },
+ {
+  "cc_code": "M.8.EE.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.8.EE.5."
+ },
+ {
+  "cc_code": "M.8.F.A.1",
+  "ee_code": "M.EE.8.F.1",
+  "ee_text": "Given a table of data for a linear function containing at least 2 complete ordered pairs, identify a missing number that completes another ordered pair."
+ },
+ {
+  "cc_code": "M.8.F.A.2",
+  "ee_code": "M.EE.8.F.2",
+  "ee_text": "Given a table of data for a linear function containing at least 2 complete ordered pairs, identify a missing number that completes another ordered pair."
+ },
+ {
+  "cc_code": "M.8.F.A.3",
+  "ee_code": "M.EE.8.F.3",
+  "ee_text": "Given a table of data for a linear function containing at least 2 complete ordered pairs, identify a missing number that completes another ordered pair."
+ },
+ {
+  "cc_code": "M.8.F.B.4",
+  "ee_code": "M.EE.8.F.4",
+  "ee_text": "Determine the values or rule of a function using a graph or a table."
+ },
+ {
+  "cc_code": "M.8.F.B.5",
+  "ee_code": "M.EE.8.F.5",
+  "ee_text": "Describe how a graph represents a relationship between two quantities."
+ },
+ {
+  "cc_code": "M.8.G.A.1",
+  "ee_code": "M.EE.8.G.1",
+  "ee_text": "Recognize translations, rotations, and reflections of shapes."
+ },
+ {
+  "cc_code": "M.8.G.A.2",
+  "ee_code": "M.EE.8.G.2",
+  "ee_text": "Identify shapes that are congruent."
+ },
+ {
+  "cc_code": "M.8.G.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.G.A.4",
+  "ee_code": "M.EE.8.G.4",
+  "ee_text": "Identify similar shapes with and without rotation."
+ },
+ {
+  "cc_code": "M.8.G.A.5",
+  "ee_code": "M.EE.8.G.5",
+  "ee_text": "Compare any angle to a right angle, and describe the angle as greater than, less than, or congruent to the right angle."
+ },
+ {
+  "cc_code": "M.8.G.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.G.B.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.G.B.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.G.C.9",
+  "ee_code": "M.EE.8.G.9",
+  "ee_text": "Use the formulas for perimeter and area of rectangles, and volume of rectangular prisms to solve real-world and mathematical problems."
+ },
+ {
+  "cc_code": "M.8.SP.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.SP.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "cc_code": "M.8.SP.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.8.SP.A.4",
+  "ee_code": "M.EE.8.SP.4",
+  "ee_text": "Construct a graph or table from given categorical data and interpret the data."
+ },
+ {
+  "cc_code": "M.N.RN.A.1",
+  "ee_code": "M.EE.N.RN.1",
+  "ee_text": "Determine the value of a quantity that is expressed with an exponent."
+ },
+ {
+  "cc_code": "M.N.RN.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.RN.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.Q.A.1",
+  "ee_code": "M.EE.N.Q.1",
+  "ee_text": "Express quantities as a precise measurement based on the context."
+ },
+ {
+  "cc_code": "M.N.Q.A.2",
+  "ee_code": "M.EE.N.Q.2",
+  "ee_text": "Express quantities as a precise measurement based on the context."
+ },
+ {
+  "cc_code": "M.N.Q.A.3",
+  "ee_code": "M.EE.N.Q.3",
+  "ee_text": "Express quantities as a precise measurement based on the context."
+ },
+ {
+  "cc_code": "M.N.CN.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.A.2",
+  "ee_code": "M.EE.N.CN.2",
+  "ee_text": "Use properties (commutative, associative, and distributive) and place value understandings to calculate and solve problems. a. Add, subtract, and multiply whole numbers. b. Add, subtract, and multiply decimals. c. Solve real-world problems involving addition, subtraction, and multiplication of whole numbers and decimals."
+ },
+ {
+  "cc_code": "M.N.CN.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.CN.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.10",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.11",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.N.VM.C.12",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.SSE.A.1",
+  "ee_code": "M.EE.A.SSE.1",
+  "ee_text": "Identify an algebraic expression involving one arithmetic operation to represent a real- world problem."
+ },
+ {
+  "cc_code": "M.A.SSE.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.SSE.B.3",
+  "ee_code": "M.EE.A.SSE.3",
+  "ee_text": "Solve simple algebraic equations with one variable using multiplication and division."
+ },
+ {
+  "cc_code": "M.A.SSE.B.4",
+  "ee_code": "M.EE.A.SSE.4",
+  "ee_text": "Determine the successive term in a geometric sequence given the common ratio."
+ },
+ {
+  "cc_code": "M.A.APR.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.B.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.C.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.C.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.D.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.APR.D.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.CED.A.1",
+  "ee_code": "M.EE.A.CED.1",
+  "ee_text": "Determine an equation involving at least one variable that can be used to solve a real-world problem."
+ },
+ {
+  "cc_code": "M.A.CED.A.2",
+  "ee_code": "M.EE.A.CED.2",
+  "ee_text": "Solve one-step inequalities."
+ },
+ {
+  "cc_code": "M.A.CED.A.3",
+  "ee_code": "M.EE.A.CED.3",
+  "ee_text": "Solve one-step inequalities."
+ },
+ {
+  "cc_code": "M.A.CED.A.4",
+  "ee_code": "M.EE.A.CED.4",
+  "ee_text": "Solve one-step inequalities."
+ },
+ {
+  "cc_code": "M.A.REI.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.REI.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.CED.1."
+ },
+ {
+  "cc_code": "M.A.REI.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.CED.1."
+ },
+ {
+  "cc_code": "M.A.REI.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.REI.C.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.REI.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.REI.10."
+ },
+ {
+  "cc_code": "M.A.REI.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.REI.10."
+ },
+ {
+  "cc_code": "M.A.REI.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.REI.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.A.REI.D.10",
+  "ee_code": "M.EE.A.REI.10",
+  "ee_text": "Interpret the meaning of a point on the graph of a line. For example, on a graph of pizza purchases, trace the graph to a point and tell the number of pizzas purchased and the total cost of the pizzas."
+ },
+ {
+  "cc_code": "M.A.REI.D.11",
+  "ee_code": "M.EE.A.REI.11",
+  "ee_text": "Interpret the meaning of a point on the graph of a line. For example, on a graph of pizza purchases, trace the graph to a point and tell the number of pizzas purchased and the total cost of the pizzas."
+ },
+ {
+  "cc_code": "M.A.REI.D.12",
+  "ee_code": "M.EE.A.REI.12",
+  "ee_text": "Interpret the meaning of a point on the graph of a line. For example, on a graph of pizza purchases, trace the graph to a point and tell the number of pizzas purchased and the total cost of the pizzas."
+ },
+ {
+  "cc_code": "M.F.IF.A.1",
+  "ee_code": "M.EE.F.IF.1",
+  "ee_text": "Use the concept of function to solve problems."
+ },
+ {
+  "cc_code": "M.F.IF.A.2",
+  "ee_code": "M.EE.F.IF.2",
+  "ee_text": "Use the concept of function to solve problems."
+ },
+ {
+  "cc_code": "M.F.IF.A.3",
+  "ee_code": "M.EE.F.IF.3",
+  "ee_text": "Use the concept of function to solve problems."
+ },
+ {
+  "cc_code": "M.F.IF.B.4",
+  "ee_code": "M.EE.F.IF.4",
+  "ee_text": "Construct graphs that represent linear functions with different rates of change and interpret the graphs. For example, which rate is faster/slower or higher/lower."
+ },
+ {
+  "cc_code": "M.F.IF.B.5",
+  "ee_code": "M.EE.F.IF.5",
+  "ee_text": "Construct graphs that represent linear functions with different rates of change and interpret the graphs. For example, which rate is faster/slower or higher/lower."
+ },
+ {
+  "cc_code": "M.F.IF.B.6",
+  "ee_code": "M.EE.F.IF.6",
+  "ee_text": "Construct graphs that represent linear functions with different rates of change and interpret the graphs. For example, which rate is faster/slower or higher/lower."
+ },
+ {
+  "cc_code": "M.F.IF.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.1."
+ },
+ {
+  "cc_code": "M.F.IF.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.IF.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.BF.A.1",
+  "ee_code": "M.EE.F.BF.1",
+  "ee_text": "Select a graph from the first quadrant of the coordinate plane that represents a situation involving constant rate of change. c. Not applicable."
+ },
+ {
+  "cc_code": "M.F.BF.A.2",
+  "ee_code": "M.EE.F.BF.2",
+  "ee_text": "Determine an arithmetic sequence with whole numbers when provided a recursive rule."
+ },
+ {
+  "cc_code": "M.F.BF.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.BF.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.BF.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.LE.A.1",
+  "ee_code": "M.EE.F.LE.1",
+  "ee_text": "Model a simple linear function such as y=mx to show that these functions increase by equal amounts over equal intervals."
+ },
+ {
+  "cc_code": "M.F.LE.A.2",
+  "ee_code": "M.EE.F.LE.2",
+  "ee_text": "Model a simple linear function such as y=mx to show that these functions increase by equal amounts over equal intervals."
+ },
+ {
+  "cc_code": "M.F.LE.A.3",
+  "ee_code": "M.EE.F.LE.3",
+  "ee_text": "Model a simple linear function such as y=mx to show that these functions increase by equal amounts over equal intervals."
+ },
+ {
+  "cc_code": "M.F.LE.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.LE.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.1."
+ },
+ {
+  "cc_code": "M.F.TF.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.B.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.F.TF.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.A.1",
+  "ee_code": "M.EE.G.CO.1",
+  "ee_text": "Know the attributes of geometric elements and two- dimensional shapes. a. Know the attributes of points, rays, lines, line segments, perpendicular lines, parallel lines, and angles. b. Know the attributes of two- dimensional shapes."
+ },
+ {
+  "cc_code": "M.G.CO.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.A.4",
+  "ee_code": "M.EE.G.CO.4",
+  "ee_text": "Given a geometric figure and a rotation, reflection, or translation of that figure, identify the components of the two figures that are congruent."
+ },
+ {
+  "cc_code": "M.G.CO.A.5",
+  "ee_code": "M.EE.G.CO.5",
+  "ee_text": "Given a geometric figure and a rotation, reflection, or translation of that figure, identify the components of the two figures that are congruent."
+ },
+ {
+  "cc_code": "M.G.CO.B.6",
+  "ee_code": "M.EE.G.CO.6",
+  "ee_text": "Identify corresponding congruent and similar parts of shapes."
+ },
+ {
+  "cc_code": "M.G.CO.B.7",
+  "ee_code": "M.EE.G.CO.7",
+  "ee_text": "Identify corresponding congruent and similar parts of shapes."
+ },
+ {
+  "cc_code": "M.G.CO.B.8",
+  "ee_code": "M.EE.G.CO.8",
+  "ee_text": "Identify corresponding congruent and similar parts of shapes."
+ },
+ {
+  "cc_code": "M.G.CO.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.C.10",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.C.11",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.D.12",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.CO.D.13",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable. See"
+ },
+ {
+  "cc_code": "M.G.SRT.A.2",
+  "ee_code": "M.EE.G.CO.6",
+  "ee_text": ". Not applicable. See M.EE.G.CO.6 ."
+ },
+ {
+  "cc_code": "M.G.SRT.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.G.CO.6 ."
+ },
+ {
+  "cc_code": "M.G.SRT.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.G.CO.6 ."
+ },
+ {
+  "cc_code": "M.G.SRT.C.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.D.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.D.10",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.SRT.D.11",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.C.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.C.B.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GPE.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GPE.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GPE.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GPE.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GPE.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.G.CO.1."
+ },
+ {
+  "cc_code": "M.G.GPE.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.G.CO.1."
+ },
+ {
+  "cc_code": "M.G.GPE.B.7",
+  "ee_code": "M.EE.G.GPE.7",
+  "ee_text": "Find perimeters and areas of squares and rectangles to solve real-world problems."
+ },
+ {
+  "cc_code": "M.G.GMD.A.1",
+  "ee_code": "M.EE.G.GMD.1",
+  "ee_text": "Estimate the volumes of containers, the areas of figures, and the perimeters of figures. Check the estimates using formulas or models."
+ },
+ {
+  "cc_code": "M.G.GMD.A.2",
+  "ee_code": "M.EE.G.GMD.2",
+  "ee_text": "Estimate the volumes of containers, the areas of figures, and the perimeters of figures. Check the estimates using formulas or models.,"
+ },
+ {
+  "cc_code": "M.G.GMD.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.G.GMD.C.4",
+  "ee_code": "M.EE.G.GMD.4",
+  "ee_text": "Use properties of geometric shapes to describe real life objects."
+ },
+ {
+  "cc_code": "M.G.GMD.C.5",
+  "ee_code": "M.EE.G.GMD.5",
+  "ee_text": "Use properties of geometric shapes to describe real life objects."
+ },
+ {
+  "cc_code": "M.G.GMD.C.6",
+  "ee_code": "M.EE.G.GMD.6",
+  "ee_text": "Use properties of geometric shapes to describe real life objects."
+ },
+ {
+  "cc_code": "M.SP.ID.A.1",
+  "ee_code": "M.EE.SP.ID.1",
+  "ee_text": "Given data, construct a graph (line, pie, bar, or picture) or table and interpret the data."
+ },
+ {
+  "cc_code": "M.SP.ID.A.2",
+  "ee_code": "M.EE.SP.ID.2",
+  "ee_text": "Given data, construct a graph (line, pie, bar, or picture) or table and interpret the data."
+ },
+ {
+  "cc_code": "M.SP.ID.A.3",
+  "ee_code": "M.EE.SP.ID.3",
+  "ee_text": "Interpret trends on a graph or chart."
+ },
+ {
+  "cc_code": "M.SP.ID.A.4",
+  "ee_code": "M.EE.SP.ID.4",
+  "ee_text": "Calculate the mean of a given data set."
+ },
+ {
+  "cc_code": "M.SP.ID.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.1."
+ },
+ {
+  "cc_code": "M.SP.ID.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.ID.C.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.4."
+ },
+ {
+  "cc_code": "M.SP.ID.C.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.ID.C.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.IC.A.1",
+  "ee_code": "M.EE.SP.IC.1",
+  "ee_text": "Determine the probability of an event occurring when the outcomes are equally likely to occur."
+ },
+ {
+  "cc_code": "M.SP.IC.A.2",
+  "ee_code": "M.EE.SP.IC.2",
+  "ee_text": "Determine the probability of an event occurring when the outcomes are equally likely to occur."
+ },
+ {
+  "cc_code": "M.SP.IC.B.3",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "cc_code": "M.SP.IC.B.4",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "cc_code": "M.SP.IC.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "cc_code": "M.SP.IC.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "cc_code": "M.SP.CP.A.1",
+  "ee_code": "M.EE.S.CP.1",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "cc_code": "M.SP.CP.A.2",
+  "ee_code": "M.EE.S.CP.2",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "cc_code": "M.SP.CP.A.3",
+  "ee_code": "M.EE.S.CP.3",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "cc_code": "M.SP.CP.A.4",
+  "ee_code": "M.EE.S.CP.4",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "cc_code": "M.SP.CP.A.5",
+  "ee_code": "M.EE.S.CP.5",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "cc_code": "M.SP.CP.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE. SP.IC.1."
+ },
+ {
+  "cc_code": "M.SP.CP.B.7",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE. SP.IC.1."
+ },
+ {
+  "cc_code": "M.SP.CP.B.8",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.CP.B.9",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.A.1",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.A.2",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.A.3",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.A.4",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.B.5",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.B.6",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "cc_code": "M.SP.MD.B.7",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ }
+]

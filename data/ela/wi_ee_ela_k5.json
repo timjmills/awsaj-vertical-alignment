@@ -1,0 +1,1814 @@
+{
+ "ee": {
+  "RF.K.1": {
+   "ee_code": "EE.RF.K.1",
+   "stem": "Demonstrate emerging understanding of the organization of print.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support during shared reading, demonstrate understanding that books are read one page at a time from beginning to end."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Not applicable"
+    ]
+   ]
+  },
+  "RF.K.2": {
+   "ee_code": "EE.RF.K.2",
+   "stem": "Demonstrate emerging understanding of spoken words, syllables, and sounds (phonemes).",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, recognize rhyming words."
+    ],
+    [
+     "b",
+     "With guidance and support, recognize the number of words in a spoken message."
+    ],
+    [
+     "c",
+     "With guidance and support, identify syllables in spoken words."
+    ],
+    [
+     "d",
+     "With guidance and support, identify single syllable spoken words with the same onset (beginning sound) as a familiar word."
+    ],
+    [
+     "e",
+     "With guidance and support, recognize the number of sounds in three-phoneme (consonant-vowel-consonant, or CVC) words"
+    ],
+    [
+     "f",
+     "With guidance and support, recognize if words are minimal pairs"
+    ]
+   ]
+  },
+  "RF.K.3": {
+   "ee_code": "EE.RF.K.3",
+   "stem": "Demonstrate emerging awareness of print.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, recognize first letter of own name in print."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "With guidance and support, recognize environmental print."
+    ],
+    [
+     "d",
+     "Not applicable Related to language standards: L.K.6c Phonetically spell simple words drawing on knowledge of letter-sound relationships. Related to Reading Foundational standards: L.K.6d Writes letters for most consonant and short vowel sounds (phonemes)."
+    ]
+   ]
+  },
+  "RF.K.4": {
+   "ee_code": "EE.RF.K.4",
+   "stem": "Engage in purposeful shared reading of familiar text.",
+   "subs": []
+  },
+  "R.K.1": {
+   "ee_code": "EE.R.K.1",
+   "stem": "With guidance and support, identify details in familiar texts.(RI&RL)",
+   "subs": []
+  },
+  "R.K.2": {
+   "ee_code": "EE.R.K.2",
+   "stem": "With guidance and support, identify major events (RL) or the topic in a familiar text (RI).",
+   "subs": []
+  },
+  "R.K.3": {
+   "ee_code": "EE.R.K.3",
+   "stem": "With guidance and support, identify characters and settings (RL) or important details and events (RI) in familiar texts.",
+   "subs": []
+  },
+  "R.K.4": {
+   "ee_code": "EE.R.K.4",
+   "stem": "With guidance and support, indicate when an unknown word is used in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.K.5": {
+   "ee_code": "EE.R.K.5",
+   "stem": "With guidance and support, recognize familiar texts (e.g., storybooks, poems, informational texts) and locate the front cover of the book. (RI&RL)",
+   "subs": []
+  },
+  "R.K.6": {
+   "ee_code": "EE.R.K.6",
+   "stem": "With guidance and support, distinguish between words and illustrations/graphics in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.K.7": {
+   "ee_code": "EE.R.K.7",
+   "stem": "With guidance and support, identify illustrations or objects/tactual information that go with the text. (RI&RL)",
+   "subs": []
+  },
+  "R.K.8": {
+   "ee_code": "EE.R.K.8",
+   "stem": "With guidance and support, identify points the author makes in text. (RI)",
+   "subs": []
+  },
+  "R.K.9": {
+   "ee_code": "EE.R.K.9",
+   "stem": "With guidance and support, match similar parts of two familiar texts, identifying the adventures or experiences of a character. (RI&RL)",
+   "subs": []
+  },
+  "W.K.1": {
+   "ee_code": "EE.W.K.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.K.2": {
+   "ee_code": "EE.W.K.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they state an opinion."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they provide some information about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events."
+    ]
+   ]
+  },
+  "W.K.3": {
+   "ee_code": "EE.W.K.3",
+   "stem": "With guidance and support, use a combination of drawing, dictating and writing to create a text that uses words familiar to the student.",
+   "subs": []
+  },
+  "W.K.4": {
+   "ee_code": "EE.W.K.4",
+   "stem": "(Begins in grade 3)",
+   "subs": []
+  },
+  "W.K.5": {
+   "ee_code": "EE.W.K.5",
+   "stem": "With guidance and support from adults, add more information to their own drawing, dictation, or writing to strengthen it.",
+   "subs": []
+  },
+  "W.K.6": {
+   "ee_code": "EE.W.K.6",
+   "stem": "With guidance and support from adults, explore a variety of digital tools to produce individual or group writing. With guidance and support from adults, produce writing through printing (including letter-like marks or forming some printed letters).",
+   "subs": []
+  },
+  "W.K.7": {
+   "ee_code": "EE.W.K.7",
+   "stem": "With guidance and support, participate in shared inquiry and writing projects.",
+   "subs": []
+  },
+  "W.K.8": {
+   "ee_code": "EE.W.K.8",
+   "stem": "With guidance and support from adults, identify information, objects, or events that relate to personal experiences.",
+   "subs": []
+  },
+  "W.K.9": {
+   "ee_code": "EE.W.K.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts. goals. Be able to justify intentional language choices Comprehension & Collaboration -",
+   "subs": []
+  },
+  "SL.K.1": {
+   "ee_code": "EE.SL.K.1",
+   "stem": "With guidance and support, participate in conversations with others.",
+   "subs": [
+    [
+     "a",
+     "Communicate directly with supportive adults or peers."
+    ],
+    [
+     "b",
+     "Participate in multiple-turn communication exchanges with support from adults."
+    ],
+    [
+     "c",
+     "Respond to questions about the topic or text."
+    ],
+    [
+     "d",
+     "Consider individual differences when communicating with others."
+    ]
+   ]
+  },
+  "SL.K.2": {
+   "ee_code": "EE.SL.K.2",
+   "stem": "With guidance and support, demonstrate an emerging understanding of a familiar text read aloud or information presented orally or through other media by answering questions",
+   "subs": []
+  },
+  "SL.K.3": {
+   "ee_code": "EE.SL.K.3",
+   "stem": "Ask for help when needed.",
+   "subs": []
+  },
+  "SL.K.4": {
+   "ee_code": "EE.SL.K.4",
+   "stem": "With guidance and support, identify familiar people, places, things, and events.",
+   "subs": []
+  },
+  "SL.K.5": {
+   "ee_code": "EE.SL.K.5",
+   "stem": "With guidance and support, add or select drawings or other visual or tactile displays that relate to familiar people, places, things, and events.",
+   "subs": []
+  },
+  "L.K.1": {
+   "ee_code": "EE.L.K.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "b",
+     "Notice linguistic diversity."
+    ]
+   ]
+  },
+  "L.K.2": {
+   "ee_code": "EE.L.K.2",
+   "stem": "Demonstrate emerging knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, demonstrate understanding of words used in every day routines."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.K.3": {
+   "ee_code": "EE.L.K.3",
+   "stem": "Demonstrate emerging understanding of word relationships.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, ask questions about unknown words."
+    ],
+    [
+     "b",
+     "With guidance and support, sort common objects into familiar categories."
+    ],
+    [
+     "c",
+     "With guidance and support, demonstrate understanding of frequently occurring opposites."
+    ],
+    [
+     "d",
+     "With guidance and support, use words to communicate in real-life situations."
+    ],
+    [
+     "e",
+     "With guidance and support, demonstrate an understanding of common verbs."
+    ]
+   ]
+  },
+  "L.K.4": {
+   "ee_code": "EE.L.K.4",
+   "stem": "With guidance and support, use words acquired through conversations, being read to, and during shared reading activities.",
+   "subs": []
+  },
+  "L.K.5": {
+   "ee_code": "EE.L.K.5",
+   "stem": "Demonstrate emerging understanding of letter and word use.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, distinguish between letters and other symbols or shapes."
+    ],
+    [
+     "b",
+     "With guidance and support, use frequently occurring nouns in communication."
+    ],
+    [
+     "c",
+     "With guidance and support, use frequently occurring plural nouns."
+    ],
+    [
+     "d",
+     "With guidance and support, identify answers to simple questions (e.g., who, what) from an array of choices."
+    ],
+    [
+     "e",
+     "With guidance and support, demonstrate understanding of common prepositions: on, off, in, out."
+    ],
+    [
+     "f",
+     "With guidance and support, link two or more words together in communication."
+    ]
+   ]
+  },
+  "L.K.6": {
+   "ee_code": "EE.L.K.6",
+   "stem": "Not applicable",
+   "subs": []
+  },
+  "RF.1.1": {
+   "ee_code": "EE.RF.1.1",
+   "stem": "Demonstrate emerging understanding of the organization of print.",
+   "subs": [
+    [
+     "a",
+     "Demonstrate understanding of the organization and basic features of print (e.g., left-to-right, top-to-bottom orientation of print, one-to-one correspondence between written and spoken word)."
+    ]
+   ]
+  },
+  "RF.1.2": {
+   "ee_code": "EE.RF.1.2",
+   "stem": "Demonstrate understanding of spoken words, syllables, and sounds (phonemes).",
+   "subs": [
+    [
+     "a",
+     "Recognize rhyming words."
+    ],
+    [
+     "b",
+     "With guidance and support, match orally presented segmented phonemes (e.g., C-A-T) to pictures or words illustrating the corresponding word."
+    ],
+    [
+     "c",
+     "Identify a single syllable spoken word with the same onset (beginning sound) as a familiar word."
+    ],
+    [
+     "d",
+     "Not Applicable"
+    ],
+    [
+     "e",
+     "Not Applicable"
+    ]
+   ]
+  },
+  "RF.1.3": {
+   "ee_code": "EE.RF.1.3",
+   "stem": "Demonstrate emerging letter and word identification skills.",
+   "subs": [
+    [
+     "a",
+     "Recognize and/or identify upper case letters of the alphabet."
+    ],
+    [
+     "b",
+     "With guidance and support, recognize familiar words that are used in everyday routines."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Not applicable"
+    ],
+    [
+     "e",
+     "Not applicable"
+    ],
+    [
+     "f",
+     "Not applicable"
+    ],
+    [
+     "g",
+     "Not applicable Related to language standards: L.1.6d Use conventional spelling for words with common spelling patterns and draw on phonemic awareness and spelling conventions to spell other words phonetically."
+    ]
+   ]
+  },
+  "RF.1.4": {
+   "ee_code": "EE.RF.1.4",
+   "stem": "Begin to attend to words in print.",
+   "subs": [
+    [
+     "a",
+     "Engage in sustained, independent study of books."
+    ],
+    [
+     "b",
+     "Participate in shared reading of a variety of reading materials reflecting a variety of text genres."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ]
+   ]
+  },
+  "R.1.1": {
+   "ee_code": "EE.R.1.1",
+   "stem": "Identify details in familiar texts. (RI&RL)",
+   "subs": []
+  },
+  "R.1.2": {
+   "ee_code": "EE.R.1.2",
+   "stem": "With guidance and support, identify important details (RI) and recount major events (RL) in familiar texts.",
+   "subs": []
+  },
+  "R.1.3": {
+   "ee_code": "EE.R.1.3",
+   "stem": "Identify characters and settings (RL) or important details and events (RI) in familiar texts.",
+   "subs": []
+  },
+  "R.1.4": {
+   "ee_code": "EE.R.1.4",
+   "stem": "With guidance and support, identify sensory or feeling words in a familiar text; ask the reader to explain the meaning of unknown words. (RI&RL)",
+   "subs": []
+  },
+  "R.1.5": {
+   "ee_code": "EE.R.1.5",
+   "stem": "With guidance and support, identify a text as telling a story or teaching facts (i.e., informational) and locate the front cover, back cover, and title page of the text. (RI&RL)",
+   "subs": []
+  },
+  "R.1.6": {
+   "ee_code": "EE.R.1.6",
+   "stem": "Distinguish between words and illustrations/graphics in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.1.7": {
+   "ee_code": "EE.R.1.7",
+   "stem": "Identify illustrations or objects/tactile information that go with the text. (RI&RL)",
+   "subs": []
+  },
+  "R.1.8": {
+   "ee_code": "EE.R.1.8",
+   "stem": "Identify points the author makes in familiar text. (RI)",
+   "subs": []
+  },
+  "R.1.9": {
+   "ee_code": "EE.R.1.9",
+   "stem": "With guidance and support, compare parts of two texts, identifying adventures or experiences of characters in a text as same or different. (RI&RL)",
+   "subs": []
+  },
+  "W.1.1": {
+   "ee_code": "EE.W.1.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.1.2": {
+   "ee_code": "EE.W.1.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they state an opinion."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they provide some information about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events. (cont.)"
+    ]
+   ]
+  },
+  "W.1.3": {
+   "ee_code": "EE.W.1.3",
+   "stem": "With guidance and support, use a combination of drawing, dictating and writing to create a text that uses words familiar to the student.",
+   "subs": []
+  },
+  "W.1.4": {
+   "ee_code": "EE.W.1.4",
+   "stem": "(Begins in grade 3)",
+   "subs": []
+  },
+  "W.1.5": {
+   "ee_code": "EE.W.1.5",
+   "stem": "With guidance and support from adults, add more information to their own drawing, dictation, or writing on a topic to strengthen it.",
+   "subs": []
+  },
+  "W.1.6": {
+   "ee_code": "EE.W.1.6",
+   "stem": "With guidance and support from adults, explore a variety of digital tools to produce individual or group writing. With guidance and support from adults, produce writing through printing (including letter-like marks or forming some printed letters).",
+   "subs": []
+  },
+  "W.1.7": {
+   "ee_code": "EE.W.1.7",
+   "stem": "With guidance and support, participate in shared inquiry and writing projects.",
+   "subs": []
+  },
+  "W.1.8": {
+   "ee_code": "EE.W.1.8",
+   "stem": "With guidance and support from adults, identify information related to personal experiences and answer simple questions about those experiences.",
+   "subs": []
+  },
+  "W.1.9": {
+   "ee_code": "EE.W.1.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts. K-5 and adapt speech to a variety of purposes, audiences, and how those choices differ for culture Comprehension & Collaboration -",
+   "subs": []
+  },
+  "SL.1.1": {
+   "ee_code": "EE.SL.1.1",
+   "stem": "With guidance and support, participate in conversations with adults.",
+   "subs": [
+    [
+     "a",
+     "Engage in multiple-turn exchanges with supportive adults."
+    ],
+    [
+     "b",
+     "Build on comments or topics initiated by an adult."
+    ],
+    [
+     "c",
+     "Use one or two words to ask questions related to the topic or text."
+    ],
+    [
+     "d",
+     "Consider individual differences when communicating with others."
+    ]
+   ]
+  },
+  "SL.1.2": {
+   "ee_code": "EE.SL.1.2",
+   "stem": "During shared reading activities, answer questions about details presented orally or through other media.",
+   "subs": []
+  },
+  "SL.1.3": {
+   "ee_code": "EE.SL.1.3",
+   "stem": "Communicate confusion or lack of understanding (\"I don't know.\").",
+   "subs": []
+  },
+  "SL.1.4": {
+   "ee_code": "EE.SL.1.4",
+   "stem": "Identify familiar people, places, things, and events.",
+   "subs": []
+  },
+  "SL.1.5": {
+   "ee_code": "EE.SL.1.5",
+   "stem": "Add or select drawings or other visual or tactile displays that relate to familiar people, places, things, and events.",
+   "subs": []
+  },
+  "L.1.1": {
+   "ee_code": "EE.L.1.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice linguistic diversity."
+    ]
+   ]
+  },
+  "L.1.2": {
+   "ee_code": "EE.L.1.2",
+   "stem": "Demonstrate emerging knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Demonstrate understanding of words used in every day routines."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.1.3": {
+   "ee_code": "EE.L.1.3",
+   "stem": "Demonstrate emerging understanding of word relationships.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, identify words about feelings."
+    ],
+    [
+     "b",
+     "With guidance and support, sort common objects into familiar categories."
+    ],
+    [
+     "c",
+     "With guidance and support, demonstrate understanding of common verbs."
+    ]
+   ]
+  },
+  "L.1.4": {
+   "ee_code": "EE.L.1.4",
+   "stem": "With guidance and support, use words acquired through conversations, being read to, and during shared reading activities.",
+   "subs": []
+  },
+  "L.1.5": {
+   "ee_code": "EE.L.1.5",
+   "stem": "Demonstrate emerging understanding of letter and word use.",
+   "subs": [
+    [
+     "a",
+     "Write letters from own name."
+    ],
+    [
+     "b",
+     "Use frequently occurring nouns in communication."
+    ],
+    [
+     "c",
+     "Use frequently occurring plural nouns in communication."
+    ],
+    [
+     "d",
+     "With guidance and support, use familiar personal pronouns (e.g., I, me, and you)."
+    ],
+    [
+     "e",
+     "Use familiar present tense verbs."
+    ],
+    [
+     "f",
+     "With guidance and support, use familiar frequently occurring adjectives (e.g., big, hot)."
+    ],
+    [
+     "g",
+     "With guidance and support, use common prepositions (e.g., on, off, in, out)."
+    ],
+    [
+     "h",
+     "With guidance and support, use simple question words (interrogatives) (e.g., who, what)."
+    ]
+   ]
+  },
+  "L.1.6": {
+   "ee_code": "EE.L.1.6",
+   "stem": "Demonstrate emerging understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, capitalize own name."
+    ],
+    [
+     "b",
+     "With guidance and support during shared writing, put a period at the end of a sentence."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "With guidance and support, use letters to create words."
+    ],
+    [
+     "e",
+     "With guidance and support during shared writing, identify the letters that represent sounds needed to spell words."
+    ]
+   ]
+  },
+  "RF.2.2": {
+   "ee_code": "EE.RF.2.2",
+   "stem": "Demonstrate understanding of spoken words, syllables, and sounds (phonemes).",
+   "subs": [
+    [
+     "a",
+     "Extend rhyming patterns"
+    ],
+    [
+     "b",
+     "With guidance and support, add, delete and substitute individual sounds (phonemes) in simple, one-syllable words to make new words."
+    ]
+   ]
+  },
+  "RF.2.3": {
+   "ee_code": "EE.RF.2.3",
+   "stem": "Demonstrate emerging use of letter-sound knowledge to read words.",
+   "subs": [
+    [
+     "a",
+     "Identify the lower case letters of the alphabet."
+    ],
+    [
+     "b",
+     "Identify letter sound correspondence for single consonants."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Not applicable"
+    ],
+    [
+     "e",
+     "Not applicable"
+    ],
+    [
+     "f",
+     "Recognize 10 or more written words. Related to language standards: See L.2.6 for additional spelling/encoding/word analysis guidance."
+    ]
+   ]
+  },
+  "RF.2.4": {
+   "ee_code": "EE.RF.2.4",
+   "stem": "Attend to words in print.",
+   "subs": [
+    [
+     "a",
+     "Read familiar text comprised of known words."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "With support, monitor for and identify errors that disrupt comprehension"
+    ]
+   ]
+  },
+  "R.2.1": {
+   "ee_code": "EE.R.2.1",
+   "stem": "Given guidance and support, answer “who”, “what” and “where” questions in familiar texts. (RI&RL)",
+   "subs": []
+  },
+  "R.2.2": {
+   "ee_code": "EE.R.2.2",
+   "stem": "Identify the topic of a text (RI) and use details to recount events from familiar stories (RL).",
+   "subs": []
+  },
+  "R.2.3": {
+   "ee_code": "EE.R.2.3",
+   "stem": "Identify the actions of characters (RL) or important details and events (RI) in familiar and unfamiliar texts.",
+   "subs": []
+  },
+  "R.2.4": {
+   "ee_code": "EE.R.2.4",
+   "stem": "Use a text’s structure (e.g., repetition, rhyming, etc.) to identify specific content, sensory, or feeling words that meaningfully relate to the text. (RI&RL)",
+   "subs": []
+  },
+  "R.2.5": {
+   "ee_code": "EE.R.2.5",
+   "stem": "Identify the beginning and end of a familiar sequential text (RL) or identify relevant graphics in an informational text (RI).",
+   "subs": []
+  },
+  "R.2.6": {
+   "ee_code": "EE.R.2.6",
+   "stem": "With guidance and support, identify words and graphic representations that connect to the point of view, topic, or important details of the text. (RI&RL)",
+   "subs": []
+  },
+  "R.2.7": {
+   "ee_code": "EE.R.2.7",
+   "stem": "Identify illustrations or objects/tactile information in text that depict characters. (RI&RL)",
+   "subs": []
+  },
+  "R.2.8": {
+   "ee_code": "EE.R.2.8",
+   "stem": "Identify points the author makes in text. (RI)",
+   "subs": []
+  },
+  "R.2.9": {
+   "ee_code": "EE.R.2.9",
+   "stem": "Compare details in two texts; recognize that texts reflect one’s own and other’s culture. (RI&RL)",
+   "subs": []
+  },
+  "W.2.1": {
+   "ee_code": "EE.W.2.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.2.2": {
+   "ee_code": "EE.W.2.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they state an opinion about a topic or text."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they provide at least 1 fact about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events. Include some details regarding what happened. (cont.)"
+    ]
+   ]
+  },
+  "W.2.3": {
+   "ee_code": "EE.W.2.3",
+   "stem": "With guidance and support, use a combination of drawing, dictating and writing to create a text that uses words familiar to the student and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.2.4": {
+   "ee_code": "EE.W.2.4",
+   "stem": "(Begins in grade 3)",
+   "subs": []
+  },
+  "W.2.5": {
+   "ee_code": "EE.W.2.5",
+   "stem": "With guidance and support from adults, focus their own drawing, dictation, or writing on a topic and add more details to strengthen their drawing, dictation, or writing as needed.",
+   "subs": []
+  },
+  "W.2.6": {
+   "ee_code": "EE.W.2.6",
+   "stem": "With guidance and support from adults and peers, use technology (including assistive technologies) to produce and publish writing. Learn to produce writing through printing (including forming upper and lower case letters).",
+   "subs": []
+  },
+  "W.2.7": {
+   "ee_code": "EE.W.2.7",
+   "stem": "With guidance and support, participate in shared and independent inquiry and writing projects.",
+   "subs": []
+  },
+  "W.2.8": {
+   "ee_code": "EE.W.2.8",
+   "stem": "Identify information related to personal experiences and answer simple questions about those experiences.",
+   "subs": []
+  },
+  "W.2.9": {
+   "ee_code": "EE.W.2.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts. and situations in order to meet communicative and context. Comprehension & Collaboration -",
+   "subs": []
+  },
+  "SL.2.1": {
+   "ee_code": "EE.SL.2.1",
+   "stem": "With guidance and support, participate in conversations with adults and peers.",
+   "subs": [
+    [
+     "a",
+     "Engage in multiple-turn exchanges with peers with support from an adult."
+    ],
+    [
+     "b",
+     "Build on others’ talk in conversations"
+    ],
+    [
+     "c",
+     "Ask for clarification and further explanation as needed about the topics and texts under discussion."
+    ],
+    [
+     "d",
+     "Consider individual differences when communicating with others."
+    ]
+   ]
+  },
+  "SL.2.2": {
+   "ee_code": "EE.SL.2.2",
+   "stem": "Demonstrate an emerging understanding of a familiar text read aloud or information presented orally or through other media by answering questions.",
+   "subs": []
+  },
+  "SL.2.3": {
+   "ee_code": "EE.SL.2.3",
+   "stem": "Ask and answer questions about the details provided by the speaker, or expand on the topic.",
+   "subs": []
+  },
+  "SL.2.4": {
+   "ee_code": "EE.SL.2.4",
+   "stem": "Identify a photograph or object that reflects a personal experience and tell one detail about it.",
+   "subs": []
+  },
+  "SL.2.5": {
+   "ee_code": "EE.SL.2.5",
+   "stem": "Select visual, audio, or other digital media, and/or tactile representations to depict a personal experience.",
+   "subs": []
+  },
+  "L.2.1": {
+   "ee_code": "EE.L.2.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice linguistic diversity."
+    ],
+    [
+     "b",
+     "Notice formal and informal uses of language."
+    ]
+   ]
+  },
+  "L.2.2": {
+   "ee_code": "EE.L.2.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Demonstrate knowledge of new vocabulary drawn from reading and content areas."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Identify the words comprising compound words."
+    ]
+   ]
+  },
+  "L.2.3": {
+   "ee_code": "EE.L.2.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, identify rhyme and repetition (letters, words, or phrases)"
+    ],
+    [
+     "b",
+     "Identify real-life connections between words and their use (e.g., happy: “I am happy.”)."
+    ],
+    [
+     "c",
+     "Demonstrate understanding of the meaning of common verbs."
+    ]
+   ]
+  },
+  "L.2.4": {
+   "ee_code": "EE.L.2.4",
+   "stem": "Use words acquired through conversations, being read to, and during shared reading activities.",
+   "subs": []
+  },
+  "L.2.5": {
+   "ee_code": "EE.L.2.5",
+   "stem": "Demonstrate understanding of letter and word use.",
+   "subs": [
+    [
+     "a",
+     "Produce all upper case letters."
+    ],
+    [
+     "b",
+     "Use common nouns (e.g., mom, dad, boy, girl) in communication."
+    ],
+    [
+     "c",
+     "Use frequently occurring pronouns to refer to self and others (e.g., we, they, him, her, them)."
+    ],
+    [
+     "d",
+     "Use frequently occurring verbs."
+    ],
+    [
+     "e",
+     "Use frequently occurring adjectives."
+    ],
+    [
+     "f",
+     "Combine two or more words together in communication."
+    ]
+   ]
+  },
+  "L.2.6": {
+   "ee_code": "EE.L.2.6",
+   "stem": "Demonstrate emerging understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, capitalize the first letter of familiar names."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Identify printed rhyming words with the same spelling pattern."
+    ],
+    [
+     "e",
+     "Consult print in the environment to support reading and spelling."
+    ]
+   ]
+  },
+  "RF.3.3": {
+   "ee_code": "EE.RF.3.3",
+   "stem": "Use letter-sound knowledge to read words.",
+   "subs": [
+    [
+     "a",
+     "In context, demonstrate basic knowledge of letter-sound correspondences."
+    ],
+    [
+     "b",
+     "With models and supports, decode and encode, in the way the child is able, single syllable words with common spelling patterns (consonant-vowel- consonant [CVC] or high frequency rimes)."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Recognize 40 or more written words."
+    ],
+    [
+     "e",
+     "Not applicable See L.3.6 for additional spelling/encoding/word analysis guidance."
+    ]
+   ]
+  },
+  "RF.3.4": {
+   "ee_code": "EE.RF.3.4",
+   "stem": "Read words in text. Read familiar text comprised of known words.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, use features of print to identify or verbalize appropriate expression while reading familiar texts."
+    ],
+    [
+     "b",
+     "Use context to determine missing words that impede comprehension in familiar texts."
+    ]
+   ]
+  },
+  "R.3.1": {
+   "ee_code": "EE.R.3.1",
+   "stem": "Answer who and what questions to demonstrate understanding of details in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.3.2": {
+   "ee_code": "EE.R.3.2",
+   "stem": "Identify details of a text. (RI&RL)",
+   "subs": []
+  },
+  "R.3.3": {
+   "ee_code": "EE.R.3.3",
+   "stem": "Identify the feelings of characters in a story. (RL) Order two events from a text as “first” and “next. (RI)",
+   "subs": []
+  },
+  "R.3.4": {
+   "ee_code": "EE.R.3.4",
+   "stem": "Determine words and phrases that complete literal sentences in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.3.5": {
+   "ee_code": "EE.R.3.5",
+   "stem": "With guidance and support, determine the beginning, middle, and end of a familiar story with a logical order (RL) and use text features including headings and key words to locate information in a text (RI).",
+   "subs": []
+  },
+  "R.3.6": {
+   "ee_code": "EE.R.3.6",
+   "stem": "Identify personal point of view about a text. (RI&RL)",
+   "subs": []
+  },
+  "R.3.7": {
+   "ee_code": "EE.R.3.7",
+   "stem": "Identify parts of illustrations or tactual information that depict story elements. (RI&RL)",
+   "subs": []
+  },
+  "R.3.8": {
+   "ee_code": "EE.R.3.8",
+   "stem": "Identify two related points the author makes in text. (RI)",
+   "subs": []
+  },
+  "R.3.9": {
+   "ee_code": "EE.R.3.9",
+   "stem": "Identify similarities between two texts and recognize that texts reflect one’s own and others’ culture. (RI&RL)",
+   "subs": []
+  },
+  "W.3.1": {
+   "ee_code": "EE.W.3.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.3.2": {
+   "ee_code": "EE.W.3.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they state an opinion about a topic or text and include at least one reason to support that opinion."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they provide at least 2 facts about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events. Include some details regarding what happened and tell about the events in the order in which they occurred. (cont.)"
+    ]
+   ]
+  },
+  "W.3.3": {
+   "ee_code": "EE.W.3.3",
+   "stem": "With guidance and support, use a combination of drawing, dictating and writing to create a text that uses words familiar to the student, temporal words to signal event order, and a beginning, middle, and end.",
+   "subs": []
+  },
+  "W.3.4": {
+   "ee_code": "EE.W.3.4",
+   "stem": "With guidance and support, produce writing that is appropriate for an explicitly stated task, and expresses more than one idea.",
+   "subs": []
+  },
+  "W.3.5": {
+   "ee_code": "EE.W.3.5",
+   "stem": "With guidance and support from adults and peers, including questions or suggestions, revise their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.3.6": {
+   "ee_code": "EE.W.3.6",
+   "stem": "With guidance and support from adults, use digital tools to produce writing while interacting and collaborating with others. Learn to produce writing through printing.",
+   "subs": []
+  },
+  "W.3.7": {
+   "ee_code": "EE.W.3.7",
+   "stem": "With guidance and support, identify information about a shared or independent inquiry topic.",
+   "subs": []
+  },
+  "W.3.8": {
+   "ee_code": "EE.W.3.8",
+   "stem": "Sort information on a topic or personal experience into two provided categories and write or draw about each one.",
+   "subs": []
+  },
+  "W.3.9": {
+   "ee_code": "EE.W.3.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts and generate reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.3.1": {
+   "ee_code": "EE.SL.3.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Engage in collaborative interactions about texts, pulling from prior experiences."
+    ],
+    [
+     "b",
+     "Listen to others’ ideas before responding."
+    ],
+    [
+     "c",
+     "Indicate confusion or lack of understanding about information presented."
+    ],
+    [
+     "d",
+     "Express ideas clearly."
+    ]
+   ]
+  },
+  "SL.3.2": {
+   "ee_code": "EE.SL.3.2",
+   "stem": "Identify details in a text read aloud or information presented orally or through other media.",
+   "subs": []
+  },
+  "SL.3.3": {
+   "ee_code": "EE.SL.3.3",
+   "stem": "Ask or answer questions about the details provided by the speaker. Presentation of Knowledge & Ideas -",
+   "subs": []
+  },
+  "SL.3.4": {
+   "ee_code": "EE.SL.3.4",
+   "stem": "Recount a personal experience, story, poem, or topic including details.",
+   "subs": []
+  },
+  "SL.3.5": {
+   "ee_code": "EE.SL.3.5",
+   "stem": "Create a multimedia presentation of a story or poem.",
+   "subs": []
+  },
+  "L.3.2": {
+   "ee_code": "EE.L.3.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "With guidance and support, use sentence level context to determine what word is missing from a sentence read aloud."
+    ],
+    [
+     "b",
+     "With guidance and support, identify the temporal meaning of words when common affixes (-ing, - ed) are added to common verbs."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.3.3": {
+   "ee_code": "EE.L.3.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Determine the literal meaning of words and phrases in context."
+    ],
+    [
+     "b",
+     "Identify real-life connections between words and their use (e.g., happy: “I am happy.”)."
+    ],
+    [
+     "c",
+     "Identify words that describe personal emotional states."
+    ]
+   ]
+  },
+  "L.3.4": {
+   "ee_code": "EE.L.3.4",
+   "stem": "Use words acquired through conversations, being read to, and during shared reading activities.",
+   "subs": [
+    [
+     "a",
+     "Demonstrate understanding of words that signal spatial and temporal relationships (e.g., behind, under, after, soon, next, later)."
+    ]
+   ]
+  },
+  "L.3.5": {
+   "ee_code": "EE.L.3.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use regular plural nouns in communication."
+    ],
+    [
+     "b",
+     "Use present and past tense verbs."
+    ],
+    [
+     "c",
+     "Uses noun + verb, noun + adjective, and subject + verb + object combinations in communication."
+    ],
+    [
+     "d",
+     "Not applicable"
+    ],
+    [
+     "e",
+     "Notice easily confused words."
+    ]
+   ]
+  },
+  "L.3.6": {
+   "ee_code": "EE.L.3.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Capitalize the first letter of familiar names."
+    ],
+    [
+     "b",
+     "During shared writing, indicate the need to add a period at the end of a sentence."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Not applicable"
+    ],
+    [
+     "e",
+     "Use resources as needed to spell common high frequency words accurately."
+    ],
+    [
+     "f",
+     "Use spelling patterns in familiar words with common spelling patterns to spell words with the same spelling pattern."
+    ],
+    [
+     "g",
+     "Consult print in the environment to support reading and spelling."
+    ]
+   ]
+  },
+  "RF.4.3": {
+   "ee_code": "EE.RF.4.3",
+   "stem": "Use letter-sound knowledge to read words.",
+   "subs": [
+    [
+     "a",
+     "Use linguistic context and letter-sound knowledge to identify unfamiliar words."
+    ],
+    [
+     "b",
+     "Decode and encode, in the way the child is able, single-syllable words with common spelling patterns (consonant-vowel-consonant [CVC] or high- frequency rimes). See L.4.6 for additional spelling/encoding/word analysis guidance."
+    ]
+   ]
+  },
+  "RF.4.4": {
+   "ee_code": "EE.RF.4.4",
+   "stem": "Read words in text. Read text comprised of familiar words with accuracy and understanding.",
+   "subs": [
+    [
+     "a",
+     "With decreasing support, use features of print to identify or verbalize appropriate expression while reading familiar texts."
+    ],
+    [
+     "b",
+     "Use letter-sound knowledge and context to support word recognition when reading."
+    ]
+   ]
+  },
+  "R.4.1": {
+   "ee_code": "EE.R.4.1",
+   "stem": "Identify explicit details in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.4.2": {
+   "ee_code": "EE.R.4.2",
+   "stem": "Identify the theme or main idea from a text. (RI&RL)",
+   "subs": []
+  },
+  "R.4.3": {
+   "ee_code": "EE.R.4.3",
+   "stem": "Use details from the text to describe characters in the text. (RL) Identify an explicit detail that is related to an individual event, or idea in a text. (RI)",
+   "subs": []
+  },
+  "R.4.4": {
+   "ee_code": "EE.R.4.4",
+   "stem": "Determine the meaning of words in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.4.5": {
+   "ee_code": "EE.R.4.5",
+   "stem": "Identify elements that are characteristic of stories (RL) and informational texts (RI).",
+   "subs": []
+  },
+  "R.4.6": {
+   "ee_code": "EE.R.4.6",
+   "stem": "Identify the narrator of a story (RL); compare own experience to that described within the text. In informational text, compare and contrast a primary and secondary source on the same event or topic. (RI)",
+   "subs": []
+  },
+  "R.4.7": {
+   "ee_code": "EE.R.4.7",
+   "stem": "Make connections between the text representation and a visual, tactual, or oral version of the text. (RI&RL)",
+   "subs": []
+  },
+  "R.4.8": {
+   "ee_code": "EE.R.4.8",
+   "stem": "Identify one or more reasons supporting a specific point in a text. (RI)",
+   "subs": []
+  },
+  "R.4.9": {
+   "ee_code": "EE.R.4.9",
+   "stem": "Identify similarities between two texts and recognize that texts reflect one’s own and others’ culture. (RI&RL)",
+   "subs": []
+  },
+  "W.4.1": {
+   "ee_code": "EE.W.4.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.4.2": {
+   "ee_code": "EE.W.4.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they state an opinion about a topic or text and include some reasons to support that opinion."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they introduce a topic and provide some facts, details, and/or multimedia content about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events. Include some details regarding what happened and tell about the events in the order in which they occurred. (cont.)"
+    ]
+   ]
+  },
+  "W.4.3": {
+   "ee_code": "EE.W.4.3",
+   "stem": "With guidance and support, use a combination of drawing, dictating and writing to create a text that uses familiar words, transitions to link and build connections, temporal words to signal event order, and a beginning, middle, and end.",
+   "subs": []
+  },
+  "W.4.4": {
+   "ee_code": "EE.W.4.4",
+   "stem": "With guidance and support, produce writing that is appropriate for an explicitly stated task or purpose, and expresses more than one idea.",
+   "subs": []
+  },
+  "W.4.5": {
+   "ee_code": "EE.W.4.5",
+   "stem": "With guidance and support from adults and peers, plan before writing and produce writing focused on the planned topic, and revise their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.4.6": {
+   "ee_code": "EE.W.4.6",
+   "stem": "With guidance and support from adults, use digital tools, including the Internet, to produce writing while interacting and collaborating with others. Learn to produce writing through printing and/or typing.",
+   "subs": []
+  },
+  "W.4.7": {
+   "ee_code": "EE.W.4.7",
+   "stem": "With guidance and support, identify information about two or more aspects of a shared or independent inquiry topic.",
+   "subs": []
+  },
+  "W.4.8": {
+   "ee_code": "EE.W.4.8",
+   "stem": "Recall and sort information from personal experiences or a topic into given categories and write or draw about each one.",
+   "subs": []
+  },
+  "W.4.9": {
+   "ee_code": "EE.W.4.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts to support reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.4.1": {
+   "ee_code": "EE.SL.4.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Contribute ideas from prior experiences with a text during discussions about the same text."
+    ],
+    [
+     "b",
+     "Listen to others’ ideas before responding and gain attention respectfully."
+    ],
+    [
+     "c",
+     "Answer specific questions related to information in a discussion."
+    ],
+    [
+     "d",
+     "Identify the key ideas in a discussion."
+    ]
+   ]
+  },
+  "SL.4.2": {
+   "ee_code": "EE.SL.4.2",
+   "stem": "Ask and answer questions about details from a text read aloud or information presented orally or through other media.",
+   "subs": []
+  },
+  "SL.4.3": {
+   "ee_code": "EE.SL.4.3",
+   "stem": "Identify a point that the speaker makes. Presentation of Knowledge & Ideas -",
+   "subs": []
+  },
+  "SL.4.4": {
+   "ee_code": "EE.SL.4.4",
+   "stem": "Clearly retell a story, poem, or personal experience or recount a topic with supporting details.",
+   "subs": []
+  },
+  "SL.4.5": {
+   "ee_code": "EE.SL.4.5",
+   "stem": "Add audio recordings or visuals to a presentation about a personally relevant topic.",
+   "subs": []
+  },
+  "L.4.2": {
+   "ee_code": "EE.L.4.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context as a clue to guide selection of a word that completes a sentence read aloud by an adult."
+    ],
+    [
+     "b",
+     "Use frequently occurring root words (e.g., talk) and the words that result when word endings are added (e.g., talked, talking, talks)."
+    ]
+   ]
+  },
+  "L.4.3": {
+   "ee_code": "EE.L.4.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Determine the literal meaning of words and phrases in context."
+    ],
+    [
+     "b",
+     "Use common idioms (e.g., no way, not a chance, you bet, it’s a deal, we’re cool)."
+    ],
+    [
+     "c",
+     "Demonstrate understanding of opposites."
+    ],
+    [
+     "d",
+     "Identify words that describe personal emotional states."
+    ]
+   ]
+  },
+  "L.4.4": {
+   "ee_code": "EE.L.4.4",
+   "stem": "Use words acquired through conversations, being read to, and during shared reading activities",
+   "subs": [
+    [
+     "a",
+     "Identify key domain-specific vocabulary"
+    ]
+   ]
+  },
+  "L.4.5": {
+   "ee_code": "EE.L.4.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use possessive pronouns."
+    ],
+    [
+     "b",
+     "Combine common nouns with verbs, nouns, or pronouns in communication."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Use comparative and superlative adjectives to describe people or objects."
+    ],
+    [
+     "e",
+     "Use common prepositions (e.g., to, from, in, out, on, off, by, with)."
+    ],
+    [
+     "f",
+     "Combine three or more words in communication."
+    ]
+   ]
+  },
+  "L.4.6": {
+   "ee_code": "EE.L.4.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Capitalize the first word in a sentence."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Spell words phonetically, drawing on knowledge of letter- sound relationships, and/or common spelling patterns."
+    ]
+   ]
+  },
+  "RF.5.3": {
+   "ee_code": "EE.RF.5.3",
+   "stem": "Use letter-sound knowledge to read words.",
+   "subs": [
+    [
+     "a",
+     "Decode and encode common sight words and single syllable words. See L.5.6 for additional spelling/encoding/word analysis guidance."
+    ]
+   ]
+  },
+  "RF.5.4": {
+   "ee_code": "EE.RF.5.4",
+   "stem": "Read words in text. Read text comprised of familiar words with accuracy and understanding.",
+   "subs": [
+    [
+     "a",
+     "Use features of print to identify or verbalize appropriate expression while reading familiar texts."
+    ],
+    [
+     "b",
+     "Use letter-sound knowledge and context to confirm or self-correct word recognition when reading."
+    ]
+   ]
+  },
+  "R.5.1": {
+   "ee_code": "EE.R.5.1",
+   "stem": "Identify explicit details in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.5.2": {
+   "ee_code": "EE.R.5.2",
+   "stem": "Identify the theme or main idea from a text when it is not explicitly stated. (RI&RL)",
+   "subs": []
+  },
+  "R.5.3": {
+   "ee_code": "EE.R.5.3",
+   "stem": "Compare two characters in a familiar story. (RL) Compare two individuals, events or ideas in a text. (RI)",
+   "subs": []
+  },
+  "R.5.4": {
+   "ee_code": "EE.R.5.4",
+   "stem": "Determine the intended meaning of multimeaning and domain-specific words and phrases. (RI&RL)",
+   "subs": []
+  },
+  "R.5.5": {
+   "ee_code": "EE.R.5.5",
+   "stem": "With guidance and support, identify a story element that undergoes change from beginning to end (RL) and determine if a text tells about events, gives directions, or provides information on a topic (RI).",
+   "subs": []
+  },
+  "R.5.6": {
+   "ee_code": "EE.R.5.6",
+   "stem": "With guidance and support, determine the point of view of a narrator (RL); compare two texts on the same topic (RI).",
+   "subs": []
+  },
+  "R.5.7": {
+   "ee_code": "EE.R.5.7",
+   "stem": "Identify illustrations, tactual or multimedia elements that add to understanding of a text. (RI&RL)",
+   "subs": []
+  },
+  "R.5.8": {
+   "ee_code": "EE.R.5.8",
+   "stem": "Identify the relationship between a specific point and supporting reasons in a text. (RI)",
+   "subs": []
+  },
+  "R.5.9": {
+   "ee_code": "EE.R.5.9",
+   "stem": "Compare and contrast details gained from two texts and make connections to other texts, ideas, cultural perspectives, identities, eras, personal events, or situations. (RI&RL)",
+   "subs": []
+  },
+  "W.5.1": {
+   "ee_code": "EE.W.5.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.5.2": {
+   "ee_code": "EE.W.5.2",
+   "stem": "With guidance and support, use writing, dictation and/or drawing to compose:",
+   "subs": [
+    [
+     "a",
+     "Opinion pieces in which they clearly state an opinion about a topic or text and include some reasons to support that opinion."
+    ],
+    [
+     "b",
+     "Informative/Explanatory text in which they introduce a topic and provide some facts, details, and/or multimedia content about a predetermined or self chosen topic."
+    ],
+    [
+     "c",
+     "Convey events, real or imagined and narrate a single event or several loosely linked events. Include some details regarding what happened and tell about the events in the order in which they occurred. (cont.)"
+    ]
+   ]
+  },
+  "W.5.3": {
+   "ee_code": "EE.W.5.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion. uses familiar words, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.5.4": {
+   "ee_code": "EE.W.5.4",
+   "stem": "Produce writing that is appropriate for an explicitly stated task or purpose, and expresses more than one idea.",
+   "subs": []
+  },
+  "W.5.5": {
+   "ee_code": "EE.W.5.5",
+   "stem": "With guidance and support from adults and peers, plan before writing and produce writing focused on the planned topic, and revise their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.5.6": {
+   "ee_code": "EE.W.5.6",
+   "stem": "With guidance and support from adults, use digital tools, including the Internet, to produce writing while interacting and collaborating with others. Learn to produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.5.7": {
+   "ee_code": "EE.W.5.7",
+   "stem": "With guidance and support, identify information about two or more aspects of a shared or independent inquiry topic.",
+   "subs": []
+  },
+  "W.5.8": {
+   "ee_code": "EE.W.5.8",
+   "stem": "Recall relevant information from experiences or gather relevant information from print or digital sources, sort information into given categories, and write or draw about each one.",
+   "subs": []
+  },
+  "W.5.9": {
+   "ee_code": "EE.W.5.9",
+   "stem": "With guidance and support from adults, recall key details from literary or informational texts to support reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.5.1": {
+   "ee_code": "EE.SL.5.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Come to discussion prepared to share information from a source such as a text or personal knowledge."
+    ],
+    [
+     "b",
+     "Listen to others’ ideas before responding, gain attention respectfully, and contribute to the discussion."
+    ],
+    [
+     "c",
+     "Ask questions related to information in a discussion."
+    ],
+    [
+     "d",
+     "Make comments that contribute to the discussion and link to the remarks of others."
+    ]
+   ]
+  },
+  "SL.5.2": {
+   "ee_code": "EE.SL.5.2",
+   "stem": "Identify the explicitly stated main idea of a text presented orally or through other media.",
+   "subs": []
+  },
+  "SL.5.3": {
+   "ee_code": "EE.SL.5.3",
+   "stem": "Identify the reasons and evidence supporting a specific point that the speaker makes. Presentation of Knowledge & Ideas -",
+   "subs": []
+  },
+  "SL.5.4": {
+   "ee_code": "EE.SL.5.4",
+   "stem": "Clearly report on a familiar topic or text or present an opinion including related facts.",
+   "subs": []
+  },
+  "SL.5.5": {
+   "ee_code": "EE.SL.5.5",
+   "stem": "Select or create audio recordings and visual/tactile displays to enhance a presentation.",
+   "subs": []
+  },
+  "L.5.1": {
+   "ee_code": "EE.L.5.1",
+   "stem": "Use language to achieve desired meaning when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many."
+    ],
+    [
+     "b",
+     "Notice the differences in language between familiar and unfamiliar contexts."
+    ],
+    [
+     "c",
+     "Notice the varieties of English (e.g., dialects, registers) used in stories, dramas, or poems."
+    ],
+    [
+     "d",
+     "Expand sentences for meaning, interest, and style."
+    ]
+   ]
+  },
+  "L.5.2": {
+   "ee_code": "EE.L.5.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use frequently occurring root words (e.g., talk) and the words that result when word endings are added (e.g., talked, talking, talks)."
+    ]
+   ]
+  },
+  "L.5.3": {
+   "ee_code": "EE.L.5.3",
+   "stem": "Demonstrate understanding of word relationship and use.",
+   "subs": [
+    [
+     "a",
+     "Determine the literal meaning of words and phrases in context."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Demonstrate understanding of words that have similar meanings"
+    ],
+    [
+     "d",
+     "Identify words that describe an increasing number of personal emotional states."
+    ]
+   ]
+  },
+  "L.5.6": {
+   "ee_code": "EE.L.5.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Not applicable"
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Spell untaught word phonetically, drawing on letter-sound relationships and common spelling patterns."
+    ]
+   ]
+  },
+  "L.5.5": {
+   "ee_code": "EE.L.5.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use frequently occurring conjunctions: and, but, or, for, because."
+    ],
+    [
+     "b",
+     "Form and use the past tense of frequently occurring irregular verbs (e.g., went, sat, ate, told)."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Not applicable"
+    ]
+   ]
+  }
+ },
+ "fixes": {
+  "EE.W.3.7": "EE..W.3.7 With",
+  "EE.W.4.3": "E.W.4.3 With g",
+  "EE.W.5.6": "EE.W.5.6With g"
+ }
+}

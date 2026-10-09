@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awsaj Vertical Alignment</title>
+<meta name="description" content="Awsaj Academy K-12 standards coverage: a collaborative audit of what each grade teaches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">A</div>
+    <div>
+      <div class="school">Awsaj Academy</div>
+      <h1>K-12 Vertical Alignment</h1>
+    </div>
+  </div>
+  <div class="team-pick">
+    <label for="team">Your team</label>
+    <select id="team"><option value="">Choose your team</option></select>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button role="tab" data-view="rate" aria-selected="true">Rate</button>
+  <button role="tab" data-view="heatmap">Heatmap</button>
+  <button role="tab" data-view="gaps">Gaps &amp; repetition</button>
+  <button role="tab" data-view="dashboard">Grade dashboard</button>
+  <button role="tab" data-view="ladder">Progressions</button>
+  <button role="tab" data-view="activity">Activity</button>
+  <span class="sync" id="sync" aria-live="polite"></span>
+</nav>
+
+<section class="filters" id="filters">
+  <label>Subject <select id="f-subject"></select></label>
+  <label>Framework <select id="f-framework"></select></label>
+  <label>Show <select id="f-division">
+    <option value="all">K-12</option><option value="Elementary">Elementary (K-5)</option>
+    <option value="Middle">Middle (6-8)</option><option value="High">High (9-12)</option></select></label>
+  <label class="grade-only">Grade <select id="f-grade"></select></label>
+  <label>Strand <select id="f-strand"><option value="">All strands</option></select></label>
+  <label class="grow">Search <input id="f-search" type="search" placeholder="Code or words, e.g. fractions"></label>
+  <div class="exports">
+    <button class="ghost" id="x-csv" title="Download the current view as a spreadsheet">CSV</button>
+    <button class="ghost" id="x-png" title="Download the heatmap or chart as an image">PNG</button>
+    <button class="ghost" id="x-pdf" title="Print or save this view as a PDF report">PDF</button>
+  </div>
+</section>
+
+<main id="main">
+  <section class="view" id="view-rate"></section>
+  <section class="view" id="view-heatmap" hidden></section>
+  <section class="view" id="view-gaps" hidden></section>
+  <section class="view" id="view-dashboard" hidden></section>
+  <section class="view" id="view-ladder" hidden></section>
+  <section class="view" id="view-activity" hidden></section>
+</main>
+
+<div class="legend-bar" id="legend">
+  <span class="key"><i class="lv lv-none"></i>Not rated</span>
+  <span class="key"><i class="lv lv-0"></i>Not taught</span>
+  <span class="key"><i class="lv lv-1"></i>Introduced / exposed</span>
+  <span class="key"><i class="lv lv-2"></i>Taught in depth</span>
+  <span class="key"><i class="lv lv-none placed"></i>Suggested grade for the standard</span>
+</div>
+
+<dialog id="detail" aria-labelledby="d-title">
+  <div class="dlg-head">
+    <div><div class="eyebrow" id="d-eyebrow"></div><h2 id="d-title"></h2></div>
+    <button class="icon" id="d-close" aria-label="Close">&times;</button>
+  </div>
+  <div class="dlg-body" id="d-body"></div>
+</dialog>
+
+<dialog id="admin" aria-labelledby="a-title">
+  <div class="dlg-head"><h2 id="a-title">Admin passcode</h2><button class="icon" data-close aria-label="Close">&times;</button></div>
+  <div class="dlg-body">
+    <p class="muted">Undoing a change or hiding a comment needs the committee passcode.</p>
+    <input id="a-pass" type="password" autocomplete="off" placeholder="Passcode">
+    <div class="row-end"><button id="a-go">Confirm</button></div>
+  </div>
+</dialog>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<footer class="foot">
+  Standards: Wisconsin Standards and Essential Elements (DPI), NGSS, AERO, and Awsaj school sheets.
+  "I can" statements marked <em>draft</em> await committee review. No student data is stored.
+</footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

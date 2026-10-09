@@ -1,0 +1,408 @@
+[
+ {
+  "code": "M.6.RP.A.2",
+  "course": "Grade 6 Math",
+  "cc_text": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship. For example, \"This recipe has a ratio of 3 cups of flour to 4 cups of sugar, so there is 3/4 cup of flour for each cup of sugar.\" \"We paid $75 for 15 hamburgers, which is a rate of $5 per hamburger.\" Expectations for unit rates in this grade are limited to non-complex fractions.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.7.RP.1."
+ },
+ {
+  "code": "M.6.NS.B.3",
+  "course": "Grade 6 Math",
+  "cc_text": "Flexibly and efficiently add, subtract, multiply, and divide multi-digit decimals using strategies or algorithms based on place value, visual models, the relationship between operations, and the properties of operations.",
+  "ee_code": "M.EE.6.NS.3",
+  "ee_text": "Use the meaning of multiplication and the properties of operations (e.g., the distributive property) to develop and understand strategies to find products with multiples of 3, 4, and 9 within 100."
+ },
+ {
+  "code": "M.6.NS.C.7",
+  "course": "Grade 6 Math",
+  "cc_text": "Understand ordering and absolute value of rational numbers. a. Interpret statements of inequality as statements about the relative position of two numbers on a number line. For example, interpret -3 > -7 as a statement that -3 is located to the right of -7 on a number line oriented from left to right. b. Write, interpret, and explain statements of order for rational numbers in real-world contexts. For example, write -3 ℃ > -7 ℃ to express the fact that -3℃ is warmer than -7 ℃. c. Understand the absolute value of a rational number as its distance from 0 on the number line; interpret absolute value as magnitude for a positive or negative quantity in a real-world situation. For example, for an account balance of -30 dollars, write |-30| = 30 to describe the size of the debt in dollars. d. Distinguish comparisons of absolute value from statements about order. For example, recognize that an account balance less than -30 dollars represents a debt greater than 30 dollars.",
+  "ee_code": "M.EE.6.NS.7",
+  "ee_text": "Describe quantities having opposite directions or values as positive and negative numbers (e.g., temperature above/below zero)."
+ },
+ {
+  "code": "M.6.EE.A.3",
+  "course": "Grade 6 Math",
+  "cc_text": "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.",
+  "ee_code": "M.EE.6.EE.3",
+  "ee_text": "Apply the properties of addition to identify equivalent numerical expressions."
+ },
+ {
+  "code": "M.6.EE.B.7",
+  "course": "Grade 6 Math",
+  "cc_text": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q, and x are all nonnegative rational numbers.",
+  "ee_code": "M.EE.6.EE.7",
+  "ee_text": "Match an equation to a real-world problem in which variables are used to represent numbers."
+ },
+ {
+  "code": "M.6.G.A.2",
+  "course": "Grade 6 Math",
+  "cc_text": "Find volumes of right rectangular prisms with fractional edge lengths by using physical or virtual unit cubes. Develop (construct) and apply the formulas V = l w h and V = B h to find volumes of right rectangular prisms in the context of solving real-world and mathematical problems.",
+  "ee_code": "M.EE.6.G.2",
+  "ee_text": "Solve real-world and mathematical problems about volume using unit cubes."
+ },
+ {
+  "code": "M.6.SP.A.2",
+  "course": "Grade 6 Math",
+  "cc_text": "Understand that a set of data collected to answer a statistical question has a distribution which can be described by its center, spread, and overall shape.",
+  "ee_code": "M.EE.6.SP.2",
+  "ee_text": "Display data on a graph or table that shows variability in the data."
+ },
+ {
+  "code": "M.7.RP.A.1",
+  "course": "Grade 7 Math",
+  "cc_text": "Compute unit rates associated with ratios of fractions, including ratios of lengths, areas, and other quantities measured in like or different units. For example, if a person walks 1/2 mile in each 1/4 hour, compute the unit rate as the complex fraction ½ / ¼ miles per hour, equivalently 2 miles per hour.",
+  "ee_code": "M.EE.7.RP.1",
+  "ee_text": "Use a ratio to model or describe a relationship."
+ },
+ {
+  "code": "M.7.NS.A.2",
+  "course": "Grade 7 Math",
+  "cc_text": "Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers. a. Understand that multiplication is extended from fractions to rational numbers by requiring that operations continue to satisfy the properties of operations, particularly the distributive property, leading to products such as (-1)(-1) = 1 and the rules for multiplying signed numbers. Interpret products of rational numbers by describing real-world contexts. b. Understand that integers can be divided, provided that the divisor is not zero, and every quotient of integers (with non-zero divisor) is a rational number. If p and q are integers, then -(p/q) = (-p)/q = p/(-q). Interpret quotients of rational numbers by describing real-world contexts. c. Apply properties of operations as strategies to multiply and divide rational numbers. d. Convert a rational number to a decimal using long division; know that the decimal form of a rational number terminates in 0s or eventually repeats.",
+  "ee_code": "M.EE.7.NS.2",
+  "ee_text": "Apply and extend previous understandings of multiplication, division, and fractions. a. Multiply within 100 using strategies such as the properties of operations [e.g., knowing that 7 x 6 can be thought of as 7 groups of 6 so one could think 5 groups of 6 is 30 and 2 more groups of 6 is 12 and 30 + 12 = 42 (informal use of the distributive property)]. b. Solve division problems within 100, including divisors of 1-5 and 10, without remainders. c-d. Express a fraction with a denominator of 10 as a decimal."
+ },
+ {
+  "code": "M.7.EE.B.3",
+  "course": "Grade 7 Math",
+  "cc_text": "Solve multi-step real-life and mathematical problems posed with positive and negative rational numbers in any form (whole numbers, fractions, and decimals), using tools strategically. Apply properties of operations to calculate with numbers in any form; convert between forms as appropriate; and assess the reasonableness of answers using mental computation and estimation strategies. For example: If a woman making $25 an hour gets a 10% raise, she will make an additional 1/10 of her salary an hour, or $2.50, for a new salary of $27.50.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.7.G.A.3",
+  "course": "Grade 7 Math",
+  "cc_text": "Describe the two-dimensional figures that result from slicing three dimensional figures parallel to the base, as in plane sections of right rectangular prisms and right rectangular pyramids.",
+  "ee_code": "M.EE.7.G.3",
+  "ee_text": "Match a two-dimensional shape with a three-dimensional shape that shares an attribute."
+ },
+ {
+  "code": "M.7.SP.A.1",
+  "course": "Grade 7 Math",
+  "cc_text": "Understand that statistics can be used to gain information about a population by examining a sample of the population; generalizations about a population from a sample are valid only if the sample is representative of that population. Understand that random sampling tends to produce representative samples and support valid inferences.",
+  "ee_code": "M.EE.7.SP.1",
+  "ee_text": "Answer a data related question, given a model of the data from a student experiment or collection."
+ },
+ {
+  "code": "M.7.SP.C.5",
+  "course": "Grade 7 Math",
+  "cc_text": "Understand that the probability of a chance event is a number between 0 and 1 that expresses the likelihood of the event occurring. Larger numbers indicate greater likelihood. A probability near 0 indicates an unlikely event, a probability around 1/2 indicates an event that is neither unlikely nor likely, and a probability near 1 indicates a likely event.",
+  "ee_code": "M.EE.7.SP.5",
+  "ee_text": "Describe the probability of events occurring as possible or impossible."
+ },
+ {
+  "code": "M.8.NS.A.1",
+  "course": "Grade 8 Math",
+  "cc_text": "Know that numbers that are not rational are called irrational. Understand informally that every number has a decimal expansion; for rational numbers show that the decimal expansion repeats eventually and use patterns to rewrite a decimal expansion that repeats into a rational number.",
+  "ee_code": "M.EE.8.NS.1",
+  "ee_text": "Subtract fractions with like denominators, including halves, thirds, fourths, and tenths with minuends less than or equal to one."
+ },
+ {
+  "code": "M.8.EE.A.3",
+  "course": "Grade 8 Math",
+  "cc_text": "Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities and to express how many times as much one is than the other. For example, estimate the population of the United States as 3 x 10 8 and the population of the world as 7 x 109 and determine that the world population is more than 20 times larger.",
+  "ee_code": "M.EE.8.EE.3",
+  "ee_text": "Compose and decompose whole numbers up to 999."
+ },
+ {
+  "code": "M.8.EE.C.7",
+  "course": "Grade 8 Math",
+  "cc_text": "Solve linear equations in one variable. a. Give examples of linear equations in one variable with one solution, infinitely many solutions, or no solutions. Show which of these possibilities is the case by successively transforming the given equation into equivalent forms. b. Solve linear equations with rational number coefficients, including equations whose solutions require expanding expressions using the distributive property and collecting like terms.",
+  "ee_code": "M.EE.8.EE.7",
+  "ee_text": "Solve simple algebraic equations with one variable using addition and subtraction."
+ },
+ {
+  "code": "M.8.F.A.3",
+  "course": "Grade 8 Math",
+  "cc_text": "Interpret the equation y = mx + b as defining a linear function, whose graph is a straight line; give examples of functions that are not linear. For example, the function A = s2 giving the area of a square as a function of its side length is not linear because its graph contains the points (1,1), (2,4), and (3,9), which are not on a straight line.",
+  "ee_code": "M.EE.8.F.3",
+  "ee_text": "Given a table of data for a linear function containing at least 2 complete ordered pairs, identify a missing number that completes another ordered pair."
+ },
+ {
+  "code": "M.8.G.A.2",
+  "course": "Grade 8 Math",
+  "cc_text": "Understand that a two-dimensional figure is congruent to another if the second can be obtained from the first by a sequence of rotations, reflections, and translations; given two congruent figures, describe a sequence that exhibits the congruence between them.",
+  "ee_code": "M.EE.8.G.2",
+  "ee_text": "Identify shapes that are congruent."
+ },
+ {
+  "code": "M.8.G.B.6",
+  "course": "Grade 8 Math",
+  "cc_text": "Justify the relationship between the lengths of the legs and the length of the hypotenuse of a right triangle and the converse of the Pythagorean Theorem.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.8.SP.A.1",
+  "course": "Grade 8 Math",
+  "cc_text": "Construct and interpret scatter plots for bivariate measurement data to investigate patterns of association between two quantities. Describe patterns such as clustering, outliers, positive or negative association, linear association, and nonlinear association.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.N.RN.A.1",
+  "course": "Algebra 1",
+  "cc_text": "Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents.",
+  "ee_code": "M.EE.N.RN.1",
+  "ee_text": "Determine the value of a quantity that is expressed with an exponent."
+ },
+ {
+  "code": "M.N.Q.A.2",
+  "course": "Algebra 1",
+  "cc_text": "Define appropriate quantities for the purpose of descriptive modeling.",
+  "ee_code": "M.EE.N.Q.2",
+  "ee_text": "Express quantities as a precise measurement based on the context."
+ },
+ {
+  "code": "M.N.CN.A.3",
+  "course": "Pre-Calculus",
+  "cc_text": "Find the conjugate of a complex number; use conjugates to find moduli (absolute values) and quotients of complex numbers.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.N.CN.C.7",
+  "course": "Algebra 2",
+  "cc_text": "Solve quadratic equations with real coefficients that have complex solutions. Recognize when the quadratic formula gives complex solutions and write them as a ± bi for real numbers a and b.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.N.VM.A.2",
+  "course": "Pre-Calculus",
+  "cc_text": "Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.N.VM.C.6",
+  "course": "Pre-Calculus",
+  "cc_text": "Use matrices to represent and manipulate data, e.g., to represent payoffs or incidence relationships in a network.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.N.VM.C.10",
+  "course": "Pre-Calculus",
+  "cc_text": "Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.A.SSE.A.2",
+  "course": "Algebra 1",
+  "cc_text": "Use the structure of an expression to identify ways to rewrite it. For example, see x4-y4 as (x2)2-(y2)2, thus recognizing it as a difference of squares that can be factored as (x 2-y2)(x2+y2).",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.A.APR.B.2",
+  "course": "Algebra 2",
+  "cc_text": "Know and apply the Remainder Theorem: For a polynomial p(x) and a number a, the remainder on division by x – a is p(a), so p(a) = 0 if and only if (x – a) is a factor of p(x).",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.A.APR.D.6",
+  "course": "Algebra 2",
+  "cc_text": "Rewrite simple rational expressions in different forms; write a(x)/b(x) in the form q(x) + r(x)/b(x), where a(x), b(x), q(x), and r(x) are polynomials with the degree of r(x) less than the degree of b(x), using inspection, long division, or, for the more complicated examples, a computer algebra system.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.A.CED.A.3",
+  "course": "Algebra 1",
+  "cc_text": "Represent constraints by equations or inequalities and by systems of equations and/or inequalities, and interpret solutions as viable or nonviable options in a modeling context. For example, represent inequalities describing nutritional and cost constraints on combinations of different foods.",
+  "ee_code": "M.EE.A.CED.3",
+  "ee_text": "Solve one-step inequalities."
+ },
+ {
+  "code": "M.A.REI.B.3",
+  "course": "Algebra 1",
+  "cc_text": "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.CED.1."
+ },
+ {
+  "code": "M.A.REI.C.7",
+  "course": "Algebra 1",
+  "cc_text": "Solve a simple system consisting of a linear equation and a quadratic equation in two variables algebraically and graphically. For example, find the points of intersection between the line y = –3x and the circle x2 + y2 = 3.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.A.REI.10."
+ },
+ {
+  "code": "M.A.REI.D.11",
+  "course": "Algebra 1",
+  "cc_text": "Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x); find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations.",
+  "ee_code": "M.EE.A.REI.11",
+  "ee_text": "Interpret the meaning of a point on the graph of a line. For example, on a graph of pizza purchases, trace the graph to a point and tell the number of pizzas purchased and the total cost of the pizzas."
+ },
+ {
+  "code": "M.F.IF.A.3",
+  "course": "Algebra 1",
+  "cc_text": "Recognize that sequences are functions, sometimes defined recursively, whose domain is a subset of the integers. For example, in an arithmetic sequence, f(x) = f(x-1) + C or in a geometric sequence, f(x) = f(x-1) * C, where C is a constant.",
+  "ee_code": "M.EE.F.IF.3",
+  "ee_text": "Use the concept of function to solve problems."
+ },
+ {
+  "code": "M.F.IF.C.7",
+  "course": "Algebra 1",
+  "cc_text": "Graph functions expressed symbolically and show key features of the graph using an efficient method. a. Graph linear and quadratic functions and show intercepts, maxima, and minima, and exponential functions, showing intercepts and end behavior. b. Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions. c. Graph polynomial functions, identifying zeros when suitable factorizations are available and showing end behavior. d. Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available and showing end behavior. e. Graph logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.1."
+ },
+ {
+  "code": "M.F.BF.A.2",
+  "course": "Algebra 1",
+  "cc_text": "Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms.",
+  "ee_code": "M.EE.F.BF.2",
+  "ee_text": "Determine an arithmetic sequence with whole numbers when provided a recursive rule."
+ },
+ {
+  "code": "M.F.LE.A.1",
+  "course": "Algebra 1",
+  "cc_text": "Distinguish between situations that can be modeled with linear functions and with exponential functions. a. Prove that linear functions grow by equal differences over equal intervals and that exponential functions grow by equal factors over equal intervals. b. Recognize situations in which one quantity changes at a constant rate per unit interval relative to another. c. Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.",
+  "ee_code": "M.EE.F.LE.1",
+  "ee_text": "Model a simple linear function such as y=mx to show that these functions increase by equal amounts over equal intervals."
+ },
+ {
+  "code": "M.F.LE.B.5",
+  "course": "Algebra 1",
+  "cc_text": "Interpret the parameters in a linear or exponential function in terms of a context.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.F.IF.1."
+ },
+ {
+  "code": "M.F.TF.A.4",
+  "course": "Pre-Calculus",
+  "cc_text": "Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.F.TF.C.8",
+  "course": "Algebra 2",
+  "cc_text": "Prove the Pythagorean identity sin2(θ) + cos2(θ) = 1 and use it to find sin(θ), cos(θ), or tan(θ) given sin(θ), cos(θ), or tan(θ) and the quadrant of the angle.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.CO.A.3",
+  "course": "Geometry",
+  "cc_text": "Given a rectangle, parallelogram, trapezoid, or regular polygon, describe the rotations and reflections that carry it onto itself.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.CO.B.7",
+  "course": "Geometry",
+  "cc_text": "Use the definition of congruence in terms of rigid motions to show that two triangles are congruent if and only if corresponding pairs of sides and corresponding pairs of angles are congruent.",
+  "ee_code": "M.EE.G.CO.7",
+  "ee_text": "Identify corresponding congruent and similar parts of shapes."
+ },
+ {
+  "code": "M.G.CO.C.11",
+  "course": "Geometry",
+  "cc_text": "Prove theorems about parallelograms. Theorems should include: Opposite sides are congruent, opposite angles are congruent, the diagonals of a parallelogram bisect each other, and conversely; rectangles are parallelograms with congruent diagonals.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.SRT.A.2",
+  "course": "Geometry",
+  "cc_text": "Given two figures, use the definition of similarity in terms of similarity transformations to decide if they are similar; explain using similarity transformations the meaning of similarity for triangles as the equality of all corresponding pairs of angles and the proportionality of all corresponding pairs of sides.",
+  "ee_code": "M.EE.G.CO.6",
+  "ee_text": ". Not applicable. See M.EE.G.CO.6 ."
+ },
+ {
+  "code": "M.G.SRT.C.6",
+  "course": "Geometry",
+  "cc_text": "Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.SRT.D.10",
+  "course": "Geometry",
+  "cc_text": "Prove the Laws of Sines and Cosines and use them to solve problems.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.GPE.A.1",
+  "course": "Geometry",
+  "cc_text": "Derive the equation of a circle of given center and radius using the Pythagorean Theorem; complete the square to find the center and radius of a circle given by an equation.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.G.GPE.B.5",
+  "course": "Geometry",
+  "cc_text": "Prove the slope criteria for parallel and perpendicular lines and use them to solve geometric problems (e.g., find the equation of a line parallel or perpendicular to a given line that passes through a given point).",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.G.CO.1."
+ },
+ {
+  "code": "M.G.GMD.A.2",
+  "course": "Geometry",
+  "cc_text": "Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems.",
+  "ee_code": "M.EE.G.GMD.2",
+  "ee_text": "Estimate the volumes of containers, the areas of figures, and the perimeters of figures. Check the estimates using formulas or models.,"
+ },
+ {
+  "code": "M.G.GMD.C.6",
+  "course": "Geometry",
+  "cc_text": "Apply geometric methods to solve design problems (e.g., designing an object or structure to satisfy physical constraints or minimize cost; working with typographic grid systems based on ratios).",
+  "ee_code": "M.EE.G.GMD.6",
+  "ee_text": "Use properties of geometric shapes to describe real life objects."
+ },
+ {
+  "code": "M.SP.ID.A.4",
+  "course": "Algebra 1",
+  "cc_text": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use statistical packages calculators, spreadsheets, and tables to estimate areas under the normal curve.",
+  "ee_code": "M.EE.SP.ID.4",
+  "ee_text": "Calculate the mean of a given data set."
+ },
+ {
+  "code": "M.SP.ID.C.8",
+  "course": "Algebra 1",
+  "cc_text": "Use technology to create a correlation coefficient for a linear fit and then interpret its meaning for the model.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.SP.IC.B.3",
+  "course": "Algebra 2",
+  "cc_text": "Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each.",
+  "ee_code": "",
+  "ee_text": "Not applicable. See M.EE.SP.ID.1."
+ },
+ {
+  "code": "M.SP.CP.A.1",
+  "course": "Geometry",
+  "cc_text": "Describe events as subsets of a sample space (the set of outcomes) using characteristics (or categories) of the outcomes, or as unions, intersections, or complements of other events (\"or,\" \"and,\" \"not\").",
+  "ee_code": "M.EE.S.CP.1",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "code": "M.SP.CP.A.5",
+  "course": "Geometry",
+  "cc_text": "Recognize and explain the concepts of conditional probability and independence in everyday language and everyday situations. For example, compare the chance of having lung cancer if you are a smoker with the chance of being a smoker if you have lung cancer.",
+  "ee_code": "M.EE.S.CP.5",
+  "ee_text": "Identify when events are independent or dependent."
+ },
+ {
+  "code": "M.SP.CP.B.9",
+  "course": "Geometry",
+  "cc_text": "Use permutations and combinations to compute probabilities of compound events and solve problems.",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ },
+ {
+  "code": "M.SP.MD.A.4",
+  "course": "Algebra 2",
+  "cc_text": "Develop a probability distribution for a random variable defined for a sample space in which probabilities are assigned empirically; find the expected value. For example, find a current data distribution on the number of TV sets per household in the United States, and calculate the expected number of sets per household. How many TV sets would you expect to find in 100 randomly selected households?",
+  "ee_code": "",
+  "ee_text": "Not applicable."
+ }
+]

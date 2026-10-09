@@ -1,0 +1,442 @@
+{
+ "RF.K.2.c|K": {
+  "why": "EE descriptor describes matching onsets (EE.RF.K.2.d), not identifying syllables.",
+  "suggested": [
+   "I can blend and break apart onsets and rimes in new words and make new rhyming words by changing the onset.",
+   "I can blend and segment the onset and rime of single-syllable spoken words (c-at, cat).",
+   "I can blend an onset and rime when an adult says them slowly (m-op) with support.",
+   "I can say the first sound of a spoken word with help.",
+   "I can, with support, identify the syllables in spoken words by clapping or tapping."
+  ]
+ },
+ "RF.K.4|K": {
+  "why": "EE descriptor describes independent book exploration, not purposeful shared reading of a familiar text.",
+  "suggested": [
+   "I can read emergent-reader books on my own and tell what happened and why I read them.",
+   "I can read emergent-reader texts with purpose and understanding.",
+   "I can read along with an adult and point to words I know in a simple book.",
+   "I can look at pictures and tell what a simple book is about with help.",
+   "I can take part in shared reading of a familiar text for a purpose, such as finding a favourite page."
+  ]
+ },
+ "W.K.2.a|K": {
+  "why": "EE descriptor describes sharing information about a topic, not stating an opinion.",
+  "suggested": [
+   "I can draw, tell and write my opinion about a book or topic and give a reason.",
+   "I can draw, tell and write to name a topic or book and state my opinion about it.",
+   "I can draw a picture and tell an adult what I like or do not like about a book.",
+   "I can point to a picture to show which book or thing I like with help.",
+   "I can, with support, draw, dictate or write to state my opinion."
+  ]
+ },
+ "L.K.1.a|K": {
+  "why": "EE descriptor describes telling letters from symbols, not noticing linguistic diversity.",
+  "suggested": [
+   "I can share words from my home language and learn words from my classmates' languages.",
+   "I can recognize and appreciate that people in my school speak different languages.",
+   "I can name one language other than English that someone in my class speaks with support.",
+   "I can notice that some people say words differently with help.",
+   "I can, with support, notice that people around me use different languages."
+  ]
+ },
+ "L.K.2.a|K": {
+  "why": "EE descriptor describes early writing, not understanding words used in everyday routines.",
+  "suggested": [
+   "I can explain two meanings of a word like duck or tie and use each in a sentence.",
+   "I can recognize that some words have more than one meaning (duck, tie).",
+   "I can match a multiple-meaning word to two pictures with support.",
+   "I can point to a picture that matches a word I hear with help.",
+   "I can, with support, show I understand words used in everyday routines, such as line up or lunch."
+  ]
+ },
+ "L.K.5.a|K": {
+  "why": "EE descriptor describes sorting objects into categories, not telling letters from other symbols.",
+  "suggested": [
+   "I can use nouns, verbs and prepositions correctly in longer spoken sentences.",
+   "I can use frequently used nouns, verbs and prepositions when I speak.",
+   "I can name objects and actions in a picture with support.",
+   "I can point to the object or action an adult names with help.",
+   "I can, with support, tell letters apart from other symbols or shapes."
+  ]
+ },
+ "L.K.5.b|K": {
+  "why": "EE descriptor describes opposites, not using frequently occurring nouns.",
+  "suggested": [
+   "I can say plural nouns correctly, including some irregular ones like mice and feet.",
+   "I can say plural nouns correctly by adding -s or -es (dog, dogs; wish, wishes).",
+   "I can say the plural of a familiar noun when an adult models it.",
+   "I can show one or many objects when asked with help.",
+   "I can, with support, use frequently occurring nouns when I communicate."
+  ]
+ },
+ "L.K.5.c|K": {
+  "why": "EE descriptor describes using words to communicate, not frequently occurring plural nouns.",
+  "suggested": [
+   "I can use question words to ask my own questions about a story or topic.",
+   "I can understand and use question words such as who, what, where and when.",
+   "I can answer a who or what question about a picture with support.",
+   "I can point to the answer to a who question with help.",
+   "I can, with support, use frequently occurring plural nouns."
+  ]
+ },
+ "L.K.5.d|K": {
+  "why": "EE descriptor describes common verbs, not answering simple questions, prepositions or linking words.",
+  "suggested": [
+   "I can say longer, expanded sentences that add details about who, what and where.",
+   "I can say complete sentences and expand them by adding a describing word or detail.",
+   "I can repeat a complete sentence after an adult model.",
+   "I can say two words together to share an idea with help.",
+   "I can, with support, choose answers to simple who and what questions, understand on, off, in and out, and link two words together."
+  ]
+ },
+ "RF.1.2.b|1": {
+  "why": "EE descriptor describes counting syllables, not matching segmented phonemes to pictures.",
+  "suggested": [
+   "I can blend sounds in longer words with consonant blends, like s-t-o-p, and say the word quickly.",
+   "I can blend sounds to say single-syllable words, including words with consonant blends.",
+   "I can blend three sounds (c-a-t) to say a word with support.",
+   "I can say a word after an adult blends the sounds for me.",
+   "I can, with support, match sounds said one at a time (c-a-t) to the picture of that word."
+  ]
+ },
+ "RF.1.3.a|1": {
+  "why": "CC Emerging and EE descriptors describe initial phonemes, not digraphs or upper-case letters.",
+  "suggested": [
+   "I can read and spell new words that have digraphs like sh, ch, th and wh.",
+   "I can say the sounds of common consonant digraphs (sh, ch, th, wh).",
+   "I can say the sound of sh or ch when I see it in a familiar word with support.",
+   "I can match a digraph card to a picture with help.",
+   "I can recognize and name upper-case letters of the alphabet."
+  ]
+ },
+ "RF.1.4.a|1": {
+  "why": "CC Emerging descriptor describes silent book exploration, which is an EE-level skill, not reading grade-level text.",
+  "suggested": [
+   "I can read grade-level text with purpose and understanding and retell it in my own words.",
+   "I can read grade-level text with purpose and understanding.",
+   "I can read simple books with help and use pictures to understand.",
+   "I can read a few familiar words in a simple book with help.",
+   "I can take part in shared reading of different kinds of texts."
+  ]
+ },
+ "L.1.1|1": {
+  "why": "CC Emerging and EE descriptors describe writing own name, not linguistic diversity.",
+  "suggested": [
+   "I can share and compare how words are said in different languages in my class.",
+   "I can recognize and appreciate that people in my school and community speak different languages.",
+   "I can name a language someone in my class speaks with support.",
+   "I can notice that people speak in different ways with help.",
+   "I can notice that people around me use different languages."
+  ]
+ },
+ "L.1.2.a|1": {
+  "why": "EE descriptor describes the first letter of own name, not understanding everyday-routine words.",
+  "suggested": [
+   "I can use word endings like -s, -ed and -ing to work out new words in my reading.",
+   "I can use word endings like -s and -ed as clues to what an unknown word means (looks, looked).",
+   "I can use word endings to work out new words with some help.",
+   "I can tell when a word has an ending added with help.",
+   "I can show I understand words used in everyday routines, such as wash hands or snack."
+  ]
+ },
+ "L.1.5.a|1": {
+  "why": "EE descriptor describes sorting objects, not writing letters from own name.",
+  "suggested": [
+   "I can use common, proper and possessive nouns correctly in my writing and explain the difference.",
+   "I can use common, proper and possessive nouns correctly when I speak and write.",
+   "I can capitalize names and use common nouns in sentences with support.",
+   "I can name people and things in a picture with help.",
+   "I can write letters from my own name."
+  ]
+ },
+ "L.2.1.a|2": {
+  "why": "EE descriptor describes producing letters, not noticing linguistic diversity.",
+  "suggested": [
+   "I can explain how people use different languages and ways of speaking at home, at school and in the community.",
+   "I can recognize and appreciate linguistic diversity at home, in the community and in what I read and hear.",
+   "I can name different languages people use in my school with support.",
+   "I can notice that people speak in different ways with help.",
+   "I can notice that people around me use different languages."
+  ]
+ },
+ "L.2.1.b|2": {
+  "why": "EE descriptor describes using nouns, not noticing formal and informal language.",
+  "suggested": [
+   "I can switch between formal and informal English on purpose and explain why.",
+   "I can recognize formal and informal uses of English.",
+   "I can sort phrases into school talk and friend talk with support.",
+   "I can tell whether someone is talking to a friend or a teacher with help.",
+   "I can notice formal and informal uses of language."
+  ]
+ },
+ "L.2.3.a|2": {
+  "why": "EE descriptor describes informal language, not rhyme and repetition.",
+  "suggested": [
+   "I can explain how alliteration, rhyme and repeated lines create rhythm and meaning in a poem or story.",
+   "I can describe how words and phrases supply rhythm and meaning in a text (alliteration, rhyme, repeated lines).",
+   "I can find rhyming or repeated words in a poem with support.",
+   "I can clap to the rhythm of a familiar rhyme with help.",
+   "I can, with support, identify rhyme and repetition in letters, words or phrases."
+  ]
+ },
+ "RF.3.3.d|3": {
+  "why": "School levels are inverted: Advanced describes the easiest skill and Emerging the hardest.",
+  "suggested": [
+   "I can read and spell less common irregularly spelled words and explain which part is irregular.",
+   "I can read grade-appropriate irregularly spelled words accurately.",
+   "I can read common irregular words such as said and friend with some support.",
+   "I can read a few high-frequency words such as the and was with help.",
+   "I can recognize 40 or more written words."
+  ]
+ },
+ "SL.3.1.c|3": {
+  "why": "CC descriptors describe explaining own ideas (SL.3.1.d), and the EE descriptor describes linking ideas, not indicating confusion.",
+  "suggested": [
+   "I can ask questions that check understanding and connect my comments to several classmates' ideas.",
+   "I can ask questions to check understanding, stay on topic and link my comments to what others say.",
+   "I can ask one question about the topic using a question starter.",
+   "I can stay on topic and say one thing about it with help.",
+   "I can show when I am confused or do not understand information."
+  ]
+ },
+ "L.3.1.b|3": {
+  "why": "CC descriptors describe key words and phrases (L.3.1.c), not written versus spoken English.",
+  "suggested": [
+   "I can explain several differences between written and spoken English and choose the right one for my purpose.",
+   "I can recognize differences between the conventions of written and spoken English.",
+   "I can tell one difference between how I talk and how I write with support.",
+   "I can tell whether a sentence is spoken or written with help.",
+   "Not applicable"
+  ]
+ },
+ "L.3.1.c|3": {
+  "why": "CC descriptors describe working out unknown words (L.3.2), not key words and word choice for effect.",
+  "suggested": [
+   "I can explain how key words help a reader and choose vivid words for effect in my own writing.",
+   "I can identify key words and phrases that help readers understand a topic and choose words for effect.",
+   "I can find key words in a text using bold print or headings with support.",
+   "I can point to a topic word in a text with help.",
+   "I can identify key words in a text."
+  ]
+ },
+ "L.3.2.b|3": {
+  "why": "CC descriptors describe degrees of certainty (L.3.3.b), not prefixes and suffixes.",
+  "suggested": [
+   "I can use prefixes and suffixes to work out and explain the meanings of many new words.",
+   "I can determine the meaning of a new word when a prefix or suffix is added (happy, unhappy).",
+   "I can find a prefix or suffix in a word and use a chart to guess its meaning.",
+   "I can find a small word I know inside a longer word with help.",
+   "I can, with support, tell the time meaning of verbs when -ing or -ed is added."
+  ]
+ },
+ "L.3.2.c|3": {
+  "why": "CC descriptors describe real-life word connections (L.3.3.c), not using resources to find word meanings.",
+  "suggested": [
+   "I can choose the best resource, print or digital, to find and check word meanings.",
+   "I can use resources such as dictionaries and glossaries to determine word meanings.",
+   "I can look up a word in a picture or student dictionary with support.",
+   "I can ask an adult what a word means.",
+   "Not applicable"
+  ]
+ },
+ "L.3.3.a|3": {
+  "why": "CC descriptors describe spatial and temporal phrases (L.3.4.a), and the EE descriptor describes making requests, not literal meaning.",
+  "suggested": [
+   "I can explain the difference between literal and non-literal phrases and use some in my writing.",
+   "I can determine the meaning of words and phrases in a text and tell literal from non-literal language.",
+   "I can tell whether a phrase means exactly what it says using examples.",
+   "I can match a phrase to a picture of its meaning with help.",
+   "I can determine the literal meaning of words and phrases in context."
+  ]
+ },
+ "L.3.3.b|3": {
+  "why": "CC descriptors describe grammar conventions, and the EE descriptor describes commenting, not degrees of certainty or real-life word connections.",
+  "suggested": [
+   "I can choose words that show exactly how sure someone is and explain the difference.",
+   "I can distinguish shades of meaning among words that describe degrees of certainty (knew, believed, suspected).",
+   "I can put certainty words in order from least to most sure using a scale.",
+   "I can tell the difference between know and think with help.",
+   "I can identify real-life connections between words and how they are used."
+  ]
+ },
+ "L.3.3.c|3": {
+  "why": "CC descriptors describe verb tense, not connecting words to real-life use.",
+  "suggested": [
+   "I can connect new words to my experiences and other words I know to remember and use them.",
+   "I can make connections between words and how they are used in real life.",
+   "I can connect a new word to something I have seen or done with support.",
+   "I can match a word to a real-life picture with help.",
+   "I can identify words that describe how I feel."
+  ]
+ },
+ "L.3.4.a|3": {
+  "why": "CC descriptors describe subject-verb agreement, and the EE descriptor is general vocabulary, not spatial and temporal words.",
+  "suggested": [
+   "I can use varied phrases that show time and place to make my writing clear and interesting.",
+   "I can identify and use phrases that signal spatial and temporal relationships (after dinner that night).",
+   "I can use time and place words such as before, after and under from a word bank.",
+   "I can follow directions with under or behind with help.",
+   "I can understand words that show place and time, such as behind, under, after and later."
+  ]
+ },
+ "L.3.5.b|3": {
+  "why": "CC descriptors describe easily confused words (L.3.5.e), and the EE descriptor describes real-life word connections, not verb tense.",
+  "suggested": [
+   "I can use past, present and future tenses correctly and keep my tense consistent.",
+   "I can use simple verb tenses (I walked, I walk, I will walk) correctly.",
+   "I can choose the correct tense of a verb in a sentence with support.",
+   "I can tell whether something happened yesterday or today with help.",
+   "I can use present and past tense verbs."
+  ]
+ },
+ "L.3.5.c|3": {
+  "why": "CC descriptors describe capitalization and punctuation, and the EE descriptor describes feeling words, not subject-verb agreement.",
+  "suggested": [
+   "I can find and fix subject-verb agreement errors in my own and others' writing.",
+   "I can make subjects and verbs agree in my sentences (he runs, they run).",
+   "I can choose the verb that matches the subject in a sentence with support.",
+   "I can say a simple sentence with a subject and verb using a model.",
+   "I can combine words such as noun and verb, or subject, verb and object, when I communicate."
+  ]
+ },
+ "L.3.5.e|3": {
+  "why": "EE descriptor describes feeling words, not easily confused words.",
+  "suggested": [
+   "I can explain the difference between easily confused words and always use the right one.",
+   "I can use easily confused words such as to, too and two correctly.",
+   "I can choose the right word (to, too, two) in a sentence using examples.",
+   "I can notice that some words sound the same with help.",
+   "I can notice easily confused words."
+  ]
+ },
+ "L.3.6.a|3": {
+  "why": "EE descriptor describes spatial and temporal words, not capitalizing names.",
+  "suggested": [
+   "I can capitalize and format titles correctly and explain the rules I used.",
+   "I can capitalize titles correctly in my writing and explain why.",
+   "I can capitalize the first word of a title using a model.",
+   "I can find capital letters in a title with help.",
+   "I can capitalize the first letter of familiar names."
+  ]
+ },
+ "R.4.2|4": {
+  "why": "CC descriptors repeat the R.4.1 descriptors (details and inference), not summarizing a theme or central idea.",
+  "suggested": [
+   "I can write a concise summary and explain how several key details work together to develop the theme or central idea.",
+   "I can summarize a text and determine its theme or central idea and explain how key details support it.",
+   "I can name the main idea and list two key details using a graphic organizer.",
+   "I can tell what a short text is mostly about with pictures and help.",
+   "I can identify the theme or main idea of a text."
+  ]
+ },
+ "SL.4.2|4": {
+  "why": "EE descriptor describes identifying the main idea, not asking and answering questions about details.",
+  "suggested": [
+   "I can paraphrase longer parts of a text or presentation accurately and explain the key points.",
+   "I can paraphrase parts of a text read aloud or information presented in different media.",
+   "I can retell one part of what I heard in my own words using a sentence frame.",
+   "I can repeat one detail I heard with help.",
+   "I can ask and answer questions about details from a text read aloud or information presented orally or in other media."
+  ]
+ },
+ "L.4.1.d|4": {
+  "why": "EE descriptor describes comparative and superlative adjectives, not choosing punctuation.",
+  "suggested": [
+   "I can choose punctuation such as exclamation marks, commas or ellipses on purpose and explain the effect.",
+   "I can choose punctuation for effect in my writing.",
+   "I can choose a period, question mark or exclamation mark for a sentence with support.",
+   "I can find the end mark in a sentence with help.",
+   "I can choose the right punctuation for a sentence."
+  ]
+ },
+ "L.4.2.a|4": {
+  "why": "EE descriptor describes capitalizing the first word, not using context to choose a word.",
+  "suggested": [
+   "I can use several kinds of context clues to work out and check the meaning of new words and phrases.",
+   "I can use context as a clue to the meaning of a word or phrase.",
+   "I can use the words around a new word to guess its meaning with support.",
+   "I can use a picture to work out a new word with help.",
+   "I can use context to choose a word that completes a sentence read aloud by an adult."
+  ]
+ },
+ "L.4.3.a|4": {
+  "why": "EE descriptor describes expressing emotion, not literal word meaning.",
+  "suggested": [
+   "I can explain what similes and metaphors mean and how they help the reader picture an idea.",
+   "I can determine the meaning of words and phrases in a text, including similes and metaphors.",
+   "I can explain a simple simile using a picture or example.",
+   "I can tell whether a phrase is silly or real with help.",
+   "I can determine the literal meaning of words and phrases in context."
+  ]
+ },
+ "L.4.3.c|4": {
+  "why": "EE descriptor describes communicating with peers, not understanding opposites.",
+  "suggested": [
+   "I can choose precise synonyms and antonyms to make my writing more exact and interesting.",
+   "I can understand words by relating them to their synonyms and antonyms.",
+   "I can match a word to a synonym or antonym using a chart.",
+   "I can match a word to its opposite picture with help.",
+   "I can show I understand opposites, such as hot and cold."
+  ]
+ },
+ "L.4.4.a|4": {
+  "why": "EE descriptor describes using context to complete a sentence (L.4.2.a), not identifying domain-specific vocabulary.",
+  "suggested": [
+   "I can use precise action words and topic words accurately in my speaking and writing.",
+   "I can learn and use words that show precise actions and feelings and words basic to a topic.",
+   "I can use topic words from a word wall in my writing with support.",
+   "I can point to a picture of a topic word with help.",
+   "I can identify key subject-specific words."
+  ]
+ },
+ "L.4.5.a|4": {
+  "why": "CC descriptors describe grammar in general, and the EE descriptor is general grammar, not relative pronouns or possessive pronouns.",
+  "suggested": [
+   "I can use relative pronouns and adverbs to combine ideas into complex sentences and explain their purpose.",
+   "I can use relative pronouns (who, which, that) and relative adverbs (where, when, why) correctly.",
+   "I can join two sentences with who or which using a model.",
+   "I can answer a who question about a picture with help.",
+   "I can use possessive pronouns such as my, your, his and her."
+  ]
+ },
+ "W.9-10.2.a|9-10": {
+  "why": "CC Emerging descriptor describes informative writing (W.9-10.2.b), not argument.",
+  "suggested": [
+   "I can write compelling arguments and literary analysis with clear reasoning, literary theory and sufficient evidence, addressing counterclaims.",
+   "I can write arguments and literary analysis that support claims with valid reasoning and relevant, sufficient evidence.",
+   "I can write a claim with reasons and some evidence using an argument organizer.",
+   "I can state my opinion and one reason using a sentence frame with support.",
+   "I can, with support, write or dictate an argument or literary analysis with a clear claim and valid reasons."
+  ]
+ },
+ "W.9-10.3.c|9-10": {
+  "why": "CC Emerging descriptor describes drawing and dictating (an EE-level skill), not word choice.",
+  "suggested": [
+   "I can use precise, culturally-sustaining and subject-specific language and telling details to manage complex topics vividly.",
+   "I can use culturally-sustaining language, domain-specific vocabulary, telling details and sensory language to convey a vivid picture.",
+   "I can add subject words and sensory details from a word bank to my writing.",
+   "I can use a few topic words and simple describing words with support.",
+   "N/A"
+  ]
+ },
+ "L.5.6.b|5": {
+  "why": "CC descriptors describe reading fluency (RF.5.4), copied with the wrong standard text; L.5.6.b is italics, underlining and quotation marks with titles.",
+  "suggested": [
+   "I can choose italics, underlining or quotation marks correctly for any kind of title and explain the rule.",
+   "I can use italics, underlining or quotation marks correctly to show titles of works.",
+   "I can put quotation marks around a story title using a model.",
+   "I can find a title in a sentence with help.",
+   "Not applicable"
+  ]
+ },
+ "L.5.6.c|5": {
+  "why": "CC descriptors describe oral reading fluency (RF.5.4.b), copied with the wrong standard text; L.5.6.c is spelling with reference materials.",
+  "suggested": [
+   "I can spell grade-level and challenging words correctly and use several reference tools to check and edit my work.",
+   "I can spell grade-level words correctly, using reference materials to solve words and edit my writing.",
+   "I can spell common words correctly and use a dictionary or spell-checker with support.",
+   "I can spell a few familiar words and copy others from a word wall with help.",
+   "I can spell untaught words by sounding them out and using common spelling patterns."
+  ]
+ }
+}

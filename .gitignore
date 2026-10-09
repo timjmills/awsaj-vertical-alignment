@@ -1,0 +1,8 @@
+data/source/*.pdf
+data/source/*.xlsx
+__pycache__/
+data/source/**/*.pdf
+data/source/**/*.docx
+data/source/**/*.zip
+data/source/
+outputs/

@@ -1,0 +1,12 @@
+name: Keep database awake
+# Supabase free projects pause after 7 days without activity; ping the API every 3 days.
+on:
+  schedule: [{ cron: "17 6 */3 * *" }]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -fsS "https://mmcblwddwgwhtlhrqmfi.supabase.co/rest/v1/teams?select=id&limit=1" \
+            -H "apikey: sb_publishable_rfubWiFJpgX5ZcSBXrb1AA_bSG0MB-y" > /dev/null

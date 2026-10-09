@@ -1,0 +1,408 @@
+{
+ "M.6.NS.A.1": {
+  "cc_advanced": "I can write and solve my own word problems that divide a fraction by a fraction, and explain my answer by checking it with multiplication.",
+  "cc_at_target": "I can divide fractions by fractions using models and equations, and solve word problems. Example: 2/3 ÷ 3/4 = 8/9 because 3/4 of 8/9 is 2/3.",
+  "cc_approaching": "I can divide a fraction by a fraction using a tape diagram or number line with support, for example 1/2 ÷ 1/4 = 2.",
+  "cc_emerging": "I can use fraction strips to show how many 1/4 pieces fit into 1 whole, with help.",
+  "ee_at_target": "I can compare two unit fractions and tell which is bigger, like 1/2 is bigger than 1/4."
+ },
+ "M.6.NS.C.5": {
+  "cc_advanced": "I can explain how positive and negative numbers describe opposite situations, like money in and money out, and solve a real problem using them.",
+  "cc_at_target": "I can use positive and negative numbers to show real quantities and explain what 0 means. Example: 10 m below sea level is -10, and 0 is sea level.",
+  "cc_approaching": "I can match positive and negative numbers to simple situations, like above or below zero on a thermometer, with support.",
+  "cc_emerging": "I can show opposites on a number line, like up and down or above and below zero, with help.",
+  "ee_at_target": "I can describe opposite quantities using positive and negative numbers, like temperatures above and below zero."
+ },
+ "M.6.EE.A.1": {
+  "cc_advanced": "I can write a numerical expression with exponents for a real situation, evaluate it, and explain each step using order of operations.",
+  "cc_at_target": "I can write and evaluate numerical expressions with whole-number exponents. Example: 2³ + 4 = 8 + 4 = 12.",
+  "cc_approaching": "I can find the value of a simple power, like 3² = 9, by writing it as repeated multiplication, with support.",
+  "cc_emerging": "I can show repeated multiplication with objects or pictures, like 3 groups of 3, with help.",
+  "ee_at_target": "I can check if an equation is true, like 3 + 4 = 7."
+ },
+ "M.6.EE.B.5": {
+  "cc_advanced": "I can test values from a set in an equation or inequality, find all values that make it true, and explain why the others do not work.",
+  "cc_at_target": "I can use substitution to decide which numbers from a set make an equation or inequality true. Example: from {2, 3, 4}, x + 5 = 8 is true when x = 3.",
+  "cc_approaching": "I can put a given number into a simple equation and check if it is true, with support.",
+  "cc_emerging": "I can tell if a number sentence with numbers only, like 4 + 2 = 6, is true or false, with help.",
+  "ee_at_target": "I can match an equation with a variable to a real-world problem."
+ },
+ "M.6.EE.C.9": {
+  "cc_advanced": "I can write an equation for two changing quantities in a real problem, use its table and graph to make predictions, and explain how they connect.",
+  "cc_at_target": "I can write an equation that shows how a dependent variable changes with an independent variable, and connect it to a table and graph. Example: d = 65t.",
+  "cc_approaching": "I can complete a table for a simple rule, like y = 2x, and plot the points, with support.",
+  "cc_emerging": "I can continue a simple pattern in a table, like adding 2 each time, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.6.G.A.4": {
+  "cc_advanced": "I can use nets to find the surface area of 3D figures in real problems, like how much paper wraps a box, and explain my method.",
+  "cc_at_target": "I can draw a net of rectangles and triangles for a 3D figure and use it to find surface area. Example: a cube with 2 cm edges has 6 × 4 = 24 cm².",
+  "cc_approaching": "I can find the area of each face on a given net and add them, with support.",
+  "cc_emerging": "I can find the area of a rectangle by counting squares, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.6.SP.B.4": {
+  "cc_advanced": "I can choose the best plot (dot plot, histogram or box plot) for a data set, make it, and explain what it shows.",
+  "cc_at_target": "I can display numerical data on a number line using dot plots, histograms and box plots.",
+  "cc_approaching": "I can make a dot plot from a small data set on a given number line, with support.",
+  "cc_emerging": "I can sort and count data and show it with objects or a tally chart, with help.",
+  "ee_at_target": "I can show data on a graph or table that shows how the data varies."
+ },
+ "M.7.RP.A.3": {
+  "cc_advanced": "I can solve multi-step percent problems, like a discount followed by tax, and explain each step and why my answer makes sense.",
+  "cc_at_target": "I can use proportional relationships to solve multi-step ratio and percent problems, like tax, tips and percent increase. Example: 20% off a 50 QAR shirt costs 40 QAR.",
+  "cc_approaching": "I can find a simple percent of a number, like 10% or 50%, using a model or table, with support.",
+  "cc_emerging": "I can use a ratio table or picture to show a simple ratio, like 2 red for every 3 blue, with help.",
+  "ee_at_target": "I can use a ratio to show or describe a relationship, like 2 cups of water for every 1 cup of rice."
+ },
+ "M.7.EE.A.1": {
+  "cc_advanced": "I can add, subtract, factor and expand linear expressions with fractions or decimals, and explain which property I used at each step.",
+  "cc_at_target": "I can use properties of operations to add, subtract, factor and expand linear expressions with rational coefficients. Example: 2(x + 3) - x = x + 6.",
+  "cc_approaching": "I can combine like terms and expand simple expressions with whole numbers, like 3(x + 2) = 3x + 6, with support.",
+  "cc_emerging": "I can use the distributive property with numbers, like 3 × (4 + 2) = 3 × 4 + 3 × 2, with help.",
+  "ee_at_target": "I can use properties of operations to show that two expressions are equivalent."
+ },
+ "M.7.G.A.1": {
+  "cc_advanced": "I can use a scale drawing to solve real problems with lengths and areas, and redraw it at a new scale, explaining my reasoning.",
+  "cc_at_target": "I can use a scale drawing to find actual lengths and areas, and redraw it at a different scale. Example: if 1 cm = 2 m, then 5 cm = 10 m.",
+  "cc_approaching": "I can use a simple scale to find one actual length, like 1 cm = 10 m, with support.",
+  "cc_emerging": "I can tell which of two shapes is bigger or smaller and by how many times, using grid paper, with help.",
+  "ee_at_target": "I can match two similar shapes that have the same shape and position but different sizes."
+ },
+ "M.7.G.B.5": {
+  "cc_advanced": "I can use angle facts in multi-step problems to write and solve equations for unknown angles, and explain my reasoning.",
+  "cc_at_target": "I can use supplementary, complementary, vertical and adjacent angles to write and solve equations for an unknown angle. Example: x + 40 = 90, so x = 50°.",
+  "cc_approaching": "I can find a missing angle when two angles make a straight line (180°) or a right angle (90°), with support.",
+  "cc_emerging": "I can identify right angles and angles on a straight line in a picture, with help.",
+  "ee_at_target": "I can recognize acute, obtuse and right angles."
+ },
+ "M.7.SP.B.3": {
+  "cc_advanced": "I can compare two data sets by how much they overlap, describe the difference in centers as a multiple of variability, and explain what it means.",
+  "cc_at_target": "I can compare two data distributions with similar spread by finding the difference between their centers as a multiple of a measure of variability.",
+  "cc_approaching": "I can compare the means of two dot plots and say which is greater and by how much, with support.",
+  "cc_emerging": "I can look at two dot plots and say which group has bigger values, with help.",
+  "ee_at_target": "I can compare two sets of data in one picture graph, line plot or bar graph."
+ },
+ "M.7.SP.C.7": {
+  "cc_advanced": "I can build a probability model, compare it to results from an experiment, and explain possible reasons why they do not match.",
+  "cc_at_target": "I can make a probability model and use it to find probabilities of events, and compare them to observed results. Example: the probability of rolling a 3 is 1/6.",
+  "cc_approaching": "I can find the probability of a simple event when all outcomes are equally likely, like a coin landing on heads is 1/2, with support.",
+  "cc_emerging": "I can list all the possible outcomes of a coin or spinner, with help.",
+  "ee_at_target": "I can describe events as possible or impossible."
+ },
+ "M.8.EE.A.1": {
+  "cc_advanced": "I can use exponent properties, including negative and zero exponents, to simplify multi-step expressions and explain why each property works.",
+  "cc_at_target": "I can use properties of integer exponents to write equivalent numerical expressions. Example: 3² × 3⁻⁵ = 3⁻³ = 1/27.",
+  "cc_approaching": "I can multiply or divide powers with the same base and positive exponents, like 2³ × 2² = 2⁵, with support.",
+  "cc_emerging": "I can write a power as repeated multiplication and find its value, like 2³ = 2 × 2 × 2 = 8, with help.",
+  "ee_at_target": "I can identify exponents and explain that an exponent shows how many times to multiply a number by itself."
+ },
+ "M.8.EE.B.5": {
+  "cc_advanced": "I can compare two proportional relationships shown in different ways, like a graph and an equation, and explain which has the greater rate.",
+  "cc_at_target": "I can graph a proportional relationship and explain that the unit rate is the slope. Example: y = 3x has slope 3, so y goes up 3 for each 1 in x.",
+  "cc_approaching": "I can graph a proportional relationship from a table and find the unit rate, with support.",
+  "cc_emerging": "I can plot points from a simple table on a coordinate grid, with help.",
+  "ee_at_target": "I can graph a simple ratio by plotting a point and joining it to the origin. Example: 2:1 becomes the point (1, 2)."
+ },
+ "M.8.F.A.1": {
+  "cc_advanced": "I can decide if a table, graph or set of ordered pairs is a function, and explain why using inputs and outputs.",
+  "cc_at_target": "I can explain that a function gives each input exactly one output, and that its graph is the set of input and output pairs.",
+  "cc_approaching": "I can tell if a simple table is a function by checking that no input has two outputs, with support.",
+  "cc_emerging": "I can use an input and output machine with a simple rule, like add 2, with help.",
+  "ee_at_target": "I can find a missing number in a table of a linear function using at least 2 complete ordered pairs."
+ },
+ "M.8.F.B.5": {
+  "cc_advanced": "I can sketch a graph from a real-world story and explain where it increases, decreases, is linear or nonlinear.",
+  "cc_at_target": "I can describe a graph's relationship (increasing, decreasing, linear or nonlinear) and sketch a graph from a description.",
+  "cc_approaching": "I can tell where a graph is going up or going down, with support.",
+  "cc_emerging": "I can match a simple graph to a story, like a car speeding up, with help.",
+  "ee_at_target": "I can describe how a graph shows a relationship between two quantities."
+ },
+ "M.8.G.A.4": {
+  "cc_advanced": "I can describe and justify a sequence of transformations, including a dilation, that maps one figure onto a similar figure.",
+  "cc_at_target": "I can explain that two figures are similar if one can be made from the other by rotations, reflections, translations and dilations, and describe the sequence.",
+  "cc_approaching": "I can identify a single dilation or transformation between two similar figures, with support.",
+  "cc_emerging": "I can tell which shapes are the same shape but a different size, with help.",
+  "ee_at_target": "I can identify similar shapes, even when one is rotated."
+ },
+ "M.8.G.B.8": {
+  "cc_advanced": "I can use the Pythagorean Theorem to find distances between points on a coordinate map in real problems, and explain my steps.",
+  "cc_at_target": "I can use the Pythagorean Theorem to find the distance between two points on a coordinate grid. Example: (0,0) to (3,4) is √(9+16) = 5.",
+  "cc_approaching": "I can draw a right triangle between two points on a grid and find the side lengths, with support.",
+  "cc_emerging": "I can count units to find horizontal or vertical distances on a grid, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.8.SP.A.3": {
+  "cc_advanced": "I can use a linear model to make predictions from data and explain what the slope and intercept mean in a real context.",
+  "cc_at_target": "I can use the equation of a linear model to solve problems and explain what the slope and intercept mean. Example: slope 1.5 cm/hr means 1.5 cm more growth each hour.",
+  "cc_approaching": "I can use a given line equation to find a value for a data problem, with support.",
+  "cc_emerging": "I can read values from a line drawn on a scatter plot, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.RN.B.3": {
+  "cc_advanced": "I can write a clear argument to prove why the sum or product of two rational numbers is rational, and why the other cases are irrational.",
+  "cc_at_target": "I can explain why rational plus rational and rational times rational are rational, and why rational plus irrational, or nonzero rational times irrational, are irrational.",
+  "cc_approaching": "I can use examples to show whether a sum or product is rational or irrational, with support.",
+  "cc_emerging": "I can sort numbers into rational and irrational, like 1/2 and √2, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.CN.A.1": {
+  "cc_advanced": "I can explain why complex numbers are needed and use i² = -1 with properties of operations to simplify complex expressions.",
+  "cc_at_target": "I can explain that i² = -1 and that every complex number has the form a + bi with a and b real.",
+  "cc_approaching": "I can identify the real part a and the imaginary part b in a complex number like 3 + 2i, with support.",
+  "cc_emerging": "I can sort numbers into real numbers and numbers with i, with help.",
+  "ee_at_target": "Not applicable. Use properties (commutative, associative, and distributive) and place value understandings to calculate and solve problems. a. Add, subtract, and multiply whole numbers."
+ },
+ "M.N.CN.B.5": {
+  "cc_advanced": "I can use the complex plane, with modulus and argument, to compute and explain operations on complex numbers.",
+  "cc_at_target": "I can show adding, subtracting, multiplying and conjugating complex numbers on the complex plane and use this to compute.",
+  "cc_approaching": "I can plot complex numbers on the complex plane and show adding two of them, with support.",
+  "cc_emerging": "I can plot a point like (3, 2) on a coordinate grid, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.CN.C.9": {
+  "cc_advanced": "I can use the Fundamental Theorem of Algebra to explain how many roots any polynomial has, including complex roots.",
+  "cc_at_target": "I can state the Fundamental Theorem of Algebra and show it is true for quadratics. Example: x² + 1 = 0 has 2 roots, i and -i.",
+  "cc_approaching": "I can solve a quadratic equation and count its roots, with support.",
+  "cc_emerging": "I can find the solutions of a simple quadratic, like x² = 9, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.VM.B.4": {
+  "cc_advanced": "I can add and subtract vectors in real problems, like forces or travel, and explain why the size of a sum is not usually the sum of the sizes.",
+  "cc_at_target": "I can add and subtract vectors end-to-end, by components and by the parallelogram rule, and find the magnitude and direction of the result.",
+  "cc_approaching": "I can add and subtract vectors using components, like (2, 3) + (1, 4) = (3, 7), with support.",
+  "cc_emerging": "I can draw an arrow on a grid to show a movement, like 3 right and 2 up, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.VM.C.8": {
+  "cc_advanced": "I can use matrix operations to solve a real problem and explain when two matrices can be added or multiplied.",
+  "cc_at_target": "I can add, subtract and multiply matrices when their dimensions allow it.",
+  "cc_approaching": "I can add and subtract matrices of the same size, with support.",
+  "cc_emerging": "I can find a number in a table by its row and column, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.N.VM.C.12": {
+  "cc_advanced": "I can use 2 × 2 matrices to transform shapes and explain how the determinant tells how the area changes.",
+  "cc_at_target": "I can use 2 × 2 matrices as transformations of the plane and explain that the absolute value of the determinant is the area scale factor.",
+  "cc_approaching": "I can multiply a 2 × 2 matrix by a point to transform it, with support.",
+  "cc_emerging": "I can find the area of a rectangle on a coordinate grid, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.A.SSE.B.4": {
+  "cc_advanced": "I can use the geometric series formula to solve real problems, like loan payments, and explain what each part of the formula means.",
+  "cc_at_target": "I can derive the formula for the sum of a finite geometric series (ratio not 1) and use it to solve problems.",
+  "cc_approaching": "I can find the sum of a short geometric series by adding the terms, like 2 + 4 + 8 + 16 = 30, with support.",
+  "cc_emerging": "I can find the next term in a pattern that multiplies by the same number, with help.",
+  "ee_at_target": "I can find the next term in a geometric sequence when I know the common ratio."
+ },
+ "M.A.APR.C.4": {
+  "cc_advanced": "I can prove a polynomial identity and use it to explain a number pattern or calculate mentally, like squaring numbers in the 20s.",
+  "cc_at_target": "I can prove polynomial identities and use them to describe number relationships. Example: (a + b)² = a² + 2ab + b², so 22² = 400 + 80 + 4 = 484.",
+  "cc_approaching": "I can expand a simple identity like (x + 2)² and check it with numbers, with support.",
+  "cc_emerging": "I can find the area of a square split into parts to show 12² = 100 + 40 + 4, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.A.CED.A.1": {
+  "cc_advanced": "I can create equations or inequalities for real problems, including quadratic or exponential situations, solve them and explain my answer.",
+  "cc_at_target": "I can create equations and inequalities in one variable from a problem and solve them. Example: 5 + 3x = 20, so x = 5.",
+  "cc_approaching": "I can write and solve a one-step or two-step linear equation from a word problem, with support.",
+  "cc_emerging": "I can use a bar model to find a missing number in a simple problem, with help.",
+  "ee_at_target": "I can write an equation with a variable that solves a real-world problem."
+ },
+ "M.A.REI.A.1": {
+  "cc_advanced": "I can explain and justify every step of solving an equation and argue why my method works.",
+  "cc_at_target": "I can explain each step in solving a simple equation using properties of equality. Example: 2x + 3 = 11, subtract 3 to get 2x = 8, then divide by 2.",
+  "cc_approaching": "I can solve a two-step equation and name the operation used in each step, with support.",
+  "cc_emerging": "I can use a balance model to show that both sides of an equation stay equal, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.A.REI.C.5": {
+  "cc_advanced": "I can prove that adding a multiple of one equation to another keeps the same solutions, and use this to solve systems.",
+  "cc_at_target": "I can justify that replacing one equation with its sum with a multiple of the other gives a system with the same solutions.",
+  "cc_approaching": "I can add two equations to remove a variable and check that the solution works in both, with support.",
+  "cc_emerging": "I can check if a pair of numbers makes two equations true, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.A.REI.C.9": {
+  "cc_advanced": "I can use inverse matrices and technology to solve real-world systems with 3 or more variables, and explain when an inverse exists.",
+  "cc_at_target": "I can find the inverse of a matrix if it exists and use it to solve systems of linear equations, using technology for 3 × 3 or larger.",
+  "cc_approaching": "I can find the inverse of a 2 × 2 matrix using a formula, with support.",
+  "cc_emerging": "I can write a system of two equations as a matrix, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.F.IF.A.1": {
+  "cc_advanced": "I can decide if a relation is a function using mappings, tables or graphs, and explain using domain and range.",
+  "cc_at_target": "I can explain that a function assigns each element of the domain exactly one element of the range.",
+  "cc_approaching": "I can tell if a mapping diagram or table is a function, with support.",
+  "cc_emerging": "I can match each input to its output using a simple rule, with help.",
+  "ee_at_target": "I can use what a function is to solve problems."
+ },
+ "M.F.IF.B.5": {
+  "cc_advanced": "I can choose a sensible domain for a function in a real problem and explain whether it should be discrete or continuous.",
+  "cc_at_target": "I can relate a function's domain to its graph and find a suitable domain for the problem. Example: the number of tickets sold uses whole numbers only.",
+  "cc_approaching": "I can read the domain from a graph, with support.",
+  "cc_emerging": "I can find the input values shown on a simple graph or table, with help.",
+  "ee_at_target": "I can make graphs of linear functions with different rates of change and explain what they show."
+ },
+ "M.F.IF.C.9": {
+  "cc_advanced": "I can compare two functions shown in different ways and explain which has a bigger maximum, rate of change or intercept, and why.",
+  "cc_at_target": "I can compare properties of two functions shown in different ways, like a graph and an equation.",
+  "cc_approaching": "I can compare one feature, like the y-intercept, of two functions shown in different ways, with support.",
+  "cc_emerging": "I can read the y-intercept or highest point from a graph, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.F.BF.B.4": {
+  "cc_advanced": "I can find inverse functions in real contexts, like converting temperature, and explain why the graphs are symmetric about y = x.",
+  "cc_at_target": "I can find inverse functions using tables, graphs and equations by solving for the other variable. Example: C = 5/9(F - 32) gives F = 9/5C + 32.",
+  "cc_approaching": "I can find the inverse of a simple function, like y = x + 3, by swapping inputs and outputs, with support.",
+  "cc_emerging": "I can undo a simple operation, like adding 3 is undone by subtracting 3, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.F.LE.A.3": {
+  "cc_advanced": "I can use graphs and tables to explain why exponential growth eventually beats linear and quadratic growth, and find when it happens.",
+  "cc_at_target": "I can use graphs and tables to show that an exponential quantity eventually exceeds a linear, quadratic or polynomial quantity. Example: 2ˣ passes x² after x = 4.",
+  "cc_approaching": "I can complete tables for y = 2x and y = 2ˣ and say which grows faster, with support.",
+  "cc_emerging": "I can continue a pattern that adds the same amount and one that doubles, with help.",
+  "ee_at_target": "I can model a simple linear function, like y = mx, and show it increases by equal amounts over equal intervals."
+ },
+ "M.F.TF.A.2": {
+  "cc_advanced": "I can use the unit circle to find trig values for any angle in radians, including negative and large angles, and explain my reasoning.",
+  "cc_at_target": "I can explain how the unit circle extends trigonometric functions to all real numbers, using radians measured counterclockwise.",
+  "cc_approaching": "I can find sine and cosine of special angles on the unit circle, with support.",
+  "cc_emerging": "I can locate angles like 90° and 180° on a circle, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.F.TF.B.6": {
+  "cc_advanced": "I can explain why the inverse trig functions use specific restricted domains and use them to solve problems.",
+  "cc_at_target": "I can explain that restricting a trig function to a domain where it is always increasing or always decreasing allows its inverse to be made.",
+  "cc_approaching": "I can identify where a trig graph is increasing or decreasing, with support.",
+  "cc_emerging": "I can tell if a graph passes the horizontal line test, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.CO.A.1": {
+  "cc_advanced": "I can use precise definitions of geometric terms to explain and justify my reasoning in proofs and problems.",
+  "cc_at_target": "I can give precise definitions of angle, circle, perpendicular line, parallel line and line segment using point, line and distance.",
+  "cc_approaching": "I can match geometry terms to drawings, like parallel lines and line segments, with support.",
+  "cc_emerging": "I can identify points, lines and angles in pictures, with help.",
+  "ee_at_target": "I can know the features of points, rays, lines, line segments, perpendicular and parallel lines, angles and 2D shapes."
+ },
+ "M.G.CO.A.5": {
+  "cc_advanced": "I can find and describe a sequence of transformations that moves one figure onto another, and explain why it works.",
+  "cc_at_target": "I can draw a figure after a rotation, reflection or translation, and describe a sequence of transformations that maps one figure onto another.",
+  "cc_approaching": "I can draw a figure after one translation or reflection on graph paper, with support.",
+  "cc_emerging": "I can slide or flip a shape cut-out and tell where it moved, with help.",
+  "ee_at_target": "I can identify the parts of a figure and its rotation, reflection or translation that are congruent."
+ },
+ "M.G.CO.C.9": {
+  "cc_advanced": "I can write complete proofs about lines and angles and use these theorems to solve multi-step problems.",
+  "cc_at_target": "I can prove theorems about lines and angles, like vertical angles are congruent and alternate interior angles are congruent with parallel lines.",
+  "cc_approaching": "I can complete a partial proof about angles using given reasons, with support.",
+  "cc_emerging": "I can identify vertical and corresponding angles in a diagram, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.CO.D.13": {
+  "cc_advanced": "I can construct an equilateral triangle, square and regular hexagon inscribed in a circle, and explain why each construction works.",
+  "cc_at_target": "I can construct an equilateral triangle, a square and a regular hexagon inscribed in a circle.",
+  "cc_approaching": "I can follow steps to construct one inscribed shape, like a hexagon, with support.",
+  "cc_emerging": "I can draw a circle with a compass and mark points on it, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.SRT.B.4": {
+  "cc_advanced": "I can prove triangle theorems and use them to solve problems, explaining each step with reasons.",
+  "cc_at_target": "I can prove theorems about triangles, like a line parallel to one side divides the other two sides proportionally, and the Pythagorean Theorem using similarity.",
+  "cc_approaching": "I can complete a partial triangle proof using given reasons, with support.",
+  "cc_emerging": "I can find a missing side in similar triangles using a ratio, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.SRT.C.8": {
+  "cc_advanced": "I can solve multi-step real-world right triangle problems, like heights and distances, choosing between trig ratios and the Pythagorean Theorem.",
+  "cc_at_target": "I can use trigonometric ratios and the Pythagorean Theorem to solve right triangles in real problems. Example: a 10 m ladder at 60° reaches 10 × sin 60° ≈ 8.7 m high.",
+  "cc_approaching": "I can find a missing side of a right triangle using the Pythagorean Theorem or one trig ratio, with support.",
+  "cc_emerging": "I can label the hypotenuse and legs of a right triangle, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.C.A.1": {
+  "cc_advanced": "I can prove properties of angles in circles, including inscribed quadrilaterals, and use them to solve multi-step problems.",
+  "cc_at_target": "I can describe relationships among inscribed angles, radii and chords, and prove angle properties of a quadrilateral inscribed in a circle.",
+  "cc_approaching": "I can use the rule that an inscribed angle is half the central angle to find a missing angle, with support.",
+  "cc_emerging": "I can identify the radius, chord and center of a circle, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.GPE.A.3": {
+  "cc_advanced": "I can derive and use equations of ellipses and hyperbolas to solve problems and explain what the foci mean.",
+  "cc_at_target": "I can derive the equations of ellipses and hyperbolas from the foci, using the fact that the sum or difference of distances to the foci is constant.",
+  "cc_approaching": "I can find the foci of an ellipse from its equation, with support.",
+  "cc_emerging": "I can use the distance formula to find the distance between two points, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.G.GPE.B.7": {
+  "cc_advanced": "I can use coordinates to find perimeters and areas of polygons in real problems, like a field on a map, and explain my method.",
+  "cc_at_target": "I can use coordinates to find perimeters of polygons and areas of triangles and rectangles. Example: a rectangle from (0,0) to (4,3) has area 12.",
+  "cc_approaching": "I can find the perimeter and area of a rectangle on a coordinate grid by counting units, with support.",
+  "cc_emerging": "I can count units along the side of a shape on a grid, with help.",
+  "ee_at_target": "I can find perimeters and areas of squares and rectangles to solve real-world problems."
+ },
+ "M.G.GMD.C.4": {
+  "cc_advanced": "I can model a real object with a combination of shapes and use their measures to solve a problem about it.",
+  "cc_at_target": "I can use geometric shapes, their measures and properties to describe real objects. Example: a can is like a cylinder.",
+  "cc_approaching": "I can name the shape that best matches a real object, with support.",
+  "cc_emerging": "I can match real objects to 3D shapes, like a ball to a sphere, with help.",
+  "ee_at_target": "I can use the properties of shapes to describe real-life objects."
+ },
+ "M.SP.ID.A.2": {
+  "cc_advanced": "I can choose the right statistics for each data shape, compare two or more data sets, and explain my choice.",
+  "cc_at_target": "I can use the right center (mean or median) and spread (IQR or standard deviation) for the data shape to compare data sets.",
+  "cc_approaching": "I can find and compare the mean or median of two data sets, with support.",
+  "cc_emerging": "I can find the middle value of a small ordered data set, with help.",
+  "ee_at_target": "resent and M.EE.SP.ID.2 Given data, construct a graph erpret data (line, pie, bar, or picture) or plays. (M) table and interpret the data."
+ },
+ "M.SP.ID.B.6": {
+  "cc_advanced": "I can fit a function to scatter plot data, check its fit using residuals, and use it to solve problems in context.",
+  "cc_at_target": "I can show two-variable data on a scatter plot, fit a function to it and use it to solve problems, including fitting a linear function.",
+  "cc_approaching": "I can make a scatter plot and draw a line of best fit, with support.",
+  "cc_emerging": "I can plot ordered pairs on a coordinate grid, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.SP.IC.A.1": {
+  "cc_advanced": "I can explain how a random sample is used to make an inference about a population and why a sample's results may differ.",
+  "cc_at_target": "I can explain that statistics is a process for making inferences about a population from a random sample.",
+  "cc_approaching": "I can tell the difference between a population and a sample, with support.",
+  "cc_emerging": "I can collect data from a small group and describe it, with help.",
+  "ee_at_target": "I can find the probability of an event when all outcomes are equally likely."
+ },
+ "M.SP.IC.B.5": {
+  "cc_advanced": "I can design a simulation to test if the difference between two treatments is significant and explain my conclusion.",
+  "cc_at_target": "I can use data from a randomized experiment to compare two treatments and use simulations to decide if differences are significant.",
+  "cc_approaching": "I can compare the means of two treatment groups, with support.",
+  "cc_emerging": "I can compare two groups of data using a graph, with help.",
+  "ee_at_target": "Not applicable. See M.EE.SP.ID.1."
+ },
+ "M.SP.CP.A.3": {
+  "cc_advanced": "I can use conditional probability to decide if two events are independent in a real situation and explain my reasoning.",
+  "cc_at_target": "I can find P(A given B) as P(A and B)/P(B) and explain that A and B are independent when P(A given B) = P(A).",
+  "cc_approaching": "I can find a conditional probability from a two-way table, with support.",
+  "cc_emerging": "I can find a simple probability from a table, with help.",
+  "ee_at_target": "ulate M.EE.S.CP.3 Identify when events are rately and independent or dependent. ciently g simple hmetic ations."
+ },
+ "M.SP.CP.B.7": {
+  "cc_advanced": "I can apply the Addition Rule to real problems and explain why P(A and B) is subtracted.",
+  "cc_at_target": "I can use a two-way table or Venn diagram to apply P(A or B) = P(A) + P(B) - P(A and B) and explain the answer.",
+  "cc_approaching": "I can find P(A or B) from a Venn diagram by counting, with support.",
+  "cc_emerging": "I can sort objects into a Venn diagram, with help.",
+  "ee_at_target": "Not applicable. See M.EE. SP.IC.1. Not applicable."
+ },
+ "M.SP.MD.A.2": {
+  "cc_advanced": "I can calculate expected value to compare choices in a real situation and explain what it means.",
+  "cc_at_target": "I can calculate the expected value of a random variable and explain it as the mean of the distribution. Example: a fair die has expected value 3.5.",
+  "cc_approaching": "I can find expected value from a simple probability table, with support.",
+  "cc_emerging": "I can find the mean of a small data set, with help.",
+  "ee_at_target": "Not applicable."
+ },
+ "M.SP.MD.B.6": {
+  "cc_advanced": "I can design a fair way to make a decision using probability and explain why it is fair.",
+  "cc_at_target": "I can use probabilities to make fair decisions, like flipping a coin or using a random number generator.",
+  "cc_approaching": "I can tell if a simple method, like a coin flip, is fair, with support.",
+  "cc_emerging": "I can say if each person has the same chance in a simple game, with help.",
+  "ee_at_target": "Not applicable."
+ }
+}

@@ -1,0 +1,1197 @@
+{
+ "ee": {
+  "R.6.1": {
+   "ee_code": "EE.R.6.1",
+   "stem": "Determine what a text says explicitly as well as what simple inferences should be drawn. (RI&RL)",
+   "subs": []
+  },
+  "R.6.2": {
+   "ee_code": "EE.R.6.2",
+   "stem": "Determine details in a text that are related to the theme or main idea. (RI&RL)",
+   "subs": []
+  },
+  "R.6.3": {
+   "ee_code": "EE.R.6.3",
+   "stem": "In literary texts, identify how a character responds to a challenge in a text. (RL) In informational texts, identify a detail that elaborates upon individuals, events, or ideas introduced in a text. (RI)",
+   "subs": []
+  },
+  "R.6.4": {
+   "ee_code": "EE.R.6.4",
+   "stem": "Determine how word choice changes the meaning in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.6.5": {
+   "ee_code": "EE.R.6.5",
+   "stem": "Given guidance and support determine the structure of a text (e.g., story, poem, drama, argument, directions, informational). (RI &RL)",
+   "subs": []
+  },
+  "R.6.6": {
+   "ee_code": "EE.R.6.6",
+   "stem": "With guidance and support, identify words or phrases in the text that describe or show the narrator, speaker, or author’s point of view. (RI&RL)",
+   "subs": []
+  },
+  "R.6.7": {
+   "ee_code": "EE.R.6.7",
+   "stem": "Find similarities in information presented in different media or formats as well as in text. (RI&RL)",
+   "subs": []
+  },
+  "R.6.8": {
+   "ee_code": "EE.R.6.8",
+   "stem": "Distinguish claims in a text supported by reason. (RI)",
+   "subs": []
+  },
+  "R.6.9": {
+   "ee_code": "EE.R.6.9",
+   "stem": "Compare and contrast how two texts describe details and make connections to other texts, ideas, cultural perspectives, identities, eras, or personal experiences. (RI&RL)",
+   "subs": []
+  },
+  "W.6.1": {
+   "ee_code": "EE.W.6.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.6.2": {
+   "ee_code": "EE.W.6.2",
+   "stem": "With guidance and support, use writing and/or dictation to write in a variety of modes:",
+   "subs": [
+    [
+     "a",
+     "Write an argument with a clearly stated claim about a topic and include clear reasons to support that claim."
+    ],
+    [
+     "b",
+     "Write informative texts which introduce a topic and provide facts, details, and/or multimedia content to develop the topic."
+    ],
+    [
+     "c",
+     "Write narratives to convey events and experiences, real or imagined."
+    ],
+    [
+     "d",
+     "Include dialogue, details regarding what happened, and tell about the events in the order in which they occurred. (cont.)"
+    ]
+   ]
+  },
+  "W.6.3": {
+   "ee_code": "EE.W.6.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion, uses words that convey specific details, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.6.4": {
+   "ee_code": "EE.W.6.4",
+   "stem": "Produce writing that is appropriate for the task, purpose, or audience.",
+   "subs": []
+  },
+  "W.6.5": {
+   "ee_code": "EE.W.6.5",
+   "stem": "With guidance and support from adults and peers, plan before writing and produce writing focused on the planned topic, and revise and edit their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.6.6": {
+   "ee_code": "EE.W.6.6",
+   "stem": "Use digital tools, including the Internet, to produce and publish writing while interacting and collaborating with others. Produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.6.7": {
+   "ee_code": "EE.W.6.7",
+   "stem": "With guidance and support, conduct short inquiry projects to answer a question.",
+   "subs": []
+  },
+  "W.6.8": {
+   "ee_code": "EE.W.6.8",
+   "stem": "Gather information about a given topic from multiple print or digital sources.",
+   "subs": []
+  },
+  "W.6.9": {
+   "ee_code": "EE.W.6.9",
+   "stem": "With guidance and support from adults, draw evidence from literary or informational texts to support reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.6.1": {
+   "ee_code": "EE.SL.6.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Come to discussions prepared to share information, with evidence."
+    ],
+    [
+     "b",
+     "With guidance and support from adults and peers, follow simple, agreed-upon norms for discussions and contribute information."
+    ],
+    [
+     "c",
+     "Ask and answer questions specific to the topic, text, or issue under discussion."
+    ],
+    [
+     "d",
+     "Restate key ideas expressed in the discussion"
+    ]
+   ]
+  },
+  "SL.6.2": {
+   "ee_code": "EE.SL.6.2",
+   "stem": "Identify information presented in diverse media and formats (e.g., visually, quantitatively, orally) that relates to a topic, text, or issue under study.",
+   "subs": []
+  },
+  "SL.6.3": {
+   "ee_code": "EE.SL.6.3",
+   "stem": "Identify the reasons and evidence supporting the claims made by the speaker.",
+   "subs": []
+  },
+  "SL.6.4": {
+   "ee_code": "EE.SL.6.4",
+   "stem": "Clearly present findings on a topic including descriptions, facts, or details, considering the audience.",
+   "subs": []
+  },
+  "SL.6.5": {
+   "ee_code": "EE.SL.6.5",
+   "stem": "Select an auditory, visual, or tactual display to clarify the information in presentations.",
+   "subs": []
+  },
+  "L.6.1": {
+   "ee_code": "EE.L.6.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many and has a specific history."
+    ],
+    [
+     "b",
+     "Notice the language demands of a writing/speaking situation (i.e. formal, informal) and respond in an appropriate way."
+    ],
+    [
+     "c",
+     "Expand or combine sentences for meaning, interest, and style."
+    ],
+    [
+     "d",
+     "Maintain consistency in use of language."
+    ]
+   ]
+  },
+  "L.6.2": {
+   "ee_code": "EE.L.6.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context to determine which word is missing from a content area text."
+    ],
+    [
+     "b",
+     "Use frequently occurring root words (e.g., like) and the words that result when affixes are added (e.g., liked, disliked, liking)."
+    ],
+    [
+     "c",
+     "Seek clarification and meaning support when unfamiliar words are encountered while reading or communicating."
+    ]
+   ]
+  },
+  "L.6.3": {
+   "ee_code": "EE.L.6.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Determine the meaning of words in a text, distinguish between literal and non-literal language."
+    ],
+    [
+     "b",
+     "Identify the meaning of simple similes (e.g., The man was as big as a tree.)."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ],
+    [
+     "d",
+     "Demonstrate understanding of words by identifying other words with similar and different meanings"
+    ]
+   ]
+  },
+  "L.6.4": {
+   "ee_code": "EE.L.6.4",
+   "stem": "Use general academic and domain-specific words and phrases across contexts.",
+   "subs": []
+  },
+  "L.6.5": {
+   "ee_code": "EE.L.6.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use personal pronouns (e.g., he, she, they) per the preference of the subject."
+    ],
+    [
+     "b",
+     "Use indefinite pronouns."
+    ]
+   ]
+  },
+  "L.6.6": {
+   "ee_code": "EE.L.6.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Use question marks at the end of written questions."
+    ],
+    [
+     "b",
+     "Spell untaught words phonetically, drawing on letter-sound relationships and common spelling patterns."
+    ]
+   ]
+  },
+  "R.7.1": {
+   "ee_code": "EE.R.7.1",
+   "stem": "Analyze text to identify where information is explicitly stated and where inferences must be drawn. (RI&RL)",
+   "subs": []
+  },
+  "R.7.2": {
+   "ee_code": "EE.R.7.2",
+   "stem": "Determine details in a text that are related to the theme or main idea and how it is developed over the course of a text. (RI&RL)",
+   "subs": []
+  },
+  "R.7.3": {
+   "ee_code": "EE.R.7.3",
+   "stem": "In literary texts determine how two or more story elements are related. (RL) In informational texts, identify how two individuals, events, or ideas are related. (RI)",
+   "subs": []
+  },
+  "R.7.4": {
+   "ee_code": "EE.R.7.4",
+   "stem": "Determine how word choice changes the meaning in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.7.5": {
+   "ee_code": "EE.R.7.5",
+   "stem": "Given guidance and support, compare the structure of two or more texts (e.g., stories, poems, dramas, argument, directions, informational) and determine how a fact, step, or event fits into the overall structure of the text. (RI&RL)",
+   "subs": []
+  },
+  "R.7.6": {
+   "ee_code": "EE.R.7.6",
+   "stem": "Identify words or phrases in the text that describe or show the narrator, speaker, or author’s point of view. (RI&RL)",
+   "subs": []
+  },
+  "R.7.7": {
+   "ee_code": "EE.R.7.7",
+   "stem": "Compare a text to an audio, video, or multimedia version of the same text. (RI&RL)",
+   "subs": []
+  },
+  "R.7.8": {
+   "ee_code": "EE.R.7.8",
+   "stem": "Determine how a claim or reason fits into the overall structure of a text. (RI)",
+   "subs": []
+  },
+  "R.7.9": {
+   "ee_code": "EE.R.7.9",
+   "stem": "Compare and contrast how two texts describe details and make connections to other texts, ideas, cultural perspectives, identities, eras, or personal experiences. (RI&RL)",
+   "subs": []
+  },
+  "W.7.1": {
+   "ee_code": "EE.W.7.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.7.2": {
+   "ee_code": "EE.W.7.2",
+   "stem": "With guidance and support, use writing and/or dictation to write in a variety of modes:",
+   "subs": [
+    [
+     "a",
+     "Write an argument with a clearly stated claim about a topic and include clear reasons to support that claim."
+    ],
+    [
+     "b",
+     "Write informative texts which introduce a topic and provide facts, details, and/or multimedia content to develop the topic. Provide a concluding statement."
+    ],
+    [
+     "c",
+     "Write narratives to convey events and experiences, real or imagined. Include dialogue, details, and tell about the events in the order in which they occurred."
+    ]
+   ]
+  },
+  "W.7.3": {
+   "ee_code": "EE.W.7.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion, uses words that convey specific details, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.7.4": {
+   "ee_code": "EE.W.7.4",
+   "stem": "Independently and collaboratively produce writing that is appropriate for the task, purpose, or audience.",
+   "subs": []
+  },
+  "W.7.5": {
+   "ee_code": "EE.W.7.5",
+   "stem": "With guidance and support from adults and peers, plan before writing and produce writing focused on the planned topic, and revise and edit their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.7.6": {
+   "ee_code": "EE.W.7.6",
+   "stem": "Use technology, (including paper and pencil, internet, audio, visual, and/or other interactive formats) to produce writing to interact and collaborate with others. Produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.7.7": {
+   "ee_code": "EE.W.7.7",
+   "stem": "With guidance and support, conduct short inquiry projects to answer a question.",
+   "subs": []
+  },
+  "W.7.8": {
+   "ee_code": "EE.W.7.8",
+   "stem": "Identify quotes providing relevant information about a topic from multiple print or digital sources.",
+   "subs": []
+  },
+  "W.7.9": {
+   "ee_code": "EE.W.7.9",
+   "stem": "With guidance and support from adults, draw evidence from literary or informational texts to support reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.7.1": {
+   "ee_code": "EE.SL.7.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Come to discussions prepared to share information, with evidence."
+    ],
+    [
+     "b",
+     "With guidance and support from adults and peers, follow simple, agreed-upon norms for discussions and contribute information."
+    ],
+    [
+     "c",
+     "Remain on the topic of the discussion when answering questions or making other contributions to a discussion."
+    ],
+    [
+     "d",
+     "Acknowledge new information and multiple perspectives expressed by others in a discussion."
+    ]
+   ]
+  },
+  "SL.7.2": {
+   "ee_code": "EE.SL.7.2",
+   "stem": "Identify details related to the main idea of a text presented orally or through other media.",
+   "subs": []
+  },
+  "SL.7.3": {
+   "ee_code": "EE.SL.7.3",
+   "stem": "Determine whether the claims made by a speaker are fact or opinion.",
+   "subs": []
+  },
+  "SL.7.4": {
+   "ee_code": "EE.SL.7.4",
+   "stem": "Clearly present findings on a topic including relevant descriptions, facts, or details, considering the audience.",
+   "subs": []
+  },
+  "SL.7.5": {
+   "ee_code": "EE.SL.7.5",
+   "stem": "Select or create audio recordings and visual/tactile displays to emphasize specific points in a presentation.",
+   "subs": []
+  },
+  "L.7.1": {
+   "ee_code": "EE.L.7.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many and has a specific history that is implicated in power relationships."
+    ],
+    [
+     "b",
+     "Notice the language demands of a writing/speaking situation (i.e. formal, informal) and respond in an appropriate way."
+    ],
+    [
+     "c",
+     "Maintain consistency in use of language."
+    ],
+    [
+     "d",
+     "Notice redundancy in language."
+    ]
+   ]
+  },
+  "L.7.2": {
+   "ee_code": "EE.L.7.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context to determine which word is missing from a text."
+    ],
+    [
+     "b",
+     "Use frequently occurring root words (e.g., like) and the words that result when affixes are added (e.g., liked, disliked, liking)."
+    ],
+    [
+     "c",
+     "Seek clarification and meaning support when unfamiliar words are encountered while reading or communicating."
+    ]
+   ]
+  },
+  "L.7.3": {
+   "ee_code": "EE.L.7.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Identify the literal and nonliteral meanings of words in context."
+    ],
+    [
+     "b",
+     "Identify rhyme and repetition (letters, words, or phrases)"
+    ]
+   ]
+  },
+  "L.7.4": {
+   "ee_code": "EE.L.7.4",
+   "stem": "Use general academic and domain-specific words and phrases across contexts.",
+   "subs": []
+  },
+  "L.7.5": {
+   "ee_code": "EE.L.7.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use simple phrases."
+    ],
+    [
+     "b",
+     "Produce complete simple sentences when writing or communicating."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.7.6": {
+   "ee_code": "EE.L.7.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Use end punctuation when writing a sentence or question."
+    ],
+    [
+     "b",
+     "Spell words phonetically, drawing on knowledge of letter- sound relationships and/or common spelling patterns."
+    ]
+   ]
+  },
+  "R.8.1": {
+   "ee_code": "EE.R.8.1",
+   "stem": "Cite text to support inferences from text. (RI&RL)",
+   "subs": []
+  },
+  "R.8.2": {
+   "ee_code": "EE.R.8.2",
+   "stem": "Summarize a familiar text and determine details related to the theme or main idea. (RI&RL)",
+   "subs": []
+  },
+  "R.8.3": {
+   "ee_code": "EE.R.8.3",
+   "stem": "In literary texts, identify which incidents in a text lead to subsequent action. (RL) In informational texts, identify how two or more individuals, events, or ideas are related. (RI)",
+   "subs": []
+  },
+  "R.8.4": {
+   "ee_code": "EE.R.8.4",
+   "stem": "Determine the connotative meanings of words and phrases in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.8.5": {
+   "ee_code": "EE.R.8.5",
+   "stem": "Compare and contrast the structure of two or more texts (RL and RI) and use important details to identify the main idea in an informational text.",
+   "subs": []
+  },
+  "R.8.6": {
+   "ee_code": "EE.R.8.6",
+   "stem": "Determine the narrator, speaker, or author’s point of view and how it differs from the audience or reader. (RI&RL)",
+   "subs": []
+  },
+  "R.8.7": {
+   "ee_code": "EE.R.8.7",
+   "stem": "Compare and contrast a text version of a story, drama, or poem with an audio, video, or live version of the same text. (RI&RL)",
+   "subs": []
+  },
+  "R.8.8": {
+   "ee_code": "EE.R.8.8",
+   "stem": "Determine the argument made by an author in a text. (RI)",
+   "subs": []
+  },
+  "R.8.9": {
+   "ee_code": "EE.R.8.9",
+   "stem": "Compare and contrast themes, patterns of events, or characters across two or more texts and make connections to other texts, ideas, cultural perspectives, identities, eras, or personal experiences. (RI&RL)",
+   "subs": []
+  },
+  "W.8.1": {
+   "ee_code": "EE.W.8.1",
+   "stem": "With guidance and support, use drawing, dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.8.2": {
+   "ee_code": "EE.W.8.2",
+   "stem": "With guidance and support, use writing and/or dictation to write in a variety of modes:",
+   "subs": [
+    [
+     "a",
+     "Write an argument with a clearly stated claim about a topic and include clear reasons to support that claim. Organize reasons logically."
+    ],
+    [
+     "b",
+     "Write informative texts which introduce a topic and provide well chosen facts, details, and/or multimedia content to develop the topic. Provide a concluding statement."
+    ],
+    [
+     "c",
+     "Write narratives to convey events and experiences, real or imagined. Include dialogue, details, character descriptions, and tell about the events in the order in which they occurred."
+    ]
+   ]
+  },
+  "W.8.3": {
+   "ee_code": "EE.W.8.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion, uses words that convey specific details, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.8.4": {
+   "ee_code": "EE.W.8.4",
+   "stem": "Independently and collaboratively produce writing that is appropriate for the task, purpose, or audience.",
+   "subs": []
+  },
+  "W.8.5": {
+   "ee_code": "EE.W.8.5",
+   "stem": "With guidance and support from adults and peers, plan before writing and produce writing focused on the planned topic, and revise and edit their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.8.6": {
+   "ee_code": "EE.W.8.6",
+   "stem": "Use technology,(including paper and pencil, internet, audio, visual, and/or other interactive formats) to produce writing to interact and collaborate with others. Produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.8.7": {
+   "ee_code": "EE.W.8.7",
+   "stem": "With guidance and support, conduct short inquiry projects to answer a question and generate additional questions for further research.",
+   "subs": []
+  },
+  "W.8.8": {
+   "ee_code": "EE.W.8.8",
+   "stem": "Select quotes providing relevant information about a topic from multiple print or digital sources.",
+   "subs": []
+  },
+  "W.8.9": {
+   "ee_code": "EE.W.8.9",
+   "stem": "With guidance and support from adults, draw evidence from literary or informational texts to support reflection or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.8.1": {
+   "ee_code": "EE.SL.8.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Come to discussions prepared to share information previously studied, with evidence."
+    ],
+    [
+     "b",
+     "Follow simple norms during discussions."
+    ],
+    [
+     "c",
+     "Remain on the topic of the discussion when asking or answering questions or making other contributions to a discussion."
+    ],
+    [
+     "d",
+     "Acknowledge new information and multiple perspectives expressed by others in a discussion and relate it to personal ideas."
+    ]
+   ]
+  },
+  "SL.8.2": {
+   "ee_code": "EE.SL.8.2",
+   "stem": "Determine the purpose of information presented in graphic, oral, visual, or multimodal formats.",
+   "subs": []
+  },
+  "SL.8.3": {
+   "ee_code": "EE.SL.8.3",
+   "stem": "Determine the argument made by a speaker on a topic.",
+   "subs": []
+  },
+  "SL.8.4": {
+   "ee_code": "EE.SL.8.4",
+   "stem": "Clearly present descriptions, facts, or details supporting specific points made on a topic, considering the audience.",
+   "subs": []
+  },
+  "SL.8.5": {
+   "ee_code": "EE.SL.8.5",
+   "stem": "Include multimedia and visual information into presentations.",
+   "subs": []
+  },
+  "L.8.1": {
+   "ee_code": "EE.L.8.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many and has a specific history that is implicated in power relationships."
+    ],
+    [
+     "b",
+     "Notice the language demands of a writing/speaking situation (i.e. formal, informal) and respond in an appropriate way."
+    ],
+    [
+     "c",
+     "Use to-be verbs (am, are, is, was, were, be, become, became) accurately when writing and communicating."
+    ],
+    [
+     "d",
+     "Begin to develop metacognitive awareness as writers and speakers by explaining the reasons for language choices."
+    ]
+   ]
+  },
+  "L.8.2": {
+   "ee_code": "EE.L.8.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context to determine which word is missing from a content area text."
+    ],
+    [
+     "b",
+     "Use frequently occurring root words (e.g., like) and the words that result when affixes are added (e.g., liked, disliked, liking)."
+    ],
+    [
+     "c",
+     "Seek clarification and meaning support when unfamiliar words are encountered while reading or communicating."
+    ]
+   ]
+  },
+  "L.8.3": {
+   "ee_code": "EE.L.8.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Identify the literal and nonliteral meanings of words in context."
+    ],
+    [
+     "b",
+     "Use descriptive words to add meaning when writing and communicating."
+    ]
+   ]
+  },
+  "L.8.4": {
+   "ee_code": "EE.L.8.4",
+   "stem": "Use general academic and domain-specific words and phrases across contexts.",
+   "subs": []
+  },
+  "L.8.5": {
+   "ee_code": "EE.L.8.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use appropriate verbs to match nouns."
+    ],
+    [
+     "b",
+     "Form and use the simple verb tenses (e.g., I walked, I walk, I will walk)."
+    ],
+    [
+     "c",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.8.6": {
+   "ee_code": "EE.L.8.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Use end punctuation and capitalization when writing a sentence or question."
+    ],
+    [
+     "b",
+     "Not applicable"
+    ],
+    [
+     "c",
+     "Spell words phonetically, drawing on knowledge of letter- sound relationships and/or common spelling patterns."
+    ]
+   ]
+  },
+  "R.9-10.1": {
+   "ee_code": "EE.R.9-10.1",
+   "stem": "Determine which citations demonstrate what the text says explicitly as well as inferentially. (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.2": {
+   "ee_code": "EE.R.9-10.2",
+   "stem": "Given the theme or central idea, recount related events and details (including character and setting details for literary texts). (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.3": {
+   "ee_code": "EE.R.9-10.3",
+   "stem": "Determine logical connections between characters, individuals, ideas, or events in a text. (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.4": {
+   "ee_code": "EE.R.9-10.4",
+   "stem": "Determine the meaning of words and phrases as they are used in text, including common idioms, analogies, and figures of speech. (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.5": {
+   "ee_code": "EE.R.9-10.5",
+   "stem": "Identify where a text deviates from a chronological presentation of events (RL) and locate sentences that support an author’s central idea or claim (RI).",
+   "subs": []
+  },
+  "R.9-10.6": {
+   "ee_code": "EE.R.9-10.6",
+   "stem": "Determine author’s point of view and compare with own point of view. (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.7": {
+   "ee_code": "EE.R.9-10.7",
+   "stem": "Compare and contrast the representation of a subject or topic in two different formats. (RI&RL)",
+   "subs": []
+  },
+  "R.9-10.8": {
+   "ee_code": "EE.R.9-10.8",
+   "stem": "Determine how the specific claims support the argument made in a text. (RI)",
+   "subs": []
+  },
+  "R.9-10.9": {
+   "ee_code": "EE.R.9-10.9",
+   "stem": "Make informed judgements about text; make connections to other texts, ideas, cultural perspectives, identities, eras, and personal events or situations. (RI&RL)",
+   "subs": []
+  },
+  "W.9-10.1": {
+   "ee_code": "EE.W.9-10.1",
+   "stem": "With guidance and support as needed, use dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.9-10.2": {
+   "ee_code": "EE.W.9-10.2",
+   "stem": "With guidance and support, use writing and/or dictation to write in a variety of modes:",
+   "subs": [
+    [
+     "a",
+     "Write an argument or literary analysis with a clearly stated claim and valid reasons to support the claim. Organize reasons logically and develop the claim fairly."
+    ],
+    [
+     "b",
+     "Write informative texts which introduce a topic and provide well chosen facts, details, and/or multimedia content to develop the topic and convey information clearly and accurately. Provide a concluding statement."
+    ],
+    [
+     "c",
+     "Write narratives to convey events and experiences, real or imagined. Include dialogue, relevant details, character descriptions, and tell about the events and in a logical sequence."
+    ]
+   ]
+  },
+  "W.9-10.3": {
+   "ee_code": "EE.W.9-10.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion, uses words that convey specific details, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.9-10.4": {
+   "ee_code": "EE.W.9-10.4",
+   "stem": "Produce writing that is appropriate for the task, purpose, and audience.",
+   "subs": []
+  },
+  "W.9-10.5": {
+   "ee_code": "EE.W.9-10.5",
+   "stem": "With guidance and support from adults and peers as needed, plan before writing, produce writing for a specific purpose and focused on a planned topic, and revise and edit their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.9-10.6": {
+   "ee_code": "EE.W.9-10.6",
+   "stem": "Make intentional decisions about technology use (including paper and pencil, internet, audio, visual, and/or other interactive formats) to produce, publish, and update individual or shared writing products. Proficiently produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.9-10.7": {
+   "ee_code": "EE.W.9-10.7",
+   "stem": "With guidance and support as needed, conduct inquiry projects to answer a question or solve a problem.",
+   "subs": []
+  },
+  "W.9-10.8": {
+   "ee_code": "EE.W.9-10.8",
+   "stem": "Write answers to research questions by selecting relevant information from multiple resources.",
+   "subs": []
+  },
+  "W.9-10.9": {
+   "ee_code": "EE.W.9-10.9",
+   "stem": "With guidance and support from adults, draw evidence from literary or informational texts to support reflection, analysis or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.9-10.1": {
+   "ee_code": "EE.SL.9-10.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Prepare evidence for discussions by collecting information on the topic and be able to explain it."
+    ],
+    [
+     "b",
+     "Work with adults and peers to set norms for discussions, and reflect on the conversation."
+    ],
+    [
+     "c",
+     "Relate the topic of discussion to broader themes or ideas and acknowledge other perspectives."
+    ],
+    [
+     "d",
+     "Indicate agreement or disagreement with others during discussions."
+    ]
+   ]
+  },
+  "SL.9-10.2": {
+   "ee_code": "EE.SL.9-10.2",
+   "stem": "Determine the credibility of information presented in diverse media or formats.",
+   "subs": []
+  },
+  "SL.9-10.3": {
+   "ee_code": "EE.SL.9-10.3",
+   "stem": "Determine the speaker's point of view on a topic.",
+   "subs": []
+  },
+  "SL.9-10.4": {
+   "ee_code": "EE.SL.9-10.4",
+   "stem": "Present an argument on a topic with logically organized claims, reasons, and evidence.",
+   "subs": []
+  },
+  "SL.9-10.5": {
+   "ee_code": "EE.SL.9-10.5",
+   "stem": "Use digital media (e.g., textual, graphical, audio, visual, and interactive elements) in presentations to support understanding.",
+   "subs": []
+  },
+  "L.9-10.1": {
+   "ee_code": "EE.L.9-10.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many and has a specific history that is implicated in power relationships."
+    ],
+    [
+     "b",
+     "Notice the language demands of a writing/speaking situation (i.e. formal, informal) and respond in an appropriate way."
+    ],
+    [
+     "c",
+     "Continue to develop metacognitive awareness as writers and speakers by explaining the reasons for language choices."
+    ],
+    [
+     "d",
+     "Not applicable"
+    ]
+   ]
+  },
+  "L.9-10.2": {
+   "ee_code": "EE.L.9-10.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context to determine the meaning of unknown."
+    ],
+    [
+     "b",
+     "Identify and use root words and the words that result when affixes are added or removed."
+    ],
+    [
+     "c",
+     "Consult reference materials (dictionaries, online vocabulary supports) to clarify the meaning of unfamiliar words encountered when reading."
+    ]
+   ]
+  },
+  "L.9-10.3": {
+   "ee_code": "EE.L.9-10.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Interpret common figures of speech."
+    ],
+    [
+     "b",
+     "Determine the intended meaning of multiple meaning words."
+    ]
+   ]
+  },
+  "L.9-10.4": {
+   "ee_code": "EE.L.9-10.4",
+   "stem": "Use general academic and domain specific words and phrases across contexts.",
+   "subs": []
+  },
+  "L.9-10.5": {
+   "ee_code": "EE.L.9-10.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Not applicable"
+    ],
+    [
+     "b",
+     "Use a variety of parts of speech (nouns, verbs, pronouns, adjectives, and prepositions) in writing or communication to convey information."
+    ]
+   ]
+  },
+  "L.9-10.6": {
+   "ee_code": "EE.L.9-10.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Use a comma and conjunction to combine two simple sentences."
+    ],
+    [
+     "b",
+     "Spell most single-syllable words correctly and apply knowledge of word chunks in spelling longer words."
+    ]
+   ]
+  },
+  "R.11-12.1": {
+   "ee_code": "EE.R.11-12.1",
+   "stem": "Analyze a text to determine its meaning and cite textual evidence to support explicit and implicit understandings. (RI&RL)",
+   "subs": []
+  },
+  "R.11-12.2": {
+   "ee_code": "EE.R.11-12.2",
+   "stem": "Recount the main events or ideas of a text which are related to the theme or central idea. (RI&RL)",
+   "subs": []
+  },
+  "R.11-12.3": {
+   "ee_code": "EE.R.11-12.3",
+   "stem": "Determine how characters, individuals, settings, ideas, or events change over the course of the text. (RI&RL)",
+   "subs": []
+  },
+  "R.11-12.4": {
+   "ee_code": "EE.R.11-12.4",
+   "stem": "Determine how words or phrases in a text, including words with multiple meanings and figurative language, impact the meaning. (RI&RL)",
+   "subs": []
+  },
+  "R.11-12.5": {
+   "ee_code": "EE.R.11-12.5",
+   "stem": "Use a text’s ending (e.g., story (RL)) or structure (e.g, informational (RI) and determine its impact on meaning of the text as a whole.",
+   "subs": []
+  },
+  "R.11-12.6": {
+   "ee_code": "EE.R.11-12.6",
+   "stem": "Determine author’s point of view and compare and contrast it with own point of view. (RI&RL)",
+   "subs": []
+  },
+  "R.11-12.7": {
+   "ee_code": "EE.R.11-12.7",
+   "stem": "Compare two or more interpretations (e.g., recorded or live production of a play or recorded novel or poetry) of a story, drama, or poem. (RL) Analyze information presented in different media on related topics to answer questions or solve problems. (RI)",
+   "subs": []
+  },
+  "R.11-12.8": {
+   "ee_code": "EE.R.11-12.8",
+   "stem": "Determine whether the claims and reasoning enhance the author’s argument in a text. (RI)",
+   "subs": []
+  },
+  "R.11-12.9": {
+   "ee_code": "EE.R.11-12.9",
+   "stem": "Evaluate the quality of texts; make connections to other texts, ideas, cultural perspectives, identities, eras, and personal events or situations. (RI&RL)",
+   "subs": []
+  },
+  "W.11-12.1": {
+   "ee_code": "EE.W.11-12.1",
+   "stem": "With guidance and support as needed, use dictating, or writing to compose writing for a variety of high-stakes and low-stakes purposes.",
+   "subs": []
+  },
+  "W.11-12.2": {
+   "ee_code": "EE.W.11-12.2",
+   "stem": "With guidance and support, use writing and/or dictation to write in a variety of modes:",
+   "subs": [
+    [
+     "a",
+     "Write an argument or literary analysis with a clearly stated claim and valid and sufficient reasons to support the claim. Organize reasons logically and develop the claim fairly."
+    ],
+    [
+     "b",
+     "Write informative texts which introduce a topic and provide well chosen facts, details, quotes, and/or multimedia content to develop the topic and convey information clearly and accurately. Provide a concluding statement."
+    ],
+    [
+     "c",
+     "Write narratives to convey events and experiences, real or imagined. Include dialogue, relevant details, characterization, and tell about the events and in a logical sequence."
+    ]
+   ]
+  },
+  "W.11-12.3": {
+   "ee_code": "EE.W.11-12.3",
+   "stem": "Use a combination of drawing, dictating and writing to create a text that includes an introduction, body, and conclusion, uses words that convey specific details, transitions to link and build connections, and temporal words to signal event order.",
+   "subs": []
+  },
+  "W.11-12.4": {
+   "ee_code": "EE.W.11-12.4",
+   "stem": "Produce clear and coherent writing that is appropriate to a particular task, purpose, and audience.",
+   "subs": []
+  },
+  "W.11-12.5": {
+   "ee_code": "EE.W.11-12.5",
+   "stem": "With guidance and support from adults and peers as needed, plan before writing, produce writing for a specific purpose and focused on a planned topic, and revise and edit their own writing, dictation, or pictures.",
+   "subs": []
+  },
+  "W.11-12.6": {
+   "ee_code": "EE.W.11-12.6",
+   "stem": "Make intentional decisions about technology use (including paper and pencil, internet, audio, visual, and/or other interactive formats) to produce, publish, and update individual or shared writing products. Proficiently produce writing through printing, cursive, and/or typing.",
+   "subs": []
+  },
+  "W.11-12.7": {
+   "ee_code": "EE.W.11-12.7",
+   "stem": "With guidance and support as needed, conduct inquiry projects to answer a question or solve a problem using information from multiple sources.",
+   "subs": []
+  },
+  "W.11-12.8": {
+   "ee_code": "EE.W.11-12.8",
+   "stem": "Write answers to research questions by selecting relevant information from multiple resources.",
+   "subs": []
+  },
+  "W.11-12.9": {
+   "ee_code": "EE.W.11-12.9",
+   "stem": "With guidance and support from adults, draw evidence from literary or informational texts to support reflection, analysis or inquiry questions based on a reading of a literary or informational text.",
+   "subs": []
+  },
+  "SL.11-12.1": {
+   "ee_code": "EE.SL.11-12.1",
+   "stem": "Engage in collaborative discussions.",
+   "subs": [
+    [
+     "a",
+     "Prepare evidence for discussions by collecting information on the topic and be able to explain it."
+    ],
+    [
+     "b",
+     "Work with peers to set norms and goals for discussions and reflect on the conversation."
+    ],
+    [
+     "c",
+     "Ask and answer questions to verify or clarify own ideas and understandings during a discussion."
+    ],
+    [
+     "d",
+     "Respond appropriately to agreements and disagreements in a discussion."
+    ]
+   ]
+  },
+  "SL.11-12.2": {
+   "ee_code": "EE.SL.11-12.2",
+   "stem": "Determine the credibility and accuracy of information presented across diverse media or formats.",
+   "subs": []
+  },
+  "SL.11-12.3": {
+   "ee_code": "EE.SL.11-12.3",
+   "stem": "Determine whether the claims and reasoning enhance the speaker’s argument on a topic.",
+   "subs": []
+  },
+  "SL.11-12.4": {
+   "ee_code": "EE.SL.11-12.4",
+   "stem": "Present an argument on a topic using an organization appropriate to the purpose, audience, and task.",
+   "subs": []
+  },
+  "SL.11-12.5": {
+   "ee_code": "EE.SL.11-12.5",
+   "stem": "Use digital media strategically (e.g., textual, graphical, audio, visual, and interactive elements) in presentations to support understanding and add interest.",
+   "subs": []
+  },
+  "L.11-12.1": {
+   "ee_code": "EE.L.11-12.1",
+   "stem": "Use language to achieve desired outcomes when communicating.",
+   "subs": [
+    [
+     "a",
+     "Notice that standardized English is only one dialect of many and has a specific history that is implicated in power relationships."
+    ],
+    [
+     "b",
+     "Notice the language demands of a writing/speaking situation (i.e. formal, informal) and respond in an appropriate way."
+    ],
+    [
+     "c",
+     "Continue to develop metacognitive awareness as writers and speakers by explaining the reasons for language choices."
+    ],
+    [
+     "d",
+     "Not applicable."
+    ]
+   ]
+  },
+  "L.11-12.2": {
+   "ee_code": "EE.L.11-12.2",
+   "stem": "Demonstrate knowledge of word meanings.",
+   "subs": [
+    [
+     "a",
+     "Use context to determine the meaning of unknown words."
+    ],
+    [
+     "b",
+     "Identify and use root words and the words that result when affixes are added or removed."
+    ],
+    [
+     "c",
+     "Consult reference materials (dictionaries, online vocabulary supports) to clarify the meaning of unfamiliar words encountered when reading."
+    ]
+   ]
+  },
+  "L.11-12.3": {
+   "ee_code": "EE.L.11-12.3",
+   "stem": "Demonstrate understanding of word relationships and use.",
+   "subs": [
+    [
+     "a",
+     "Interpret common figures of speech"
+    ],
+    [
+     "b",
+     "Determine the intended meaning of multiple meaning words."
+    ]
+   ]
+  },
+  "L.11-12.4": {
+   "ee_code": "EE.L.11-12.4",
+   "stem": "Use general academic and domain specific words and phrases across contexts.",
+   "subs": []
+  },
+  "L.11-12.5": {
+   "ee_code": "EE.L.11-12.5",
+   "stem": "Demonstrate standardized English grammar and usage when communicating.",
+   "subs": [
+    [
+     "a",
+     "Use conventions of standard English when needed."
+    ],
+    [
+     "b",
+     "Not applicable."
+    ],
+    [
+     "c",
+     "Use digital, electronic, and other resources and tools to improve uses of language as needed."
+    ]
+   ]
+  },
+  "L.11-12.6": {
+   "ee_code": "EE.L.11-12.6",
+   "stem": "Demonstrate understanding of conventions of standardized English.",
+   "subs": [
+    [
+     "a",
+     "Demonstrate conventions of standard English including capitalization, ending punctuation, and spelling when writing."
+    ],
+    [
+     "b",
+     "Spell most single-syllable words correctly and apply knowledge of word chunks in spelling longer words."
+    ]
+   ]
+  }
+ },
+ "fixes": {
+  "EE.W.6.7": "EE W.6.7 With",
+  "EE.L.8.2": "E.L.8.2 Demons",
+  "EE.L.9-10.1": "EE.L.9-10.3.1"
+ }
+}
