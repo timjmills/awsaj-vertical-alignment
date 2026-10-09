@@ -175,15 +175,24 @@
       <span>${list.length - c[3]} of ${list.length} rated · ${c[2]} in depth</span></div>`;
   }
 
+  // The one framework each count uses, so a standard listed in two frameworks is not counted twice:
+  // elementary uses AERO (the school's current framework), middle and high use NGSS / Wisconsin Social Studies.
+  function countFramework(subject, g) {
+    const elem = DIV.Elementary.includes(g);
+    if (subject === "Science") return elem ? "AERO-SCI" : "NGSS";
+    if (subject === "Social Studies") return elem ? "AERO-SS" : "WI-SS";
+    return null;
+  }
   // Grade-level standards (suggested for grade g) that no one has marked yet, per subject. The goal is 0 everywhere.
   function toRateStrip(g) {
     const subs = S.team.name === "Vertical Alignment Committee" ? S.meta.subjects.map((s) => s.name) : S.team.subjects;
     const chips = subs.map((name) => {
       const sl = S.meta.subjects.find((s) => s.name === name).slug;
-      const list = S.idx[sl].filter((e) => e.pl.includes(g));
+      const fw = countFramework(name, g);
+      const list = S.idx[sl].filter((e) => e.pl.includes(g) && (!fw || e.f === fw));
       const left = list.filter((e) => !rating(e.f, e.c, g)).length;
-      return `<button type="button" class="torate ${left ? "" : "done"} ${name === S.f.subject ? "on" : ""}" data-act="subject" data-s="${esc(name)}"
-        title="${left} of ${list.length} ${esc(name)} standards for ${esc(gname(g))} not rated yet"><b>${left}</b> ${esc(name)}${left ? "" : " ✓"}</button>`;
+      return `<button type="button" class="torate ${left ? "" : "done"} ${name === S.f.subject ? "on" : ""}" data-act="subject" data-s="${esc(name)}" data-fw="${esc(fw || "")}"
+        title="${left} of ${list.length} ${esc(name)} standards for ${esc(gname(g))} not rated yet${fw ? " (" + esc(FW_NAME[fw]) + ")" : ""}"><b>${left}</b> ${esc(name)}${left ? "" : " ✓"}</button>`;
     }).join("");
     return `<div class="torate-row"><span class="muted">Still to rate in ${esc(gname(g))}:</span> ${chips} ${hb("torate")}</div>`;
   }
@@ -494,7 +503,7 @@
     const act = b.dataset.act;
     if (act === "rate") { const e = findItem(b.dataset.k); const l = +b.dataset.l; const cur = rating(e.f, e.c, b.dataset.g); if (cur && cur.level === l) return; setRating(e, b.dataset.g, l); }
     else if (act === "open") openDetail(b.dataset.k);
-    else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
+    else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = b.dataset.fw || ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
     else if (act === "cycle") {
       const e = findItem(b.dataset.k), g = b.dataset.g, cur = rating(e.f, e.c, g);
       if (!canEdit(g)) { toast(S.team ? `Your team rates ${S.team.grades.map(gname).join(", ")}.` : "Choose your team first."); return; }
