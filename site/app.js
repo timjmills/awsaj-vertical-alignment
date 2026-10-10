@@ -10,7 +10,8 @@
   const LEVEL_SHORT = ["Not taught", "Introduced", "In depth"];
   const FW_NAME = { "WI-CC-MATH": "Wisconsin Math (CC)", "WI-CC-ELA": "Wisconsin ELA (CC)", "NGSS": "NGSS",
     "WI-SCI": "Wisconsin Science", "AERO-SCI": "AERO Science", "WI-SS": "Wisconsin Social Studies", "AERO-SS": "AERO Social Studies" };
-  const COLORS = { none: "#FFFFFF", 0: "#D93F3F", placed: "#8A1538", 1: "#E09F1F", 2: "#1E7B45", maroon: "#8A1538", line: "#E3E6EA", ink: "#1F2328" };
+  // Awsaj brand: ratings use three of the four symbol ribbons (orange is kept for highlights so it never sits next to lime).
+  const COLORS = { none: "#FFFFFF", 0: "#D00070", placed: "#024638", 1: "#0092BC", 2: "#78BE21", maroon: "#024638", accent: "#ED8B00", line: "#D9E1E2", ink: "#1E2324" };
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -236,7 +237,7 @@
     toast(msg, action);
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const box = document.createElement("div"); box.className = "confetti"; box.setAttribute("aria-hidden", "true");
-    const cols = [COLORS[2], COLORS[1], COLORS[0], COLORS.maroon, "#0F8B8D"];
+    const cols = [COLORS[2], COLORS[1], COLORS[0], COLORS.accent, COLORS.maroon];
     for (let i = 0; i < 70; i++) {
       const b = document.createElement("i");
       b.style.cssText = `left:${Math.random() * 100}vw;background:${cols[i % cols.length]};animation-delay:${Math.random() * 0.4}s;animation-duration:${1.4 + Math.random()}s;transform:rotate(${Math.random() * 360}deg)`;
@@ -408,7 +409,7 @@
     }
     const rated = list.filter((e) => levelsAcross(e).length).length;
     el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"} ${hb("heatmap")}</h2>
-      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A maroon outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
+      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A dark green outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
       <div class="hm-wrap" id="hm"><table class="hm" data-sel="${esc(S.f.grade)}"><thead><tr><th class="rowh">Standard <span class="muted" style="font-weight:400">${hb("hm_cols")}</span></th>${gs.map((g) => {
         const mine = list.filter((e) => e.pl.includes(g)), c = countLevels(mine, g), pct = mine.length ? Math.round(((mine.length - c[3]) / mine.length) * 100) : 0;
         return `<th data-gi="${g}" class="${S.f.grade === g ? "sel" : ""}"><button type="button" class="colh" data-act="grade" data-g="${g}" data-tip-text="${esc(gname(g))}: ${mine.length - c[3]} of ${mine.length} suggested standards rated (${c[2]} in depth, ${c[1]} introduced, ${c[0]} not taught). Click to choose this grade.">${gl(g)}<small>${mine.length ? pct + "%" : ""}</small>${mine.length ? miniBar(c) : ""}</button></th>`;

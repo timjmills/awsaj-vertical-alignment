@@ -20,7 +20,7 @@
 ## Waiting on Tim
 - **Turn on GitHub Pages**: repo Settings, Pages, Source = GitHub Actions, then re-run the failed "Publish site"
   run. Site URL: https://timjmills.github.io/awsaj-vertical-alignment
-- Awsaj logo and official colours (currently maroon #8A1538 / teal #0F8B8D from his Curriculum Hub).
+- Awsaj logo and colours: now taken from awsaj.qa (symbol in site/awsaj-symbol.svg, palette in CLAUDE.md). Confirm with the school if an official brand guide exists.
 
 ## Next steps
 1. After Pages is on: open the live site, check every view, then share the link with the committee.
