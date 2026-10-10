@@ -479,7 +479,7 @@
         <div class="tile"><div class="n">${extra.length}</div><div class="l">taught here but suggested for another grade ${hb("t_extra")}</div></div>
       </div>
       <div class="summary">${hb("summary")}${list.length - tot[3] === 0 ? `<p>No ratings yet for ${esc(gname(g))}. Once the team rates its standards, this summary fills in.</p>` :
-        `<p>${esc(gname(g))} has rated ${list.length - tot[3]} of ${list.length} ${esc(S.f.subject)} standards. ${tot[2]} are taught in depth and ${tot[1]} are introduced; ${tot[0]} are not taught this year.</p>
+        `<p>${esc(gname(g))} has rated ${list.length - tot[3]} of ${list.length} ${esc(S.f.subject)} standards. ${tot[2]} ${tot[2] === 1 ? "is" : "are"} taught in depth and ${tot[1]} ${tot[1] === 1 ? "is" : "are"} introduced; ${tot[0]} ${tot[0] === 1 ? "is" : "are"} not taught this year.</p>
         ${strong && weak && strong !== weak ? `<p>Strongest coverage: <b>${esc(strong.s)}</b>. Most room to grow: <b>${esc(weak.s)}</b>.</p>` : ""}
         ${extra.length ? `<p>The team also teaches ${extra.length} standard${extra.length > 1 ? "s" : ""} suggested for other grades (see Gaps &amp; repetition).</p>` : ""}`}</div>
       <h3>Coverage by strand ${hb("strandbars")}</h3><div class="strand-bars" id="dash-bars">${bars || "<div class='muted'>No standards.</div>"}</div></div>`;
@@ -519,7 +519,7 @@
       <div class="panel"><h2>Recent comments</h2><table class="log"><thead><tr><th>When</th><th>Team</th><th>Standard</th><th colspan="2">Comment</th><th></th></tr></thead><tbody>${crow || "<tr><td colspan='6' class='muted'>No comments yet.</td></tr>"}</tbody></table></div>`;
   }
 
-  /* ---------------- Part 2: plans vs ratings ---------------- */
+  /* ---------------- Part 2: Vertical Alignment Audit (plans vs ratings) ---------------- */
   // data/evidence.json is written by scripts/part2/match_plans.py (not run yet). Until it exists the page shows
   // its layout with empty states, so the committee can see what Part 2 will report.
   const ev = (f, c, g) => S.evidence && S.evidence.items[`${f}|${c}|${g}`];
@@ -552,7 +552,7 @@
         .filter((o) => o.e && !o.e.pl.includes(g) && o.e.f && (!S.f.framework || o.e.f === S.f.framework) && list.includes(o.e));
     }
     const empty = (cols, msg) => `<tr class="placeholder"><td colspan="${cols}">${msg}</td></tr>`;
-    el.innerHTML = `<div class="panel"><h2>Plans vs ratings: ${esc(gname(g))} · ${esc(S.f.subject)} ${hb("plans")}</h2>
+    el.innerHTML = `<div class="panel"><h2>Vertical Alignment Audit: ${esc(gname(g))} · ${esc(S.f.subject)} ${hb("plans")}</h2>
       <p class="lede">What the curriculum plans show, side by side with what teams said in Part 1.</p>
       ${ready ? `<p class="muted">Plans last read ${esc(S.evidence.built)} · ${S.evidence.sources.length} plan files.</p>` :
       `<div class="notice"><b>Part 2 has not run yet.</b> This page shows what it will report. When the plans are read, every section below fills in, and each standard's popup shows the plans and weeks where it appears.</div>`}
