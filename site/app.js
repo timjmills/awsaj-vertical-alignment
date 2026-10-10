@@ -328,9 +328,11 @@
     let body;
     if (!e) {
       const next = S.team.subjects.find((s) => flowList(s, g).some((x) => !rating(x.f, x.c, g)));
-      body = `<div class="card done-card"><div class="big-tick">✓</div><h2>${esc(F.subject)} is done</h2>
-        <p class="lede">All ${list.length} ${esc(F.subject)} standards for ${esc(gname(g))} are rated. Thank you.</p>
-        <div class="done-actions">${next ? `<button type="button" data-act="flow-subject" data-s="${esc(next)}">Next: ${esc(next)} →</button>` : `<p><b>Every subject is done.</b> The committee can now see your grade on the map.</p>`}
+      const all = !next && S.team.subjects.length > 1;
+      const total = S.team.subjects.reduce((n, s) => n + flowList(s, g).length, 0);
+      body = `<div class="card done-card"><div class="big-tick">✓</div><h2>${all ? `${esc(gname(g))} is done` : `${esc(F.subject)} is done`}</h2>
+        <p class="lede">${all ? `All ${total} standards in ${S.team.subjects.map(esc).join(", ")} are rated. The committee can now see your grade on the map. Thank you.` : `All ${list.length} ${esc(F.subject)} standards for ${esc(gname(g))} are rated. Thank you.`}</p>
+        <div class="done-actions">${next ? `<button type="button" data-act="flow-subject" data-s="${esc(next)}">Next: ${esc(next)} →</button>` : `<button type="button" data-act="explore">See your grade on the K-12 map</button>`}
         <button type="button" class="ghost" data-act="review">Review my answers</button></div></div>`;
     } else {
       const k = rkey(e.f, e.c, g), r = rating(e.f, e.c, g), pos = list.indexOf(e) + 1;
