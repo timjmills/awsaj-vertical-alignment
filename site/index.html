@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=dev">
 </head>
 <body>
 <header class="top">
@@ -46,7 +46,7 @@
     <option value="Middle">Middle (6-8)</option><option value="High">High (9-12)</option></select></label>
   <label class="grade-only"><span>Grade <button type="button" class="help" data-help="grade" aria-label="What is this?">?</button></span><select id="f-grade"></select></label>
   <label><span>Strand <button type="button" class="help" data-help="strand" aria-label="What is this?">?</button></span><select id="f-strand"><option value="">All strands</option></select></label>
-  <label class="grow"><span>Search <button type="button" class="help" data-help="search" aria-label="What is this?">?</button></span><input id="f-search" type="search" placeholder="Code or words, e.g. fractions"></label>
+  <label class="grow"><span>Search <button type="button" class="help" data-help="search" aria-label="What is this?">?</button></span><input id="f-search" type="search" name="va-search" autocomplete="off" placeholder="Code or words, e.g. fractions"></label>
   <div class="exports">
     <button class="ghost" id="x-csv" title="Download the current view as a spreadsheet">CSV</button>
     <button class="ghost" id="x-png" title="Download the heatmap or chart as an image">PNG</button>
@@ -98,8 +98,8 @@
   Standards: Wisconsin Standards and Essential Elements (DPI), NGSS, AERO, and Awsaj school sheets.
   "I can" statements marked <em>draft</em> await committee review. No student data is stored.
 </footer>
-<script src="config.js"></script>
-<script src="help.js"></script>
-<script src="app.js"></script>
+<script src="config.js?v=dev"></script>
+<script src="help.js?v=dev"></script>
+<script src="app.js?v=dev"></script>
 </body>
 </html>
