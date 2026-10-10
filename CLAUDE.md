@@ -42,9 +42,15 @@ revoked; re-grant temporarily with a fresh token when reloading standards, then 
 Free projects pause after 7 days idle; `keepalive.yml` pings every 3 days.
 
 ## Rating scale and colours
-0 Not taught (red #D93F3F), 1 Introduced / exposed (amber #E09F1F), 2 Taught in depth (green #1E7B45), unrated
-white. Dark outline = suggested grade; dot = taught in a grade other than the suggested one. Part 2 uses the same
-scale: 1-2 weeks in plans = Introduced, 3+ weeks = Taught in depth. Brand: maroon #8A1538, teal #0F8B8D, white.
+Awsaj brand (from awsaj.qa logo and stylesheet): dark green #024638 (frame, headings, buttons), greys #56595A / #75787B,
+and the four symbol ribbons: orange #ED8B00, blue #0092BC, magenta #D00070, lime #78BE21. Font: Barlow (free, DIN-like;
+the school uses DIN Next and QF, which are licensed). Ratings: 0 Not taught (magenta #D00070), 1 Introduced / exposed
+(blue #0092BC), 2 Taught in depth (lime #78BE21), unrated white. Orange is only for highlights (selection, focus,
+celebrations): never make orange and lime two rating levels, colour-blind readers cannot tell them apart. Dark green
+outline = suggested grade; dot = taught in a grade other than the suggested one. Part 2 uses the same scale: 1-2 weeks in
+plans = Introduced, 3+ weeks = Taught in depth.
+
+Teachers use one guided flow (view "flow": one standard at a time); the committee and "Explore" get the full tabs.
 
 ## Testing
 Use Playwright (Chromium) against the local server, and check every view (Rate, Heatmap, Gaps, Dashboard,
