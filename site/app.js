@@ -394,28 +394,56 @@
     </div>`;
   }
 
+  // Part 1 coverage map: strands down the side, grades across. Each tile summarises how that grade rated the
+  // standards suggested for it in that strand (bottom-up: in depth, introduced, not taught, grey = not rated yet).
   function renderHeatmap() {
     const el = $("#view-heatmap"), gs = visibleGrades(), list = filtered();
     if (!list.length) { el.innerHTML = `<div class="panel empty">No standards match these filters.</div>`; return; }
+    const multi = subj().frameworks.length > 1;
+    const rowsKey = [...new Set(list.map((e) => (multi ? e.f + "\u0001" : "") + (e.s || "Standards")))];
+    let done = 0, total = 0;
+    const tile = (inS, g, strandName) => {
+      const mine = inS.filter((e) => e.pl.includes(g));
+      const extra = inS.filter((e) => !e.pl.includes(g) && (rating(e.f, e.c, g)?.level || 0) > 0).length;
+      if (!mine.length) return `<td class="cm-td" data-gi="${g}">${extra ? `<span class="cm-none cm-extra" data-tip-text="${esc(gname(g))} also teaches ${extra} ${esc(strandName)} standard${extra > 1 ? "s" : ""} suggested for other grades.">+${extra}</span>` : `<span class="cm-none"></span>`}</td>`;
+      const c = countLevels(mine, g), n = mine.length; total += n; done += n - c[3];
+      const h = (i) => (c[i] / n) * 100;
+      return `<td class="cm-td" data-gi="${g}"><button type="button" class="cm-tile ${c[3] ? "" : "full"}" data-act="cm-open" data-g="${g}" data-s="${esc(strandName)}"
+        data-tip-text="${esc(gname(g))} · ${esc(strandName)}: ${n} standard${n > 1 ? "s" : ""}. ${c[2]} in depth, ${c[1]} introduced, ${c[0]} not taught${c[3] ? ", " + c[3] + " not rated yet" : ""}.${extra ? " Also teaches " + extra + " from other grades." : ""} Click to see the strand across grades.">
+        <span class="cm-fill"><i style="height:${h(2)}%;background:${COLORS[2]}"></i><i style="height:${h(1)}%;background:${COLORS[1]}"></i><i style="height:${h(0)}%;background:${COLORS[0]}"></i></span>
+        <span class="cm-n">${n}</span>${extra ? `<span class="cm-plus">+${extra}</span>` : ""}</button></td>`;
+    };
+    const body = rowsKey.map((key) => {
+      const [fw, sname] = multi ? key.split("\u0001") : [null, key];
+      const inS = list.filter((e) => (e.s || "Standards") === sname && (!fw || e.f === fw));
+      const cells = gs.map((g) => tile(inS, g, sname)).join("");
+      return `<tr><th class="cm-row" scope="row"><span>${esc(sname)}</span>${multi ? `<small>${esc(FW_NAME[fw] || fw)}</small>` : ""}</th>${cells}</tr>`;
+    }).join("");
+    const head = gs.map((g) => {
+      const mine = list.filter((e) => e.pl.includes(g)), c = countLevels(mine, g), pct = mine.length ? Math.round(((mine.length - c[3]) / mine.length) * 100) : 0;
+      return `<th data-gi="${g}" class="${S.f.grade === g ? "sel" : ""}"><button type="button" class="colh" data-act="grade" data-g="${g}" data-tip-text="${esc(gname(g))}: ${mine.length - c[3]} of ${mine.length} suggested standards rated. Click to choose this grade.">${gl(g)}<small>${mine.length ? pct + "%" : ""}</small></button></th>`;
+    }).join("");
+    el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage map, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"} ${hb("heatmap")}</h2>
+      <p class="lede">Each tile is one grade and one strand. The number is how many standards that grade has in the strand; the colour fills up as the team rates them: lime in depth, blue introduced, magenta not taught, grey not rated yet. <b>${done} of ${total}</b> rated so far. Click a tile to follow the strand across grades.</p></div>
+      <div class="cm-wrap"><table class="cm"><thead><tr><th class="cm-row">Strand ${hb("hm_cols")}</th>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+  }
+
+  // Standard by standard across K-12 (used by the Vertical Alignment Audit). Colour = what each grade said in Part 1;
+  // a blue ring marks a grade whose plans include the standard (Part 2).
+  function standardGrid(list, gs) {
     let rows = "", last = null;
     for (const e of list) {
       const head = (subj().frameworks.length > 1 ? (FW_NAME[e.f] || e.f) + " · " : "") + (e.s || "");
       if (head !== last) { rows += `<tr class="strand-row"><td colspan="${gs.length + 1}">${esc(head)}</td></tr>`; last = head; }
       rows += `<tr><td class="rowh"><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}" title="${esc(e.t)}">${esc(e.c)}</button></td>` +
         gs.map((g) => {
-          const r = rating(e.f, e.c, g), placed = e.pl.includes(g);
-          const cls = ["cell", r ? "l" + r.level : "", placed ? "placed" : "", r && r.level > 0 && !placed ? "off" : ""].join(" ");
+          const r = rating(e.f, e.c, g), placed = e.pl.includes(g), inPlan = !!ev(e.f, e.c, g);
+          const cls = ["cell", r ? "l" + r.level : "", placed ? "placed" : "", r && r.level > 0 && !placed ? "off" : "", inPlan ? "inplan" : ""].join(" ");
           return `<td data-gi="${g}"><button class="${cls}" data-act="open" data-k="${esc(e.f + "|" + e.c)}" data-g="${g}" data-tip="1"
-            aria-label="${esc(e.c)}, ${esc(gname(g))}: ${r ? LEVEL[r.level] : "not rated"}${placed ? ", suggested grade" : ""}"></button></td>`;
+            aria-label="${esc(e.c)}, ${esc(gname(g))}: ${r ? LEVEL[r.level] : "not rated"}${placed ? ", suggested grade" : ""}${inPlan ? ", in plans" : ""}"></button></td>`;
         }).join("") + `</tr>`;
     }
-    const rated = list.filter((e) => levelsAcross(e).length).length;
-    el.innerHTML = `<div class="panel"><h2>${esc(S.f.subject)} coverage, ${S.f.division === "all" ? "K-12" : esc(S.f.division) + " school"} ${hb("heatmap")}</h2>
-      <p class="lede">${list.length} standards. ${rated} have at least one rating. Each row is a standard and each column a grade. A dark green outline marks the grade the standard is suggested for; a dot marks a grade that reports teaching it somewhere else.</p></div>
-      <div class="hm-wrap" id="hm"><table class="hm" data-sel="${esc(S.f.grade)}"><thead><tr><th class="rowh">Standard <span class="muted" style="font-weight:400">${hb("hm_cols")}</span></th>${gs.map((g) => {
-        const mine = list.filter((e) => e.pl.includes(g)), c = countLevels(mine, g), pct = mine.length ? Math.round(((mine.length - c[3]) / mine.length) * 100) : 0;
-        return `<th data-gi="${g}" class="${S.f.grade === g ? "sel" : ""}"><button type="button" class="colh" data-act="grade" data-g="${g}" data-tip-text="${esc(gname(g))}: ${mine.length - c[3]} of ${mine.length} suggested standards rated (${c[2]} in depth, ${c[1]} introduced, ${c[0]} not taught). Click to choose this grade.">${gl(g)}<small>${mine.length ? pct + "%" : ""}</small>${mine.length ? miniBar(c) : ""}</button></th>`;
-      }).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+    return `<div class="hm-wrap"><table class="hm" data-sel="${esc(S.f.grade)}"><thead><tr><th class="rowh">Standard</th>${gs.map((g) => `<th data-gi="${g}" class="${S.f.grade === g ? "sel" : ""}"><span class="colh">${gl(g)}</span></th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 
   function analyse(list) {
@@ -572,6 +600,9 @@
       <table class="svs"><thead><tr><th>Standard</th><th>Suggested grade</th><th>Weeks in ${esc(gname(g))} plans</th><th>Below or above</th></tr></thead>
       <tbody>${ready ? off.map(({ e, x }) => `<tr><td><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}">${esc(e.c)}</button></td><td>${e.pl.map(gl).join(", ")}</td><td>${x.weeks} (${x.match})</td>
         <td>${GRADES.indexOf(e.pl[0]) < GRADES.indexOf(g) ? "Below grade (review or remediation)" : "Above grade (extension)"}</td></tr>`).join("") || empty(4, "None found.") : empty(4, "Fills in when Part 2 runs.")}</tbody></table></div>
+    <div class="panel"><h2>Each standard across K-12 ${hb("p_heat")}</h2>
+      <p class="lede">One row per ${esc(S.f.subject)} standard${S.f.strand ? " in " + esc(S.f.strand) : ""}. Colour is what each grade said in Part 1; a <span class="ring-key"></span> ring marks a grade whose plans include it${ready ? "" : " (rings appear when the audit runs)"}. This is where repetition and gaps between grades show up.</p>
+      ${standardGrid(filtered(), visibleGrades())}</div>
     <div class="panel"><h2>Plan sources ${hb("p_sources")}</h2>
       <table class="svs"><thead><tr><th>Plan</th><th>Year</th><th>Grade</th><th>Type</th><th>Notes</th></tr></thead>
       <tbody>${ready ? S.evidence.sources.filter((s) => s.grade === g).map((s) => `<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${esc(s.year)}</td><td>${esc(gname(s.grade))}</td><td>${esc(s.kind)}</td><td>${s.carried_forward ? "Copied forward from last year" : ""}</td></tr>`).join("") || empty(5, "No plans read for this grade yet.") :
@@ -684,6 +715,7 @@
     else if (act === "flow-rate") flowRate(b.dataset.k, +b.dataset.l);
     else if (act === "flow-skip") flowSkip();
     else if (act === "flow-back") flowBack();
+    else if (act === "cm-open") { S.f.grade = b.dataset.g; S.f.strand = b.dataset.s; showView("ladder"); refreshFilterOptions(); rerender(); }
     else if (act === "grade") { S.f.grade = b.dataset.g; refreshFilterOptions(); rerender(); }
     else if (act === "strand") { S.f.strand = b.dataset.s; $(`.tabs [data-view="rate"]`).click(); }
     else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = b.dataset.fw || ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
@@ -737,11 +769,11 @@
   // heatmap crosshair: light up the row and grade column under the pointer
   let hmCol = null;
   document.addEventListener("mouseover", (ev) => {
-    const td = ev.target.closest("table.hm td[data-gi], table.hm th[data-gi]");
+    const td = ev.target.closest("table.hm td[data-gi], table.hm th[data-gi], table.cm td[data-gi], table.cm th[data-gi]");
     const col = td ? td.dataset.gi : null;
     if (col === hmCol) return;
-    $$("table.hm .xcol").forEach((x) => x.classList.remove("xcol"));
-    hmCol = col; if (col) $$(`table.hm [data-gi="${col}"]`).forEach((x) => x.classList.add("xcol"));
+    $$("table.hm .xcol, table.cm .xcol").forEach((x) => x.classList.remove("xcol"));
+    hmCol = col; if (col) $$(`table.hm [data-gi="${col}"], table.cm [data-gi="${col}"]`).forEach((x) => x.classList.add("xcol"));
   });
   // tooltip for heatmap cells and bars
   const tip = $("#tip");
