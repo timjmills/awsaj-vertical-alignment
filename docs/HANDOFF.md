@@ -14,7 +14,7 @@
    popup (text, EE, "I can" levels, grade strip you can click, grade before/after, comments, history); CSV/PNG/PDF
    export; "?" explanations everywhere; traffic-light colours. Tested end to end against the live database
    (save, history, undo with passcode, wrong passcode rejected).
-4. **Part 2 page** ("Plans vs ratings" tab): layout and empty states are ready; it reads `site/data/evidence.json`
+4. **Part 2 page** ("Vertical Alignment Audit" tab, view id "plans"): layout and empty states are ready; it reads `site/data/evidence.json`
    when that file exists. `scripts/part2/match_plans.py` is written but has NOT been run (Tim asked to hold it).
 
 ## Waiting on Tim

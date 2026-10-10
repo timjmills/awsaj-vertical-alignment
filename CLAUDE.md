@@ -56,5 +56,5 @@ Teachers use one guided flow (view "flow": one standard at a time); the committe
 
 ## Testing
 Use Playwright (Chromium) against the local server, and check every view (Rate, Heatmap, Gaps, Dashboard,
-Progressions, Activity, Plans vs ratings) plus a standard popup. Do not leave test ratings in the live database:
+Progressions, Activity, Vertical Alignment Audit) plus a standard popup. Do not leave test ratings in the live database:
 if you write one, undo it.
