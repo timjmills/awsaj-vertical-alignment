@@ -1,5 +1,8 @@
 /* Explanations shown by the "?" buttons. Plain language for teachers. */
 window.VA_HELP = {
+  flow: ["Rating one at a time", "Your grade's standards appear one at a time, strand by strand. Choose how each is really taught this year and the next one appears. Every answer saves straight away, with an Undo button for a few seconds. The bar shows how many are left: the goal is 0 in every subject."],
+  flow_keys: ["Shortcuts", "Press <b>1</b> Not taught, <b>2</b> Introduced, <b>3</b> Taught in depth. <b>S</b> skips a standard for now (it comes back at the end). The left arrow goes back to your previous answer so you can change it."],
+  review: ["The whole list", "Shows every standard for your grade and subject on one page, so you can check or change answers. It also lists standards suggested for other grades: mark any your grade actually teaches."],
   team: ["Your team", "Pick the team you are rating for. The site remembers it on this device. Every change you make is saved with this team name and the time, so the committee can see who rated what. There is no sign-in."],
   sync: ["Saving and updates", "Ratings save the moment you click. This label shows when your last change was saved and when the page last checked for other teams' changes (about every 20 seconds)."],
   subject: ["Subject", "Math, ELA, Science or Social Studies. Teams that teach one subject only see that subject."],

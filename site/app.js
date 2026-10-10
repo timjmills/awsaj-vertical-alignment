@@ -25,7 +25,7 @@
 
   const S = {
     meta: null, idx: {}, detail: {}, ratings: new Map(), events: [], comments: [], teams: [],
-    team: null, view: "rate", lastSync: null, device: null, pending: null,
+    team: null, view: "rate", explore: false, flow: { subject: null, skipped: new Set(), back: null, history: [] }, lastSync: null, device: null, pending: null,
     f: { subject: "Math", framework: "", division: "all", grade: "", strand: "", search: "" },
   };
 
@@ -160,9 +160,25 @@
   }
 
   /* ---------------- views ---------------- */
+  // Teachers get one guided flow (view "flow"); the committee, or a teacher who chooses "Explore", gets the full tabs.
+  const isCommittee = () => S.team && S.team.name === "Vertical Alignment Committee";
+  const mode = () => (!S.team ? "welcome" : isCommittee() || S.explore ? "full" : "teacher");
+  function showView(v) {
+    S.view = v;
+    $$(".tabs [data-view]").forEach((x) => x.setAttribute("aria-selected", x.dataset.view === v));
+    $$(".view").forEach((x) => (x.hidden = x.id !== "view-" + v));
+    document.body.dataset.mode = mode(); document.body.dataset.view = v;
+    renderWho();
+  }
+  function renderWho() {
+    const m = mode();
+    $("#whoami").innerHTML = m === "welcome" ? "" : `<span class="who-team">${esc(S.team.name)}</span>
+      ${m === "teacher" ? `<button type="button" class="ghost sm" data-act="explore">Explore the K-12 map</button>` : !isCommittee() ? `<button type="button" class="sm" data-act="back-to-flow">Back to rating</button>` : ""}
+      <button type="button" class="linkish" data-act="switch-team">Change team</button>`;
+  }
   function rerender() {
     const v = S.view;
-    if (v === "rate") renderRate(); else if (v === "heatmap") renderHeatmap(); else if (v === "gaps") renderGaps();
+    if (v === "flow") renderFlow(); else if (v === "rate") renderRate(); else if (v === "heatmap") renderHeatmap(); else if (v === "gaps") renderGaps();
     else if (v === "dashboard") renderDashboard(); else if (v === "ladder") renderLadder(); else if (v === "plans") renderPlans(); else renderActivity();
   }
 
@@ -267,6 +283,86 @@
     return `<div class="torate-row"><span class="muted">Still to rate in ${esc(gname(g))}:</span> ${chips} ${hb("torate")}</div>`;
   }
 
+  /* ---------------- teacher flow: one standard at a time ---------------- */
+  // The grade-level list a teacher works through for one subject, in document order (strand by strand).
+  function flowList(subject, g) {
+    const sl = S.meta.subjects.find((s) => s.name === subject).slug, fw = countFramework(subject, g);
+    return S.idx[sl].filter((e) => e.pl.includes(g) && (!fw || e.f === fw));
+  }
+  // Index rows trim long standards; the card shows the full text from the detail file once it has loaded.
+  function fullText(e) {
+    const sub = S.meta.subjects.find((s) => S.idx[s.slug].includes(e)), det = sub && S.detail[sub.slug];
+    if (!det) { if (sub) loadDetail(sub.slug).then(() => S.view === "flow" && rerender()).catch(() => {}); return e.t + (e.t.length >= 220 ? "…" : ""); }
+    return (det[`${e.f}|${e.c}|${e.pl[0]}`] || {}).text || e.t;
+  }
+  function flowCurrent(list, g) {
+    const F = S.flow;
+    if (F.back) { const b = list.find((e) => rkey(e.f, e.c, g) === F.back); if (b) return b; F.back = null; }
+    const open = list.filter((e) => !rating(e.f, e.c, g));
+    return open.find((e) => !F.skipped.has(rkey(e.f, e.c, g))) || open[0] || null;
+  }
+  function welcome(el) {
+    const groups = { "Elementary": [], "Middle school": [], "High school": [] };
+    S.teams.forEach((t) => { if (t.name !== "Vertical Alignment Committee") (DIV.Elementary.includes(t.grades[0]) ? groups.Elementary : DIV.Middle.includes(t.grades[0]) ? groups["Middle school"] : groups["High school"]).push(t); });
+    el.innerHTML = `<div class="flow-wrap"><div class="hero"><h2>Which team are you?</h2>
+      <p class="lede">You will see your grade's standards one at a time. For each one, say how it is really taught this year. It saves as you go, and this device remembers your team.</p></div>
+      ${Object.entries(groups).map(([g, ts]) => `<h3 class="pick-h">${g}</h3><div class="pick">${ts.map((t) => `<button type="button" class="pick-b" data-act="team" data-t="${esc(t.name)}">${esc(t.name)}</button>`).join("")}</div>`).join("")}
+      <p class="muted committee-link"><button type="button" class="linkish" data-act="team" data-t="Vertical Alignment Committee">I am on the Vertical Alignment Committee</button></p></div>`;
+  }
+  function renderFlow() {
+    const el = $("#view-flow");
+    if (!S.team) return welcome(el);
+    const g = teamGrade(), F = S.flow;
+    if (!F.subject || !S.team.subjects.includes(F.subject)) F.subject = S.team.subjects.find((s) => flowList(s, g).some((e) => !rating(e.f, e.c, g))) || S.team.subjects[0];
+    const list = flowList(F.subject, g), done = list.filter((e) => rating(e.f, e.c, g)).length, left = list.length - done;
+    const pills = S.team.subjects.length > 1 ? `<div class="subj-pills" role="tablist" aria-label="Subjects">${S.team.subjects.map((s) => {
+      const l = flowList(s, g), n = l.filter((e) => !rating(e.f, e.c, g)).length;
+      return `<button type="button" role="tab" aria-selected="${s === F.subject}" class="subj ${n ? "" : "done"}" data-act="flow-subject" data-s="${esc(s)}">${esc(s)} <span>${n ? n + " left" : "✓"}</span></button>`;
+    }).join("")}</div>` : "";
+    const pct = list.length ? (done / list.length) * 100 : 100;
+    const head = `<div class="flow-head">${pills}
+      <div class="flow-progress"><div class="fp-bar"><i style="width:${pct}%"></i></div>
+      <span><b>${done}</b> of ${list.length} rated · <b>${left}</b> left ${hb("flow")}</span></div></div>`;
+    const e = flowCurrent(list, g);
+    let body;
+    if (!e) {
+      const next = S.team.subjects.find((s) => flowList(s, g).some((x) => !rating(x.f, x.c, g)));
+      body = `<div class="card done-card"><div class="big-tick">✓</div><h2>${esc(F.subject)} is done</h2>
+        <p class="lede">All ${list.length} ${esc(F.subject)} standards for ${esc(gname(g))} are rated. Thank you.</p>
+        <div class="done-actions">${next ? `<button type="button" data-act="flow-subject" data-s="${esc(next)}">Next: ${esc(next)} →</button>` : `<p><b>Every subject is done.</b> The committee can now see your grade on the map.</p>`}
+        <button type="button" class="ghost" data-act="review">Review my answers</button></div></div>`;
+    } else {
+      const k = rkey(e.f, e.c, g), r = rating(e.f, e.c, g), pos = list.indexOf(e) + 1;
+      const ee = e.ee ? e.ee.split(";")[0].trim() : "";
+      const fresh = S.flow.lastKey !== k; S.flow.lastKey = k;
+      body = `<article class="card std-card ${fresh ? "enter" : ""}" data-k="${esc(k)}">
+        <div class="card-top"><span class="eyebrow">${esc(e.s || F.subject)}</span><span class="muted">${pos} of ${list.length}</span></div>
+        <h2 class="card-code"><button class="code" data-act="open" data-k="${esc(e.f + "|" + e.c)}" title="Open the full standard">${esc(e.c)}</button></h2>
+        <p class="card-text">${esc(fullText(e))}</p>
+        <p class="card-meta">${ee ? `Essential Element ${esc(ee)} · ` : ""}<button type="button" class="linkish" data-act="open" data-k="${esc(e.f + "|" + e.c)}">Full standard and "I can" levels</button>${e.sg ? ` · <span class="tag sg">Suggested placement</span>` : ""}</p>
+        <p class="card-q">How is this taught in ${esc(gname(g))} this year?</p>
+        <div class="choices">${[0, 1, 2].map((l) => `<button type="button" class="choice c${l} ${r && r.level === l ? "on" : ""}" data-act="flow-rate" data-k="${esc(e.f + "|" + e.c)}" data-l="${l}">
+          <kbd>${l + 1}</kbd><b>${["Not taught", "Introduced", "Taught in depth"][l]}</b><small>${["We do not teach this", "Touched on, not a main focus", "Taught, practised and assessed"][l]}</small></button>`).join("")}</div>
+        <div class="card-foot">
+          <button type="button" class="linkish" data-act="flow-back" ${F.history.length ? "" : "disabled"}>← Previous</button>
+          <span class="muted keys">Keys: 1, 2, 3 to answer · S to skip ${hb("flow_keys")}</span>
+          <button type="button" class="linkish" data-act="flow-skip">Skip for now →</button></div>
+      </article>`;
+    }
+    el.innerHTML = `<div class="flow-wrap">${head}${body}
+      <p class="flow-more"><button type="button" class="linkish" data-act="review">See the whole list</button> ${hb("review")}</p></div>`;
+  }
+  async function flowRate(k, level) {
+    const g = teamGrade(), e = findItem(k); if (!e) return;
+    const rk = rkey(e.f, e.c, g), cur = rating(e.f, e.c, g);
+    S.flow.skipped.delete(rk);
+    if (S.flow.back === rk) S.flow.back = null;
+    if (!S.flow.history.includes(rk)) S.flow.history.push(rk);
+    const card = $(".std-card"); if (card) card.classList.add("leaving");
+    if (cur && cur.level === level) { rerender(); return; }
+    await setRating(e, g, level);
+  }
+
   function renderRate() {
     const el = $("#view-rate");
     if (!S.team) {
@@ -280,7 +376,7 @@
     const placed = all.filter((e) => e.pl.includes(g));
     const band = all.filter((e) => !e.pl.includes(g) && e.sg && e.div.includes(divOf(g)));
     const committee = S.team.name === "Vertical Alignment Committee";
-    el.innerHTML = `<div class="panel">
+    el.innerHTML = (mode() === "teacher" ? `<div class="flow-wrap wide"><p><button type="button" class="ghost" data-act="back-to-flow">← Back to one at a time</button></p></div>` : "") + `<div class="panel">
       <div class="rate-head"><div><h2>${esc(S.f.subject)} · ${esc(gname(g))} ${hb("rate")}</h2>
       <p class="lede">For each standard, choose how it is taught in ${esc(gname(g))} this year. Use what is really taught, even if the plans do not show it yet.</p></div>
       <div class="ring-box">${(() => { const lst = placed.concat(band.filter((e) => rating(e.f, e.c, g))), c = countLevels(lst, g); return donut(c) +
@@ -578,6 +674,15 @@
     const act = b.dataset.act;
     if (act === "rate") { const e = findItem(b.dataset.k); const l = +b.dataset.l; const cur = rating(e.f, e.c, b.dataset.g); if (cur && cur.level === l) return; setRating(e, b.dataset.g, l); }
     else if (act === "open") openDetail(b.dataset.k);
+    else if (act === "team") { setTeam(b.dataset.t); store.set("va_team", b.dataset.t); $("#team").value = b.dataset.t; }
+    else if (act === "switch-team") { S.explore = false; setTeam(""); store.set("va_team", ""); $("#team").value = ""; }
+    else if (act === "explore") { S.explore = true; showView("heatmap"); refreshFilterOptions(); rerender(); }
+    else if (act === "back-to-flow") { S.explore = false; showView("flow"); rerender(); }
+    else if (act === "review") { S.f.subject = S.flow.subject || S.f.subject; S.f.framework = defaultFramework(S.f.subject, teamGrade()); S.f.strand = ""; showView("rate"); refreshFilterOptions(); rerender(); }
+    else if (act === "flow-subject") { S.flow.subject = b.dataset.s; S.flow.back = null; S.flow.skipped.clear(); showView("flow"); rerender(); }
+    else if (act === "flow-rate") flowRate(b.dataset.k, +b.dataset.l);
+    else if (act === "flow-skip") flowSkip();
+    else if (act === "flow-back") flowBack();
     else if (act === "grade") { S.f.grade = b.dataset.g; refreshFilterOptions(); rerender(); }
     else if (act === "strand") { S.f.strand = b.dataset.s; $(`.tabs [data-view="rate"]`).click(); }
     else if (act === "subject") { S.f.subject = b.dataset.s; S.f.framework = b.dataset.fw || ""; S.f.strand = ""; refreshFilterOptions(); rerender(); }
@@ -643,8 +748,7 @@
   document.addEventListener("mousemove", (ev) => { if (!tip.hidden) { tip.style.left = Math.min(ev.clientX + 14, innerWidth - 360) + "px"; tip.style.top = ev.clientY + 14 + "px"; } });
 
   $$(".tabs [data-view]").forEach((b) => b.addEventListener("click", () => {
-    S.view = b.dataset.view; $$(".tabs [data-view]").forEach((x) => x.setAttribute("aria-selected", x === b));
-    $$(".view").forEach((v) => (v.hidden = v.id !== "view-" + S.view));
+    showView(b.dataset.view);
     store.set("va_view", S.view); refreshFilterOptions(); rerender();
     if (S.view === "activity") Promise.all([loadEvents(), loadComments()]).then(rerender);
   }));
@@ -659,12 +763,37 @@
 
   function setTeam(name) {
     S.team = S.teams.find((t) => t.name === name) || null;
-    if (S.team && S.team.name !== "Vertical Alignment Committee") {
+    S.flow = { subject: null, skipped: new Set(), back: null, history: [] };
+    $("#toast").hidden = true;
+    if (S.team && !isCommittee()) {
       S.f.subject = S.team.subjects[0]; S.f.grade = S.team.grades[0]; S.f.division = "all"; S.f.strand = "";
       S.f.framework = defaultFramework(S.f.subject, S.f.grade);
     }
+    showView(!S.team || !isCommittee() ? "flow" : S.view === "flow" ? "rate" : S.view);
     refreshFilterOptions(); rerender();
   }
+  function flowSkip() {
+    const g = teamGrade(), list = flowList(S.flow.subject, g), e = flowCurrent(list, g); if (!e) return;
+    const k = rkey(e.f, e.c, g);
+    if (S.flow.back === k) S.flow.back = null; else S.flow.skipped.add(k);
+    const open = list.filter((x) => !rating(x.f, x.c, g));
+    if (open.length && open.every((x) => S.flow.skipped.has(rkey(x.f, x.c, g)))) { S.flow.skipped.clear(); toast("Back to the ones you skipped."); }
+    rerender();
+  }
+  function flowBack() {
+    const h = S.flow.history; if (!h.length) return;
+    const cur = S.flow.back, i = cur ? h.indexOf(cur) - 1 : h.length - 1;
+    if (i < 0) return; S.flow.back = h[i]; rerender();
+  }
+  document.addEventListener("keydown", (ev) => {
+    if (S.view !== "flow" || mode() !== "teacher" || ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    if (ev.target.closest("input, textarea, select, dialog") || $("#detail").open) return;
+    const card = $(".std-card"); if (!card) return;
+    const k = card.dataset.k.split("|").slice(0, 2).join("|");
+    if (["1", "2", "3"].includes(ev.key)) { ev.preventDefault(); flowRate(k, +ev.key - 1); }
+    else if (ev.key === "s" || ev.key === "S") { ev.preventDefault(); flowSkip(); }
+    else if (ev.key === "ArrowLeft") { ev.preventDefault(); flowBack(); }
+  });
 
   /* ---------------- start ---------------- */
   async function start() {
@@ -677,7 +806,9 @@
     S.teams.forEach((t) => (t.name === "Vertical Alignment Committee" ? groups.Committee : DIV.Elementary.includes(t.grades[0]) ? groups.Elementary : DIV.Middle.includes(t.grades[0]) ? groups["Middle school"] : groups["High school"]).push(t));
     $("#team").innerHTML = `<option value="">Choose your team</option>` + Object.entries(groups).map(([g, ts]) => `<optgroup label="${g}">${ts.map((t) => `<option>${esc(t.name)}</option>`).join("")}</optgroup>`).join("");
     const saved = store.get("va_team"); if (saved && S.teams.some((t) => t.name === saved)) { $("#team").value = saved; setTeam(saved); }
-    const v = store.get("va_view"); if (v && $(`.tabs [data-view="${v}"]`)) $(`.tabs [data-view="${v}"]`).click(); else { refreshFilterOptions(); rerender(); }
+    const v = store.get("va_view");
+    if (mode() === "full" && v && v !== "flow" && $(`.tabs [data-view="${v}"]`)) $(`.tabs [data-view="${v}"]`).click();
+    else { showView(mode() === "full" ? "rate" : "flow"); refreshFilterOptions(); rerender(); }
     try { await Promise.all([loadRatings(true), loadEvents(), loadComments()]); syncNote("Up to date"); rerender(); }
     catch (err) { syncNote("Offline: ratings could not load"); }
     let n = 0;
