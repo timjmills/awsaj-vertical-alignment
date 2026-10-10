@@ -1,6 +1,6 @@
 /* Awsaj K-12 Vertical Alignment: Part 1 (collaborative standards audit)
    Static site. Standards come from data/*.json; ratings, history and comments live in Supabase
-   and are written only through logged database functions (set_rating, add_comment, admin_*). */
+   and are written only through logged database functions (set_rating, add_comment, undo_change, hide_comment, undo_my_rating). */
 (() => {
   "use strict";
   const CFG = window.VA_CONFIG;
@@ -72,7 +72,7 @@
   const items = () => S.idx[subj().slug];
   const visibleGrades = () => (S.f.division === "all" ? GRADES : DIV[S.f.division]);
   function filtered({ ignoreDivision = false } = {}) {
-    const q = S.f.search.trim().toLowerCase();
+    const q = mode() === "full" ? S.f.search.trim().toLowerCase() : "";
     const grades = visibleGrades();
     return items().filter((e) =>
       (!S.f.framework || e.f === S.f.framework) &&
@@ -228,7 +228,7 @@
       arcs += `<circle r="${r}" cx="20" cy="20" fill="none" stroke="${COLORS[i]}" stroke-width="4.2" stroke-dasharray="${Math.max(len - gap, 0.1)} ${C}" stroke-dashoffset="${-off}" class="arc"><title>${LEVEL[i]}: ${c[i]}</title></circle>`;
       off += len;
     }
-    const pct = Math.round(((n - c[3]) / n) * 100);
+    const pct = c[0] + c[1] + c[2] + c[3] ? Math.round(((n - c[3]) / n) * 100) : 0;
     return `<svg class="donut" width="${size}" height="${size}" viewBox="0 0 40 40" role="img" aria-label="${pct}% rated">
       <circle r="${r}" cx="20" cy="20" fill="none" stroke="var(--chip)" stroke-width="4.2"></circle><g transform="rotate(-90 20 20)">${arcs}</g>
       <text x="20" y="21.5" text-anchor="middle" class="donut-n">${pct}%</text><text x="20" y="27.5" text-anchor="middle" class="donut-l">rated</text></svg>`;
@@ -514,7 +514,7 @@
     const crow = S.comments.slice(0, 50).map((c) => `<tr><td>${new Date(c.created_at).toLocaleString()}</td><td>${esc(c.team)}${c.author ? " · " + esc(c.author) : ""}</td>
       <td><button class="code" data-act="open" data-k="${esc(c.framework + "|" + c.code)}">${esc(c.code)}</button></td><td colspan="2">${esc(c.body)}</td>
       <td><button class="ghost" data-act="hide" data-id="${c.id}">Hide</button></td></tr>`).join("");
-    el.innerHTML = `<div class="panel"><h2>Recent changes ${hb("activity")}</h2><p class="lede">Every rating change, newest first. Undo needs the committee passcode.</p>
+    el.innerHTML = `<div class="panel"><h2>Recent changes ${hb("activity")}</h2><p class="lede">Every rating change, newest first. Anyone can undo a change made by mistake; the history keeps a record of it.</p>
       <table class="log"><thead><tr><th>When</th><th>Team</th><th>Standard</th><th>Grade</th><th>Change</th><th></th></tr></thead><tbody>${rows || "<tr><td colspan='6' class='muted'>No changes yet.</td></tr>"}</tbody></table></div>
       <div class="panel"><h2>Recent comments</h2><table class="log"><thead><tr><th>When</th><th>Team</th><th>Standard</th><th colspan="2">Comment</th><th></th></tr></thead><tbody>${crow || "<tr><td colspan='6' class='muted'>No comments yet.</td></tr>"}</tbody></table></div>`;
   }
@@ -668,8 +668,6 @@
   }
 
   /* ---------------- events ---------------- */
-  let adminAction = null;
-  function askAdmin(fn) { adminAction = fn; $("#a-pass").value = ""; $("#admin").showModal(); $("#a-pass").focus(); }
   document.addEventListener("click", async (ev) => {
     const b = ev.target.closest("[data-act]"); if (!b) return;
     const act = b.dataset.act;
@@ -679,7 +677,7 @@
     else if (act === "switch-team") { S.explore = false; setTeam(""); store.set("va_team", ""); $("#team").value = ""; }
     else if (act === "explore") { S.explore = true; showView("heatmap"); refreshFilterOptions(); rerender(); }
     else if (act === "back-to-flow") { S.explore = false; showView("flow"); rerender(); }
-    else if (act === "review") { S.f.subject = S.flow.subject || S.f.subject; S.f.framework = defaultFramework(S.f.subject, teamGrade()); S.f.strand = ""; showView("rate"); refreshFilterOptions(); rerender(); }
+    else if (act === "review") { S.f.subject = S.flow.subject || S.f.subject; S.f.framework = defaultFramework(S.f.subject, teamGrade()); S.f.strand = ""; S.f.search = ""; $("#f-search").value = ""; showView("rate"); refreshFilterOptions(); rerender(); }
     else if (act === "flow-subject") { S.flow.subject = b.dataset.s; S.flow.back = null; S.flow.skipped.clear(); showView("flow"); rerender(); }
     else if (act === "flow-rate") flowRate(b.dataset.k, +b.dataset.l);
     else if (act === "flow-skip") flowSkip();
@@ -697,10 +695,16 @@
       const e = findItem(b.dataset.k);
       try { await rpc("add_comment", { p_framework: e.f, p_code: e.c, p_grade: teamGrade(), p_team: S.team.name, p_author: $("#c-author").value.trim(), p_body: body });
         await loadComments(); openDetail(b.dataset.k); toast("Comment posted"); } catch (err) { toast("Could not post: " + err.message); }
-    } else if (act === "undo") askAdmin(async (p) => { await rpc("admin_undo", { p_event_id: +b.dataset.id, p_passcode: p }); await Promise.all([loadRatings(true), loadEvents()]); rerender(); toast("Change undone"); });
-    else if (act === "hide") askAdmin(async (p) => { await rpc("admin_hide_comment", { p_comment_id: +b.dataset.id, p_passcode: p }); await loadComments(); rerender(); toast("Comment hidden"); });
+    } else if (act === "undo") {
+      if (!confirm("Undo this change? The rating goes back to what it was before. The change stays in the history.")) return;
+      try { await rpc("undo_change", { p_event_id: +b.dataset.id }); await Promise.all([loadRatings(true), loadEvents()]); rerender(); toast("Change undone"); }
+      catch (err) { toast("Could not undo: " + err.message); }
+    } else if (act === "hide") {
+      if (!confirm("Hide this comment from the site?")) return;
+      try { await rpc("hide_comment", { p_comment_id: +b.dataset.id }); await loadComments(); rerender(); toast("Comment hidden"); }
+      catch (err) { toast("Could not hide: " + err.message); }
+    }
   });
-  $("#a-go").addEventListener("click", async () => { try { await adminAction($("#a-pass").value); $("#admin").close(); } catch (err) { toast(err.message === "not allowed" ? "Wrong passcode" : err.message); } });
   $$("dialog [data-close], #d-close").forEach((b) => b.addEventListener("click", () => b.closest("dialog").close()));
   $("#detail").addEventListener("close", () => rerender());
 
@@ -798,6 +802,7 @@
 
   /* ---------------- start ---------------- */
   async function start() {
+    $("#f-search").value = "";
     S.device = store.get("va_device") || Math.random().toString(36).slice(2, 12); store.set("va_device", S.device);
     S.meta = await (await fetch("data/meta.json")).json();
     S.teams = S.meta.teams;

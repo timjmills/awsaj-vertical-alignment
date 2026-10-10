@@ -35,8 +35,10 @@ Read `docs/HANDOFF.md` first (current status and next steps), then `docs/spec.md
 ## Database (Supabase)
 Project `awsaj-vertical-alignment` (ref `mmcblwddwgwhtlhrqmfi`, region ap-south-1, Free plan) in Tim's
 "mycurricula.app" organisation. No sign-in: tables are read-only to the public key through RLS; all writes go
-through `set_rating`, `add_comment`, `admin_undo`, `admin_hide_comment` (admin ones need the committee passcode,
-stored only as a bcrypt hash in `app_settings`; Tim has it). Ratings are keyed by (framework, code, grade) so any
+through `set_rating`, `add_comment`, `undo_change`, `hide_comment` and `undo_my_rating`. There is **no passcode**:
+Tim asked for undo and hide to be open to everyone (migration 003). `undo_change` only undoes the newest change to a
+standard; every change and undo stays in `rating_events`. (The old `admin_*` functions and the passcode hash in
+`app_settings` are unused.) Ratings are keyed by (framework, code, grade) so any
 grade can claim a band standard suggested for another grade. `load_rows()` (bulk loader) exists but its EXECUTE is
 revoked; re-grant temporarily with a fresh token when reloading standards, then revoke again.
 Free projects pause after 7 days idle; `keepalive.yml` pings every 3 days.
